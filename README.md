@@ -173,19 +173,13 @@ Configured via `pipeline.communication` in `config.yaml` and `communication.max_
 
 | Model | Natural | Constrained | Structured |
 |-------|:-------:|:-----------:|:----------:|
-| DeepSeek-R1-Distill-Qwen-1.5B | — | — | — |
-| Gemma2-2B | — | — | — |
-| LLaMA 3.2-3B | — | — | — |
-| Mistral-7B | — | — | — |
-| Qwen2.5-7B | — | — | — |
+| DeepSeek-R1-Distill-Qwen-1.5B | 67 | 53 | 62 |
+| Gemma2-2B | 54 | 54 | 46 |
+| LLaMA 3.2-3B | 58 | 71 | 58 |
+| Mistral-7B | 29 | 32 | 36 |
+| Qwen2.5-7B | 44 | 46 | 53 |
 
-> *(Results to be populated from `outputs/` after full experimental runs.)*
 
-#### Token Cost Breakdown (per agent)
-
-| Model | Planner Tokens | Solver Tokens | Verifier Tokens | Total |
-|-------|:--------------:|:-------------:|:---------------:|:-----:|
-| — | — | — | — | — |
 
 #### 🔍 Key Design Insights
 
