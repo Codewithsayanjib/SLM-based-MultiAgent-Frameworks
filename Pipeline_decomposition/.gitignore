@@ -9,3 +9,5 @@ venv/
 .venv/
 
 README.md
+
+.DS_Store
