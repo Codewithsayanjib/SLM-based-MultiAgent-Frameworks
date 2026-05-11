@@ -5,7 +5,7 @@
 <br/>
 
 # 🧠 SLM-Based Multi-Agent Frameworks
-## *Methodology 1 : Pipeline Decomposition*
+## *Methodology 2 : Diverse Ensemble Classifier
 
 <br/>
 
@@ -414,7 +414,7 @@ If you use this code or findings in your research, please cite:
 
 <div align="center">
 
-**More methodologies coming soon** · Stay tuned for Methodology 2
+**More methodologies coming soon** · Stay tuned for Methodology 1
 
 <br/>
 
