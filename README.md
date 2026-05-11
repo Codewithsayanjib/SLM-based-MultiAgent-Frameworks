@@ -5,7 +5,7 @@
 <br/>
 
 # 🧠 SLM-Based Multi-Agent Frameworks
-## Methodology 2 : Diverse Ensemble Classifier
+## Methodology 2 : Diverse Ensemble Reasoning
 
 <br/>
 
