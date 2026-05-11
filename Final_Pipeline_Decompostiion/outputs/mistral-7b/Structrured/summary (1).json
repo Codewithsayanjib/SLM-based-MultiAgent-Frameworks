@@ -1,0 +1,12 @@
+{
+  "model": "mistralai/Mistral-7B-Instruct-v0.3",
+  "pipeline": "planner_solver_verifier",
+  "communication": "structured",
+  "dataset": "gsm8k",
+  "num_examples": 100,
+  "num_correct": 26,
+  "accuracy": 0.26,
+  "total_token_cost": 108102,
+  "avg_token_cost": 1081.02,
+  "accuracy_per_1000_tokens": 0.240514
+}

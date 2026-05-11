@@ -1,0 +1,12 @@
+{
+  "model": "Qwen/Qwen2.5-7B-Instruct",
+  "pipeline": "planner_solver_verifier",
+  "communication": "natural",
+  "dataset": "gsm8k",
+  "num_examples": 100,
+  "num_correct": 44,
+  "accuracy": 0.44,
+  "total_token_cost": 297447,
+  "avg_token_cost": 2974.47,
+  "accuracy_per_1000_tokens": 0.147926
+}

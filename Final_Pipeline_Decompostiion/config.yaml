@@ -1,0 +1,27 @@
+seed: 42
+output_dir: outputs/gemma2_svamp_planner_solver_verifier/constrained
+
+dataset:
+  name: svamp
+  split: train        
+  max_samples: 100
+
+model:
+  name: google/gemma-2-2b-it
+  device: mps
+  dtype: float16
+  load_in_4bit: false
+
+pipeline:
+  type: planner_solver_verifier
+  communication: constrained
+
+communication:
+  max_tokens: 120
+  num_steps: 5
+
+generation:
+  max_new_tokens: 512
+  temperature: 0.0
+  top_p: 1.0
+  do_sample: false

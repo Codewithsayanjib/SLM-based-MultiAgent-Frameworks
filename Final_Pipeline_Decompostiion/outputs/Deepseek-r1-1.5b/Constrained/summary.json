@@ -1,0 +1,12 @@
+{
+  "model": "deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B",
+  "pipeline": "planner_solver_verifier",
+  "communication": "constrained",
+  "dataset": "svamp",
+  "num_examples": 100,
+  "num_correct": 62,
+  "accuracy": 0.62,
+  "total_token_cost": 167436,
+  "avg_token_cost": 1674.36,
+  "accuracy_per_1000_tokens": 0.370291
+}
