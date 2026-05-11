@@ -401,12 +401,12 @@ pipeline:
 If you use this code or findings in your research, please cite:
 
 ```bibtex
-@misc{slm_multiagent_pipeline_decomposition_2025,
-  title     = {SLM-Based Multi-Agent Frameworks: Methodology 1 — Pipeline Decomposition},
-  author    = {Sayanjib Saha},
-  year      = {2025},
-  note      = {Research in progress. IIT Patna AI-ML-NLP Lab \& Jadavpur University},
-  url       = {https://github.com/Codewithsayanjib/SLM-based-MultiAgent-Frameworks}
+@inproceedings{sur2026slm,
+  title     = {Structured Communication and Ensemble Diversity in SLM based Multi-Agent Systems: A Comparative Study},
+  author    = {Sur, Sayanjib and Sil Sarma, Ankush and Singh, Pawan Kumar},
+  booktitle = {Proceedings of the 10th International Conference on Computing, Communication, Control \& Automation (ICCUBEA)},
+  year      = {2026},
+  note      = {Submitted}
 }
 ```
 
@@ -418,7 +418,7 @@ If you use this code or findings in your research, please cite:
 
 <br/>
 
-Made with 🔬 at **IIT Patna AI-ML-NLP Lab** · **Jadavpur University**
+Made with 🔬 at **Jadavpur University**
 
 <br/>
 
