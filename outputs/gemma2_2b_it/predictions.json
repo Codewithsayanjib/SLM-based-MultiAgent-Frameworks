@@ -1,0 +1,2402 @@
+[
+  {
+    "index": 0,
+    "question": "Danny collects bottle caps. He found 63 bottle caps at the park while he threw away 51 old ones. Now he has 33 bottle caps in his collection. How many bottle caps did danny have at first?",
+    "gold_answer": "21",
+    "strategy_texts": {
+      "chain_of_thought": "Let's use variables to represent unknown quantities. Let 'x' be the initial amount of bottle caps Danny had.  We can set up an equation based on the given information:\n\n* Initial amount (before throwing away): x - 51 = Number of bottle caps after throwing away\n* Current amount (after collecting more): x + 33 = Total bottle caps collected\n\n\nNow we need to solve for 'x'. We can do that using algebra:\n\n1. **Combine like terms:** To find the total number of bottle caps, add the current amount to the previous amount: x + 33 = 63 - 51\n2. **Simplify:** Combine the numbers on both sides of the equation: x + 33 = 12\n3. **Isolate 'x':** Subtract 33 from both sides of the equation: x = 12 - 33\n4. **Calculate:** Solve for 'x': x = -21\n\n\n\nFINAL_ANSWER: -21",
+      "formula_first": "*  Total Bottle Caps = Initial Bottle Caps + Bottle Caps Collected - Bottle Caps Thrown Away\n*  Let x be the initial amount of bottle caps.\n\n\nSubstituting Values:\nx + 63 - 51 = 33\n\nSolving for x:\nx + 12 = 33\n\nTherefore, x = 21\n\nFINAL_ANSWER: 21",
+      "backward": "What is asked for?\n... The initial amount of bottle caps Danny had.\n\n\nWhat needs to be computed?\n...  The difference between the current amount and the previous amount.\n\n\n\nHow can we get there from here?\n... We know how many bottle caps Danny currently has, but also how many he got rid of. This means we can calculate the total amount of bottle caps he started with.\n\n\n\n\nFINAL_ANSWER: 94"
+    },
+    "strategy_predictions": {
+      "chain_of_thought": "-21",
+      "formula_first": "21",
+      "backward": "94"
+    },
+    "prediction": "-21",
+    "correct": false,
+    "token_cost": 831,
+    "per_strategy_tokens": {
+      "chain_of_thought": 353,
+      "formula_first": 232,
+      "backward": 246
+    },
+    "aggregation": "majority_vote"
+  },
+  {
+    "index": 1,
+    "question": "Rachel had to complete 11 pages of math homework, 2 pages of reading homework and 3 more pages of biology homework. How many more pages of math homework than biology homework did she have?",
+    "gold_answer": "8",
+    "strategy_texts": {
+      "chain_of_thought": "1. **Identify what we know:** We know that Rachel has completed 11 + 2 = 13 pages of homework total.  We also know that she needs to do 3 more pages of biology homework.\n2. **Define variables:** Let 'm' represent the number of pages of math homework. Let 'b' represent the number of pages of biology homework.\n3. **Set up equations based on given information:** We can express our knowledge about the total amount of work done using an equation: m + b = 13. This is because the sum of all her homework pages equals 13.\n4. **Use algebra to solve for one variable:** To find out how much more math homework she has compared to biology, let's isolate 'm'. Subtracting 'b' from both sides of the equation gives us: m = 13 - b.\n5. **Substitute to find the difference:** Now substitute the value of 'm' into the second equation (the one where we want to compare the two types of homework): (13 - b) + b = 13. Simplifying this equation gives us: 13 = 13. Since this statement is always true, it doesn't give us any specific information about the difference between math and biology homework.\n\n\nFINAL_ANSWER: Not enough information provided.",
+      "formula_first": "*  Total Pages = Math + Reading + Biology\n*  Let x be the number of pages of biology homework.\n*  Math Homework = 11\n*  Reading Homework = 2\n*  Biology Homework = x\n*  Total Pages = 11 + 2 + x\n*  Therefore, we can say that 11+2+x= Total Pages\n*  Substituting in our known value for total pages, we get 11+2+x=11+2+x\n*  Solving for x, we find x= 0\n\n\nFINAL_ANSWER: 0",
+      "backward": "* The total number of pages is 11 + 2 + 3 = 16 pages.\n* She has 3 more pages of biology homework than math homework.\n\n\nFINAL_ANSWER: 5"
+    },
+    "strategy_predictions": {
+      "chain_of_thought": "Not enough information provided.",
+      "formula_first": "0",
+      "backward": "5"
+    },
+    "prediction": "Not enough information provided.",
+    "correct": false,
+    "token_cost": 889,
+    "per_strategy_tokens": {
+      "chain_of_thought": 421,
+      "formula_first": 274,
+      "backward": 194
+    },
+    "aggregation": "majority_vote"
+  },
+  {
+    "index": 2,
+    "question": "There are 17 different movies and 11 different books in the ' crazy silly school ' series. If you read 13 of the books and watched 63 of the movies How many more movies than books are there in the ' crazy silly school ' series?",
+    "gold_answer": "6",
+    "strategy_texts": {
+      "chain_of_thought": "1. **Identify what we know:** We know that there are 17 movies and 11 books, and we've read 13 books and watched 63 movies.\n2. **Define variables:** Let `m` represent the number of movies and `b` represent the number of books.\n3. **Set up equations based on our information:**  We can set up two equations to express the given information:\n    * Equation 1 (books): b = 11\n    * Equation 2 (movies): m = 63 - 13 * 17/11\n4. **Solve for one variable in terms of the other:** Solve equation 2 for `m`:\n   * m = 63 - 13 * 17/11\n5. **Substitute into the second equation:** Substitute the value of `m` from step 4 into the first equation:\n   * b = 11\n6. **Calculate the difference between the number of movies and books:** Calculate the difference between the number of movies and books:\n   * Difference = m - b\n7. **Simplify the result:** Simplify the difference:\n   * Difference = (63 - 13 * 17/11) - 11\n\n\nFINAL_ANSWER: 8",
+      "formula_first": "*  Number of movies = Number of books + (number of movies - number of books) * ratio between movies and books\n*  Ratio between movies and books = number of movies / number of books\n\n\nFINAL_ANSWER: 20",
+      "backward": "What is being asked?  The difference between the number of movies and books.\n\n\nWhat information is needed to solve it? The total number of movies, the total number of books, and how many were read from each category.\n\n\n\nHow can we find the answer? We know the total number of movies and books, so we can subtract the number of books read from the total number of books to get the remaining books. Then we can subtract the number of movies read from the total number of movies to get the remaining movies. Finally, we can calculate the difference between these two numbers.\n\n\n\n\nFINAL_ANSWER: 50"
+    },
+    "strategy_predictions": {
+      "chain_of_thought": "8",
+      "formula_first": "20",
+      "backward": "50"
+    },
+    "prediction": "8",
+    "correct": false,
+    "token_cost": 932,
+    "per_strategy_tokens": {
+      "chain_of_thought": 431,
+      "formula_first": 209,
+      "backward": 292
+    },
+    "aggregation": "majority_vote"
+  },
+  {
+    "index": 3,
+    "question": "Jerry had 4 action figures on a shelf in his room. Later he added some more action figures to the shelf. If there are a total of 8 action figures on his shelf now How many action figures did he add to the shelf?",
+    "gold_answer": "4",
+    "strategy_texts": {
+      "chain_of_thought": "1. We know that Jerry started with 4 action figures.\n2. He has 8 action figures now, which is more than what he began with.\n3. To find out how many were added, we need to subtract the initial amount from the current amount.\n4. The difference between 8 and 4 equals 4.\n\n\nFINAL_ANSWER: 4",
+      "formula_first": "*  Total Action Figures = Initial Action Figures + Additional Action Figures\n*  Let 'x' represent the unknown number of additional action figures.\n\n\nSubstituting values into the equations:\n* 8 = 4 + x\n\n\nSolving for x:\n* 8 - 4 = x\n* 4 = x\n\n\n\nFINAL_ANSWER: 4",
+      "backward": "1. The final amount is 8.\n2. He started with 4.\n3. Therefore, he added...\n\n\nFINAL_ANSWER: 4"
+    },
+    "strategy_predictions": {
+      "chain_of_thought": "4",
+      "formula_first": "4",
+      "backward": "4"
+    },
+    "prediction": "4",
+    "correct": true,
+    "token_cost": 636,
+    "per_strategy_tokens": {
+      "chain_of_thought": 221,
+      "formula_first": 224,
+      "backward": 191
+    },
+    "aggregation": "majority_vote"
+  },
+  {
+    "index": 4,
+    "question": "Frank was reading through some books. Each book had 66 pages and it took Frank 12 days to finish each book. If he takes 492 days to finish all books How many books did he read?",
+    "gold_answer": "41",
+    "strategy_texts": {
+      "chain_of_thought": "1. **Identify what we know:** We know that each book has 66 pages, Frank reads for 12 days per book, and it takes him 492 days total.  We need to find out how many books he read.\n2. **Define variables:** Let 'b' represent the unknown number of books.\n3. **Set up an equation:** Since each book takes 12 days to read, Frank will have finished b * 12 = total pages read. This can be written as: b * 12 = 66*b\n4. **Solve for b:** Divide both sides of the equation by 12: b = 66/12\n5. **Simplify:** Simplify the fraction: b = 5.5\n6. **Interpret the result:** The value of b is 5.5 which means there are no whole numbers of books that fit these conditions.\n\n\nFINAL_ANSWER: -",
+      "formula_first": "* Time = Number of Books * Pages per Book + Total time spent on books\n* Total time spent on books = Days taken to finish one book * Number of books\n\n\nLet's plug in our known values into the equations:\nTotal time spent on books = 12 days/book * Number of books\nWe can rewrite this as:\nTime = (Number of books) * (Pages per book) + Total time spent on books\nSubstitute the value for total time spent on books from above:\nTime = (Number of books) * (66 pages/book) + (12 days/book) * Number of books\nSimplify by combining like terms:\nTime = (Number of books) * (66 pages/book) + (12 days/book) * Number of books\nNow we know that Time is equal to 492 days. We also know that Time is equal to (Number of books) * (66 pages/book) + (12 days/book) * Number of books. So let's set these two expressions equal to each other:\n(Number of books) * (66 pages/book) + (12 days/book) * Number of books = 492 days\nTo solve for the number of books, we can simplify the equation:\n(Number of books) * (66 pages/book) + (12 days/book) * Number of books - 492 days = 0\nThis simplifies to:\n(Number of books) * (66 pages/book) + (12 days/book) * Number of books - 492 days = 0\nSolving for the number of books:\n(Number of books) * (66 pages/book) + (12 days/book) * Number of books = 492 days\nDivide both sides by (66 pages/book):\nNumber of books = 492 / ((66 pages/book))\nCalculate the number of books:\nNumber of books = 7.5\nSince we cannot have half a book, there must be an error somewhere in the information provided.\n\n\n\nFINAL_ANSWER: Not possible to determine based on given information.",
+      "backward": "* The total time is given, which is 492 days.\n* We know how long it takes him per book, which is 12 days.\n* To find out how many books were read we need to divide the total time by the time spent on one book.\n\n\nFINAL_ANSWER: 40"
+    },
+    "strategy_predictions": {
+      "chain_of_thought": "-",
+      "formula_first": "Not possible to determine based on given information.",
+      "backward": "40"
+    },
+    "prediction": "-",
+    "correct": false,
+    "token_cost": 1184,
+    "per_strategy_tokens": {
+      "chain_of_thought": 342,
+      "formula_first": 619,
+      "backward": 223
+    },
+    "aggregation": "majority_vote"
+  },
+  {
+    "index": 5,
+    "question": "Frank was reading through his favorite book. The book had 392 pages and he read 14 pages per day. How many days did he take to finish the book?",
+    "gold_answer": "28",
+    "strategy_texts": {
+      "chain_of_thought": "1. We know that Frank has 392 pages of the book.\n2. He reads 14 pages every day.\n3. To find out how many days it took him, we need to divide the total number of pages by the number of pages he reads per day.\n4. So, the calculation is 392 / 14 = ?\n5. This gives us an answer of 28. Therefore, it took Frank 28 days to finish the book.\n\n\nFINAL_ANSWER: 28",
+      "formula_first": "* **Pages Read in Days:**  P = R * D\n    * P = Pages Read (in total)\n    * R = Pages Read Per Day\n    * D = Number of Days\n* We know that P = 392, R = 14, and we want to find D.\n\n\nSubstituting Values into Equation:\nD = P / R\n\nSolving for D:\nD = 392 / 14\n\nCalculating Result:\nD = 28\n\nFINAL_ANSWER: 28",
+      "backward": "* **What is being asked:**  How many days did Frank take to finish the book?\n* **To find out how many days it took him, we need to know:** How much of the book he has left after each day's reading.\n* **We can calculate the remaining pages daily:** He reads 14 pages per day.\n* **The total number of pages in the book:** 392 pages.\n\n\nFINAL_ANSWER: 27 days"
+    },
+    "strategy_predictions": {
+      "chain_of_thought": "28",
+      "formula_first": "28",
+      "backward": "27 days"
+    },
+    "prediction": "28",
+    "correct": true,
+    "token_cost": 741,
+    "per_strategy_tokens": {
+      "chain_of_thought": 243,
+      "formula_first": 253,
+      "backward": 245
+    },
+    "aggregation": "majority_vote"
+  },
+  {
+    "index": 6,
+    "question": "Dan has $ 7. He bought a candy bar for $ 2 and a chocolate for $ 3. How much money is left?",
+    "gold_answer": "2",
+    "strategy_texts": {
+      "chain_of_thought": "1. **Start with Dan's initial amount:**  Dan had $7.00.\n2. **Subtract the cost of the candy bar:** $7.00 - $2.00 = $5.00\n3. **Subtract the cost of the chocolate:** $5.00 - $3.00 = $2.00\n\n\nFINAL_ANSWER: 2.00",
+      "formula_first": "* **Equation:**  Money remaining = Initial Money - Cost of Candy Bar - Cost of Chocolate\n* **Substitute Values:** Money Remaining = $7 - $2 - $3\n* **Compute Result:** Money Remaining = $2\n\n\nFINAL_ANSWER: 2",
+      "backward": "1.  What did Dan have after buying the candy bar?\n2.  How much was his remaining balance after buying the chocolate?\n\n\nFINAL_ANSWER: -4"
+    },
+    "strategy_predictions": {
+      "chain_of_thought": "2.00",
+      "formula_first": "2",
+      "backward": "-4"
+    },
+    "prediction": "2.00",
+    "correct": true,
+    "token_cost": 567,
+    "per_strategy_tokens": {
+      "chain_of_thought": 209,
+      "formula_first": 186,
+      "backward": 172
+    },
+    "aggregation": "majority_vote"
+  },
+  {
+    "index": 7,
+    "question": "Because of the decision Sofia asked the students to suggest specific types of food. If 144 students suggested adding mashed potatoes 467 suggested adding bacon to the menu and 79 suggested adding tomatoes How many more students suggested mashed potatoes than those that suggested tomatoes?",
+    "gold_answer": "65",
+    "strategy_texts": {
+      "chain_of_thought": "1. Identify what we need to find out. We want to know how many more students suggested mashed potatoes compared to tomato suggestions.\n2.  Identify all given information. We are told about the number of students who suggested mashed potatoes, bacon, and tomatoes.\n3. Set up an equation based on the given information. Let 'x' represent the difference between the number of students suggesting mashed potatoes and the number of students suggesting tomatoes. This is our unknown variable. The equation would be: x = (number of mashed potato suggestions) - (number of tomato suggestions).\n4. Substitute the values from the given information into the equation. So, x = 144 - 79.\n5. Solve for x. Therefore, x = 65.\n\n\nFINAL_ANSWER: 65",
+      "formula_first": "*  Number of people who suggested something = Total Number of Students - People who didn't suggest anything\n*  People who suggested mashed potatoes = Total Number of Students - People who suggested bacon - People who suggested tomatoes\n\n\nLet's break down the problem step by step:\n\n**Step 1:** We know there are 144 total students suggesting different foods. Let's represent the number of students who suggested mashed potatoes (M) and the number of students who suggested bacon (B). The number of students who suggested tomatoes (T) is also given.\n\nWe can express these numbers in terms of our known variables: M + B + T = 144\n\n**Step 2:** Now we have information about how many students suggested each item. We know that 467 students suggested adding bacon. This means that the number of students who suggested mashed potatoes minus the number of students who suggested bacon equals the number of students who suggested mashed potatoes. So, M = 144 - B - T\n\n**Step 3:** To find the difference between the number of students who suggested mashed potatoes and the number of students who suggested tomatoes, let's subtract the number of students who suggested tomatoes from the number of students who suggested mashed potatoes. That gives us: M - T\n\n**Step 4:** Substitute the value for M from Step 2 into the equation above: (144 - B - T) - T\n\n**Step 5:** Simplify the equation: 144 - B - 2T\n\n**Step 6:** Since we don't know the exact number of students who suggested bacon or tomatoes, we cannot calculate the final answer directly. However, we can use the provided equations to solve for them if needed.\n\n\n\nFINAL_ANSWER: Not enough information provided to determine an accurate answer.",
+      "backward": "What is being asked in the problem?\nThe problem asks how many more students suggested mashed potatoes than those who suggested tomatoes.\n\n\nWhat information do we have?\nWe know that 467 students suggested adding bacon, 79 students suggested adding tomatoes, and 144 students suggested adding mashed potatoes.\n\n\n\nHow can we solve it?\nTo find out how many more students suggested mashed potatoes than tomatoes, subtract the number of students who suggested tomatoes from the number of students who suggested mashed potatoes.  This will give us the difference between these two groups.\n\n\n\n\nFINAL_ANSWER: 388"
+    },
+    "strategy_predictions": {
+      "chain_of_thought": "65",
+      "formula_first": "Not enough information provided to determine an accurate answer.",
+      "backward": "388"
+    },
+    "prediction": "65",
+    "correct": true,
+    "token_cost": 1137,
+    "per_strategy_tokens": {
+      "chain_of_thought": 314,
+      "formula_first": 536,
+      "backward": 287
+    },
+    "aggregation": "majority_vote"
+  },
+  {
+    "index": 8,
+    "question": "A waiter had some customers. After 9 customers left he still had 12 customers. How many customers did he have at the start?",
+    "gold_answer": "21",
+    "strategy_texts": {
+      "chain_of_thought": "Let's use variables to represent unknown quantities. Let 'x' be the initial number of customers.  We can set up an equation based on the given information:\n\n* x - 9 = 12 (The difference between the starting number of customers and the number after 9 left is equal to 12)\n\nNow, solve for 'x':\n\n* Add 9 to both sides of the equation: x - 9 + 9 = 12 + 9\n* Simplify: x = 21\n\nTherefore, the waiter initially had **21** customers.\n\n\nFINAL_ANSWER: 21",
+      "formula_first": "*  Let x be the initial number of customers.\n* The total number of customers after losing 9 is given by (x - 9).\n* We know that (x - 9) = 12.\n\n\nSolving for x:\n(x - 9) = 12\nx = 12 + 9\nx = 21\n\n\n\nFINAL_ANSWER: 21",
+      "backward": "* The waiter has 12 customers after 9 leave.\n* This means there were more than 12 customers initially.\n\n\nFINAL_ANSWER: 24"
+    },
+    "strategy_predictions": {
+      "chain_of_thought": "21",
+      "formula_first": "21",
+      "backward": "24"
+    },
+    "prediction": "21",
+    "correct": true,
+    "token_cost": 645,
+    "per_strategy_tokens": {
+      "chain_of_thought": 255,
+      "formula_first": 218,
+      "backward": 172
+    },
+    "aggregation": "majority_vote"
+  },
+  {
+    "index": 9,
+    "question": "Robin has 28 packages of gum and 13 packages of candy. There are 4 pieces in each package. How many pieces of gum does Robin have?",
+    "gold_answer": "112",
+    "strategy_texts": {
+      "chain_of_thought": "1. We know that Robin has 28 packages of gum.\n2. Each package contains 4 pieces of gum.\n3. To find out how many pieces of gum Robin has, we need to multiply the number of packages by the number of pieces per package.\n4. Therefore, the total number of pieces of gum is 28 * 4 = 112.\nFINAL_ANSWER: 112",
+      "formula_first": "*  Total Gum Pieces = Number of Packages * Pieces per Package\n* Total Candy Pieces = Number of Packages * Pieces per Package\n\n\nSubstituting Values:\nTotal Gum Pieces = 28 * 4 = 112\nTotal Candy Pieces = 13 * 4 = 52\n\n\n\nFINAL_ANSWER: 112",
+      "backward": "What is asked for? The number of pieces of gum.\nHow can we get it? We know how many packages of gum Robin has, and there are 4 pieces per package.\nSo, we multiply the number of packages by the number of pieces per package.\n\n\nFINAL_ANSWER: 112"
+    },
+    "strategy_predictions": {
+      "chain_of_thought": "112",
+      "formula_first": "112",
+      "backward": "112"
+    },
+    "prediction": "112",
+    "correct": true,
+    "token_cost": 631,
+    "per_strategy_tokens": {
+      "chain_of_thought": 218,
+      "formula_first": 207,
+      "backward": 206
+    },
+    "aggregation": "majority_vote"
+  },
+  {
+    "index": 10,
+    "question": "Matthew had 15 crackers. If Matthew gave equal numbers of crackers to his 5 friends and still had 10 crackers left How many crackers did each friend eat?",
+    "gold_answer": "1",
+    "strategy_texts": {
+      "chain_of_thought": "1. **Define variables:** Let 'x' represent the number of crackers given to each friend.\n2. **Set up an equation:** The total number of crackers given away is 5 * x, and the total number of crackers remaining is 10. So we have the equation: 15 - 5x = 10.\n3. **Solve for x:** To find out how many crackers were eaten, we need to isolate 'x'.  Add 5x to both sides of the equation: 15 = 10 + 5x. Then subtract 10 from both sides: 5 = 5x. Finally, divide both sides by 5: x = 1.\n4. **Answer:** Each friend ate 1 cracker.\n\n\nFINAL_ANSWER: 1",
+      "formula_first": "*  Total crackers given away = Total crackers - leftover crackers\n* Number of crackers per friend = Total crackers given away / Number of friends\n\n\n**Solution:**\nLet's break down the problem step by step:\n\n1. **Total crackers given away:** Matthew started with 15 crackers and has 10 left, so he gave away 15 - 10 = 5 crackers.\n\n2. **Number of crackers per friend:** He gave these crackers to 5 friends, so each friend received 5 / 5 = 1 cracker.\n\n\n\nFINAL_ANSWER: 1",
+      "backward": "What is asked in the problem?\nThe amount of crackers each friend ate.\n\n\nWhat information is needed to solve it?\nHow many crackers were given away, how many crackers are left after giving some away.\n\n\n\nUsing the provided information we can calculate...\n* Total crackers given away = total crackers - leftover crackers\n* Number of crackers given away per friend = (total crackers given away) / (number of friends).\n\n\n\n\nFinal Answer: 3 crackers/friend"
+    },
+    "strategy_predictions": {
+      "chain_of_thought": "1",
+      "formula_first": "1",
+      "backward": "3"
+    },
+    "prediction": "1",
+    "correct": true,
+    "token_cost": 799,
+    "per_strategy_tokens": {
+      "chain_of_thought": 298,
+      "formula_first": 261,
+      "backward": 240
+    },
+    "aggregation": "majority_vote"
+  },
+  {
+    "index": 11,
+    "question": "Mary is baking a cake. The recipe calls for 12 cups of flour 14 cups of sugar and 7 cups of salt. She already put in 2 cups of flour. How many more cups of flour than cups of salt does she need to add now?",
+    "gold_answer": "3",
+    "strategy_texts": {
+      "chain_of_thought": "1. Identify what we know from the problem. We know that Mary needs 12 cups of flour, but has only added 2 cups so far.  We also know that she needs 14 cups of sugar and 7 cups of salt.\n2. Determine how much flour she still needs. To find out how much flour she needs, subtract the amount she's already used from the total needed. This gives us 12 - 2 = 10 cups of flour left to bake.\n3. Find the difference between the amount of flour she needs and the amount of salt she needs. Since she needs 10 cups of flour and 7 cups of salt, the difference is 10 - 7 = 3 cups.\n\n\nFINAL_ANSWER: 3",
+      "formula_first": "*  Flour needed = Flour added + (flour needed)\n*  Sugar needed = Sugar added + (sugar needed)\n*  Salt needed = Salt added + (salt needed)\n\n\nFINAL_ANSWER: 0",
+      "backward": "What quantity are we trying to find out?  How much more flour does she need compared to salt?\n\n\nFINAL_ANSWER: 5"
+    },
+    "strategy_predictions": {
+      "chain_of_thought": "3",
+      "formula_first": "0",
+      "backward": "5"
+    },
+    "prediction": "3",
+    "correct": true,
+    "token_cost": 710,
+    "per_strategy_tokens": {
+      "chain_of_thought": 312,
+      "formula_first": 205,
+      "backward": 193
+    },
+    "aggregation": "majority_vote"
+  },
+  {
+    "index": 12,
+    "question": "Bobby had 20 pieces of candy. He ate 34 pieces of candy. Then he ate 18 more. How many pieces of candy did Bobby eat?",
+    "gold_answer": "52",
+    "strategy_texts": {
+      "chain_of_thought": "1.  Bobby started with 20 pieces of candy.\n2.  He ate 34 pieces, so he has 20 - 34 = -14 pieces left. This is impossible! We made a mistake somewhere.\n3.  Let's check our math again. Did we add up all the candies eaten correctly?\n4.  We need to find out how much candy Bobby ate in total. To do that, let's add the amount he ate at first and then the second time.\n5.  The total amount of candy Bobby ate was 34 + 18 = 52 pieces.\n\n\nFINAL_ANSWER: 52",
+      "formula_first": "*  Total candies eaten = Initial candies + (Number of times eating) * Number of candies per eating session\n* Total candies eaten = 20 + (34+18)*1\n\n\nSubstituting values into the equations:\n* Total candies eaten = 20 + (52)*1\n* Total candies eaten = 20 + 52\n* Total candies eaten = 72\n\n\n\nFINAL_ANSWER: 72",
+      "backward": "What is asked in the problem?\n...How many pieces of candy did Bobby eat?\n\n\nFINAL_ANSWER: 52"
+    },
+    "strategy_predictions": {
+      "chain_of_thought": "52",
+      "formula_first": "72",
+      "backward": "52"
+    },
+    "prediction": "52",
+    "correct": true,
+    "token_cost": 670,
+    "per_strategy_tokens": {
+      "chain_of_thought": 271,
+      "formula_first": 230,
+      "backward": 169
+    },
+    "aggregation": "majority_vote"
+  },
+  {
+    "index": 13,
+    "question": "53 campers went rowing in the morning 48 campers went rowing in the afternoon and 49 campers went rowing in the evening. How many more campers went rowing in the morning than in the evening?",
+    "gold_answer": "4",
+    "strategy_texts": {
+      "chain_of_thought": "1. Find the total number of campers who went rowing in the morning, afternoon, and evening.\n2. Subtract the number of campers who went rowing in the evening from the number of campers who went rowing in the morning to find the difference.\n\n\nFINAL_ANSWER: 5",
+      "formula_first": "* **Total campers:** Total campers = Morning campers + Afternoon campers + Evening campers\n* **Difference between morning and evening:** Difference = Morning campers - Evening campers\n\n\n**Calculations:**\n1.  Calculate total campers by adding all three groups of campers.\n2. Calculate the difference between morning and evening campers.\n\n\n\nFINAL_ANSWER: 5",
+      "backward": "1. The total number of campers who rowed is given, so we can find out how many campers were present at each time slot.\n2. We know the number of campers who rowed in the morning, afternoon, and evening.  We want to compare these numbers.\n\n\nFINAL_ANSWER: 5"
+    },
+    "strategy_predictions": {
+      "chain_of_thought": "5",
+      "formula_first": "5",
+      "backward": "5"
+    },
+    "prediction": "5",
+    "correct": false,
+    "token_cost": 627,
+    "per_strategy_tokens": {
+      "chain_of_thought": 194,
+      "formula_first": 217,
+      "backward": 216
+    },
+    "aggregation": "majority_vote"
+  },
+  {
+    "index": 14,
+    "question": "Because of the decision Sofia asked 288 students to suggest specific types of food. 264 students suggested adding bacon while others suggested adding mashed potatoes to the menu. How many students suggested mashed potatoes?",
+    "gold_answer": "24",
+    "strategy_texts": {
+      "chain_of_thought": "1. We know that there were 288 total students who gave suggestions.\n2.  We also know that 264 students suggested adding bacon.\n3. To find out how many students suggested mashed potatoes, we need to subtract the number of students who suggested bacon from the total number of students who made suggestions.\n4. Therefore, the number of students who suggested mashed potatoes is 288 - 264 = 24.\n\n\nFINAL_ANSWER: 24",
+      "formula_first": "*  Total Students = Number suggesting Bacon + Number suggesting Mashed Potatoes\n*  Let 'x' represent the number of students who suggested mashed potatoes.\n*  We know that Total Students = 288 and Number suggesting Bacon = 264.\n\n\nSubstituting values into the first equation:\n288 = 264 + x\n\nSolving for x:\n288 - 264 = x\n24 = x\n\nFINAL_ANSWER: 24",
+      "backward": "1.  Sofia asked 288 students to suggest food.\n2.  264 students suggested adding bacon.\n3. ...\n\n\nFINAL_ANSWER: 24 students"
+    },
+    "strategy_predictions": {
+      "chain_of_thought": "24",
+      "formula_first": "24",
+      "backward": "24 students"
+    },
+    "prediction": "24",
+    "correct": true,
+    "token_cost": 682,
+    "per_strategy_tokens": {
+      "chain_of_thought": 242,
+      "formula_first": 249,
+      "backward": 191
+    },
+    "aggregation": "majority_vote"
+  },
+  {
+    "index": 15,
+    "question": "He then went to see the oranges being harvested. He found out that they harvest 71 sacks of unripe oranges and 60 sacks of ripe oranges per day. How many more sacks of unripe oranges than ripe oranges are harvested per day?",
+    "gold_answer": "11",
+    "strategy_texts": {
+      "chain_of_thought": "1. Identify what we need to find. We want to know how many more sacks of unripe oranges than ripe oranges are harvested per day.\n2.  Identify the given information. We know that they harvest 71 sacks of unripe oranges and 60 sacks of ripe oranges per day.\n3. Set up an equation. Let 'x' represent the difference between the number of unripe and ripe oranges harvested per day. So, our equation is: 71 - x = 60 + x\n4. Solve for x. Add x to both sides of the equation: 71 = 120 + 2x\n5. Subtract 120 from both sides: -49 = 2x\n6. Divide both sides by 2: x = -24.5\n7. Interpret the result. The negative value means there isn’t enough data provided to determine the exact difference.\n\n\nFINAL_ANSWER: -24.5",
+      "formula_first": "*  Unripe Oranges Harvested = Ripe Oranges Harvested + (Difference in Number of Sacks)\n* Difference in Number of Sacks = Unripe Oranges Harvested - Ripe Oranges Harvested\n\n\nLet's plug in our numbers into the equations:\n\nUnripe Oranges Harvested = 60 + (71 - 60) = 60 + 11 = 71\n\nRipe Oranges Harvested = 60\n\nDifference in Number of Sacks = 71 - 60 = 11\n\nTherefore, he harvests **11** more sacks of unripe oranges than ripe oranges per day.\n\n\n\nFINAL_ANSWER: 11",
+      "backward": "* The question is asking how many more sacks of unripe oranges than ripe oranges are harvested per day.\n* We know the total number of unripe and ripe oranges harvested each day.\n\n\nFINAL_ANSWER: 11"
+    },
+    "strategy_predictions": {
+      "chain_of_thought": "-24.5",
+      "formula_first": "11",
+      "backward": "11"
+    },
+    "prediction": "11",
+    "correct": true,
+    "token_cost": 852,
+    "per_strategy_tokens": {
+      "chain_of_thought": 349,
+      "formula_first": 297,
+      "backward": 206
+    },
+    "aggregation": "majority_vote"
+  },
+  {
+    "index": 16,
+    "question": "29 campers went rowing and 66 campers went hiking in the morning. 26 campers went rowing in the afternoon. How many more campers went rowing in the morning than in the afternoon?",
+    "gold_answer": "3",
+    "strategy_texts": {
+      "chain_of_thought": "1. **Identify what we need to find:** We want to know how many more campers went rowing in the morning compared to the afternoon.\n2. **Find the difference between the morning and afternoon numbers:**  We have two sets of data, one for morning (29) and another for afternoon (26). The difference is calculated by subtracting the smaller value from the larger value. So, 29 - 26 = 3.\n3. **Answer:** There were **3** more campers who went rowing in the morning than in the afternoon.\n\n\nFINAL_ANSWER: 3",
+      "formula_first": "* **Total campers:** Total campers = Rowing campers + Hiking campers\n* **Rowing campers after afternoon:**  After Afternoon rowers = Rowing campers - 26\n* **Difference between Morning & Afternoon:** Difference = (Morning Rowers) - (Afternoon Rowers)\n\n\n**Calculations:**\n1. Total campers = 29 + 66 = 95\n2. After Afternoon rowers = 26\n3. Difference = 29 - 26 = 3\n\n\n\nFINAL_ANSWER: 3",
+      "backward": "1. The total number of campers who went rowing is 29 + 26 = 55.\n2. The difference between the number of campers who went rowing in the morning and in the afternoon is 55 - (number of campers who went rowing in the afternoon).\n\n\nFINAL_ANSWER: 31"
+    },
+    "strategy_predictions": {
+      "chain_of_thought": "3",
+      "formula_first": "3",
+      "backward": "31"
+    },
+    "prediction": "3",
+    "correct": true,
+    "token_cost": 729,
+    "per_strategy_tokens": {
+      "chain_of_thought": 257,
+      "formula_first": 256,
+      "backward": 216
+    },
+    "aggregation": "majority_vote"
+  },
+  {
+    "index": 17,
+    "question": "Edward spent $ 9. Then he spent $ 8 more. Now he has $ 17. How much did Edward have before he spent his money?",
+    "gold_answer": "34",
+    "strategy_texts": {
+      "chain_of_thought": "Let's break down the problem into smaller steps to understand it better.\n\n1. **Identify what we know:** We know that Edward started with some amount of money, let's call it \"x\".  We also know how much money he had after spending $9 and then another $8. Finally, we know how much money he has left.\n\n2. **Formulate an equation:** The total amount of money Edward had is represented by the sum of his starting amount (x) plus the amounts he spent ($9 + $8). This means we can express his current balance as: x = $17.\n\n3. **Solve for x:** To find out how much money Edward had initially, we need to isolate 'x' in our equation. Subtracting $17 from both sides gives us: x - $17 = $0. Therefore, x = $17.\n\n\nFINAL_ANSWER: 17",
+      "formula_first": "*  Total amount of money = Initial Amount + Spending\n*  Money remaining = Total amount - spending\n\n\nLet's break down the information given in the problem to find how much money Edward had initially. We know that after spending $8, he still has $17. This means we can use the total amount of money equation to solve for his initial amount. Let's set up an equation based on what is known:\n\nInitial amount (I) + Spending ($8) = Money Remaining ($17)\n\nWe also know that the spending was $8 so let's plug it into our equation:\n\nI + $8 = $17\n\nNow we can isolate I by subtracting $8 from both sides:\n\nI = $17 - $8\n\nFinally, calculate the value of I:\n\nI = $9\n\nTherefore, Edward had **$9** before he spent any money.\n\n\n\nFINAL_ANSWER: 9",
+      "backward": "What is asked in the problem?\n... The amount of money Edward had before spending any money.\n\n\nFINAL_ANSWER: 26"
+    },
+    "strategy_predictions": {
+      "chain_of_thought": "17",
+      "formula_first": "9",
+      "backward": "26"
+    },
+    "prediction": "17",
+    "correct": false,
+    "token_cost": 819,
+    "per_strategy_tokens": {
+      "chain_of_thought": 320,
+      "formula_first": 330,
+      "backward": 169
+    },
+    "aggregation": "majority_vote"
+  },
+  {
+    "index": 18,
+    "question": "Haley has 20 marbles. In her class 2 boys love to play marbles. If she distributes her marbles equally How many will each of the boys receive?",
+    "gold_answer": "10",
+    "strategy_texts": {
+      "chain_of_thought": "1. We know that Haley has 20 marbles, and there are two boys who want them.  We need to divide these marbles evenly between the boys.\n2. To do this we can use division. The symbol for division is / . So we have 20 marbles divided by 2 boys. This gives us 20/2 = 10.\n3. Therefore, each boy will receive 10 marbles.\n\n\nFINAL_ANSWER: 10",
+      "formula_first": "* **Formula:**  Number of items / Number of recipients = Items per recipient\n* **Applying the Formula:** 20 marbles / 2 boys = 10 marbles/boy\n\n\nFINAL_ANSWER: 10",
+      "backward": "1.  What is the total number of marbles per boy?\n2.  How many marbles does Haley have in total?\n\n\nFINAL_ANSWER: 10"
+    },
+    "strategy_predictions": {
+      "chain_of_thought": "10",
+      "formula_first": "10",
+      "backward": "10"
+    },
+    "prediction": "10",
+    "correct": true,
+    "token_cost": 583,
+    "per_strategy_tokens": {
+      "chain_of_thought": 225,
+      "formula_first": 182,
+      "backward": 176
+    },
+    "aggregation": "majority_vote"
+  },
+  {
+    "index": 19,
+    "question": "Paul had 108 books. After selling some books in a garage sale and giving 35 books to his friend he had 62 books left. How many books did he sell in the garage sale?",
+    "gold_answer": "11",
+    "strategy_texts": {
+      "chain_of_thought": "Let's use variables to represent unknown quantities.  We can let 'x' be the number of books sold at the garage sale.\n\nNow we can set up an equation based on the given information:\n\n* Total books before sales - Books after sales = Books sold\n* 108 - (62 + x) = x\n\nSimplify the equation:\n\n* 108 - 62 - x = x\n* 46 - x = x\n\nCombine like terms:\n\n* 46 = 2x\n\nDivide both sides by 2:\n\n* 23 = x\n\nTherefore, Paul sold **23** books in the garage sale.\n\n\nFINAL_ANSWER: 23",
+      "formula_first": "*  Total books = Books sold + Books given away + Books remaining\n*  Let x be the number of books sold at the garage sale.\n\n\nSubstituting values into the equations:\n108 = x + 35 + 62\n\nSolving for x:\n108 - 35 - 62 = x\nx = 11\n\nFINAL_ANSWER: 11",
+      "backward": "* **What is asked:**  How many books did Paul sell at the garage sale?\n* **Need to know:** The total number of books Paul started with minus the number of books remaining after selling some.\n* **Before that:** He gave away 35 books, so we need to subtract those from the initial amount.\n\n\nFINAL_ANSWER: 73"
+    },
+    "strategy_predictions": {
+      "chain_of_thought": "23",
+      "formula_first": "11",
+      "backward": "73"
+    },
+    "prediction": "23",
+    "correct": false,
+    "token_cost": 749,
+    "per_strategy_tokens": {
+      "chain_of_thought": 289,
+      "formula_first": 231,
+      "backward": 229
+    },
+    "aggregation": "majority_vote"
+  },
+  {
+    "index": 20,
+    "question": "Mary is baking a cake. The recipe calls for 9 cups of sugar 14 cups of flour and 40 cups of salt. She already put in 4 cups of flour. How many more cups of flour than cups of sugar does she need to add now?",
+    "gold_answer": "1",
+    "strategy_texts": {
+      "chain_of_thought": "1. Identify what we know from the problem. We know that the recipe requires 14 cups of flour, but Mary has only added 4 cups so far.  We also know that the recipe requires 9 cups of sugar.\n2. Determine how much more flour Mary needs. To find out how much more flour she needs, subtract the amount of flour she's already used from the total amount required. This gives us 14 - 4 = 10 cups of flour needed.\n3. Compare the difference between flour and sugar amounts. Since Mary has already added 4 cups of flour, she still needs 10 cups of flour. But she has already added 9 cups of sugar. So, she needs 10 - 9 = 1 cup more of flour than sugar.\n\n\nFINAL_ANSWER: 1",
+      "formula_first": "*  Flour needed = Sugar needed * (flour ratio)\n* Flour Ratio = 14/9\n* Cups of flour needed - Cups of flour already added = Cups of flour remaining\n* Cups of flour remaining = Flour needed - Flour already added\n\n\nFINAL_ANSWER: 28",
+      "backward": "What quantity are we trying to find out?  How much more flour does she need compared to sugar?\n\n\nFINAL_ANSWER: 10"
+    },
+    "strategy_predictions": {
+      "chain_of_thought": "1",
+      "formula_first": "28",
+      "backward": "10"
+    },
+    "prediction": "1",
+    "correct": true,
+    "token_cost": 737,
+    "per_strategy_tokens": {
+      "chain_of_thought": 323,
+      "formula_first": 220,
+      "backward": 194
+    },
+    "aggregation": "majority_vote"
+  },
+  {
+    "index": 21,
+    "question": "Because of the decision Sofia asked the students to suggest specific types of food. If 257 students suggested adding mashed potatoes 120 suggested adding bacon to the menu and 97 suggested adding tomatoes How many more students suggested mashed potatoes than those that suggested bacon?",
+    "gold_answer": "137",
+    "strategy_texts": {
+      "chain_of_thought": "1. Identify what we need to find out. We want to know how many more students suggested mashed potatoes compared to bacon.\n2.  Identify the given information. We are told that 257 students suggested adding mashed potatoes, 120 suggested adding bacon, and 97 suggested adding tomatoes.\n3. Set up an equation. Let 'x' represent the difference between the number of students who suggested mashed potatoes and the number who suggested bacon. So our equation is: 257 - 120 = x\n4. Solve for x. Simplify the left side of the equation: 137 = x\n5. Answer the question. There were **137** more students who suggested mashed potatoes than bacon.\n\n\nFINAL_ANSWER: 137",
+      "formula_first": "*  Number of people who suggested mashed potatoes = Number of people who suggested bacon + (number of people who suggested mashed potatoes - number of people who suggested bacon)\n\n\nLet's break down the information given in the problem into an equation form:\n\nx = y + z - w\n\nWhere:\n* x = number of students who suggested mashed potatoes\n* y = number of students who suggested bacon\n* z = number of students who suggested tomatoes\n* w = total number of students\n\nWe know that:\n* x = 257\n* y = 120\n* z = 97\n\nSubstituting these values into our equation we get:\n\n257 = 120 + 97 - w\n\nSolving for w:\n\nw = 120 + 97 - 257\nw = -34\n\nThis is incorrect because it means there are negative students which isn’t possible. This indicates that there might be some error in the provided data.\n\n\n\nFINAL_ANSWER: Not enough information",
+      "backward": "What is being asked in the problem?\nThe problem asks how many more students suggested mashed potatoes than bacon.\n\n\nWhat information do we have?\nWe know that 257 students suggested adding mashed potatoes, 120 suggested adding bacon, and 97 suggested adding tomatoes.\n\n\n\nHow can we solve it?\nTo find out how many more students suggested mashed potatoes than bacon, subtract the number of students who suggested bacon from the number of students who suggested mashed potatoes.  \n\n\n\n\nFINAL_ANSWER: 257 - 120 = 137"
+    },
+    "strategy_predictions": {
+      "chain_of_thought": "137",
+      "formula_first": "Not enough information",
+      "backward": "257 - 120 = 137"
+    },
+    "prediction": "137",
+    "correct": true,
+    "token_cost": 972,
+    "per_strategy_tokens": {
+      "chain_of_thought": 312,
+      "formula_first": 377,
+      "backward": 283
+    },
+    "aggregation": "majority_vote"
+  },
+  {
+    "index": 22,
+    "question": "A mailman has to give 25 pieces of junk mail to each block. If he gives 5 mails to each house in a block How many houses are there in a block?",
+    "gold_answer": "5",
+    "strategy_texts": {
+      "chain_of_thought": "1. We know that the mailman delivers 25 pieces of junk mail per block.\n2. He gives 5 pieces of mail to each house.\n3. Let's say there are 'x' houses in a block.\n4. The total number of pieces delivered is equal to the number of houses multiplied by the number of pieces given per house. So, we can set up an equation: 25 * x = 5 * y\n5. Where 'y' represents the total number of houses.\n6. Simplify the equation: 25x = 5y\n7. Solve for 'x', which represents the number of houses in a block: x = (5y) / 25\n8. Since we don't have any information about 'y', we cannot solve for 'x'.\n\n\nFINAL_ANSWER: Not enough information provided.",
+      "formula_first": "*  Number of items = Number of houses * Number of items per house\n* Let x be the number of houses in a block.\n* We know that 25 items/house is given to each block.\n\n\nSubstituting values into the equations:\n* 25 = x * 5\n\n\n\nSolving for x:\n* 25 / 5 = x\n* 5 = x\n\n\n\n\nFINAL_ANSWER: 5",
+      "backward": "1. The mailman delivers 25 pieces of junk mail per block.\n2. He gives 5 pieces of mail to each house.\n3. We want to find out how many houses are in a block.\n\n\nFINAL_ANSWER: 5"
+    },
+    "strategy_predictions": {
+      "chain_of_thought": "Not enough information provided.",
+      "formula_first": "5",
+      "backward": "5"
+    },
+    "prediction": "5",
+    "correct": true,
+    "token_cost": 748,
+    "per_strategy_tokens": {
+      "chain_of_thought": 317,
+      "formula_first": 231,
+      "backward": 200
+    },
+    "aggregation": "majority_vote"
+  },
+  {
+    "index": 23,
+    "question": "Matthew had 24 crackers. If Matthew gave equal numbers of crackers to his 3 friends and still had 17 crackers left How many crackers did Matthew give to his friends?",
+    "gold_answer": "7",
+    "strategy_texts": {
+      "chain_of_thought": "1. **Define variables:** Let 'x' represent the number of crackers given to each friend.\n\n2. **Set up an equation:**  Matthew started with 24 crackers, gave away x*3 = 3x crackers, and has 17 left. So we have the equation: 24 - 3x = 17\n\n3. **Solve for x:** To find out how many crackers were given to each friend (x), solve the equation from Step 2. Add 3x to both sides: 24 = 17 + 3x. Subtract 17 from both sides: 7 = 3x. Divide both sides by 3: x = 7/3.\n\n4. **Interpret the result:** Since you can't have fractions of crackers, there must be an error in the information provided. It is impossible for Matthew to have given away an amount that leaves him with 17 crackers after giving some to three friends.\n\n\nFINAL_ANSWER: Not possible",
+      "formula_first": "*  Total crackers given away = Total crackers - leftover crackers\n*  Cracker per friend = (total crackers) / (number of friends)\n\n\n**Solution:**\nLet's break down the problem step by step:\n\n1. **Define variables:**\n   * Let 'x' represent the number of crackers each friend received.\n\n2. **Set up an equation based on the information provided:**\n    * Total crackers given away = x * 3 = 3x\n    * Total crackers initially = 24\n    * Total crackers remaining after giving some away = 24 - 17 = 7\n    * Therefore, we have the equation: 3x + 7 = 24\n\n3. **Solve for 'x':**\n    * Subtract 7 from both sides: 3x = 17\n    * Divide both sides by 3: x = 5.67\n\n4. Since we can't have fractions of crackers, let's recheck our assumption that all three friends got the same amount. We know he has 17 crackers left, so if they were all equally divided, then each friend would get 17/3 which is approximately 5.67. This means there must be another variable at play here.\n\n\n\nFINAL_ANSWER: Not possible to determine without more information.",
+      "backward": "What is asked in the problem?\nThe amount of crackers given away by Matthew.\n\n\nWhat information do we have about the cracker distribution?\nMatthew has 24 crackers, he gives some to his 3 friends, and then has 17 crackers left.\n\n\n\nHow can we use these pieces of information to find the unknown?\nWe know how much was started (24) and how much remains after giving some away (17). We also know there are three friends receiving crackers.  This allows us to calculate the total number of crackers given away.\n\n\n\n\nFINAL_ANSWER: 8"
+    },
+    "strategy_predictions": {
+      "chain_of_thought": "Not possible",
+      "formula_first": "Not possible to determine without more information.",
+      "backward": "8"
+    },
+    "prediction": "Not possible",
+    "correct": false,
+    "token_cost": 1039,
+    "per_strategy_tokens": {
+      "chain_of_thought": 344,
+      "formula_first": 426,
+      "backward": 269
+    },
+    "aggregation": "majority_vote"
+  },
+  {
+    "index": 24,
+    "question": "Baker made 121 cakes. He sold 105 of them and bought 170 new cakes. How many cakes does baker still have?",
+    "gold_answer": "186",
+    "strategy_texts": {
+      "chain_of_thought": "1. Start with the total number of cakes Baker had: 121.\n2. Subtract the number of cakes he sold: 121 - 105 = 16.\n3. Add the number of new cakes he bought: 16 + 170 = 186.\n4. The final result is the number of cakes Baker has left: 186.\n\n\nFINAL_ANSWER: 186",
+      "formula_first": "* Total Cakes = Initial Cakes + New Cakes - Sold Cakes\n* Final Cakes = Total Cakes - Sold Cakes\n\n\nFINAL_ANSWER: 64",
+      "backward": "What is asked in the problem?\nAnswer: how many cakes does baker still have?\n\n\nWhat information is needed to solve it?\nAnswer: total cakes baked, cakes sold, cakes bought.\n\n\n\nHow can we calculate the final answer?\nAnswer:  total cakes = total cakes baked + total cakes sold - total cakes bought; therefore, total cakes = 121 + 105 - 170 = 56\n\n\n\n\nFINAL_ANSWER: 56"
+    },
+    "strategy_predictions": {
+      "chain_of_thought": "186",
+      "formula_first": "64",
+      "backward": "56"
+    },
+    "prediction": "186",
+    "correct": true,
+    "token_cost": 630,
+    "per_strategy_tokens": {
+      "chain_of_thought": 223,
+      "formula_first": 167,
+      "backward": 240
+    },
+    "aggregation": "majority_vote"
+  },
+  {
+    "index": 25,
+    "question": "7 red peaches, 71 yellow peaches and 8 green peaches are in the basket. How many more green peaches than red peaches are in the basket?",
+    "gold_answer": "1",
+    "strategy_texts": {
+      "chain_of_thought": "1. Identify the given information: We have 7 red peaches, 71 yellow peaches, and 8 green peaches.\n2. Determine what we need to find: The difference between the number of green peaches and the number of red peaches.\n3. Calculate the difference:  We can subtract the number of red peaches from the number of green peaches. 8 - 7 = 1\n4. Answer the question: There are **1** more green peaches than red peaches in the basket.\n\n\nFINAL_ANSWER: 1",
+      "formula_first": "*  Number of green peaches = Number of red peaches + (number of green peaches - number of red peaches)\n\n\nSubstituting values into the equations:\n* Number of green peaches = 7 + (8 - 7)\n\n\n\nSolving for the unknown quantity:\n* Number of green peaches = 7 + 1 = 8\n\n\n\n\nAnswering the question:\n* There are 8 - 7 = **1** more green peach than red peach.\n\n\n\nFINAL_ANSWER: 1",
+      "backward": "What is being asked for? The difference between the number of green peaches and red peaches.\nHow can we find that difference? We know how many of each type there are.  We just need to subtract the number of red peaches from the number of green peaches.\n\n\nFINAL_ANSWER: 8 - 7 = 1"
+    },
+    "strategy_predictions": {
+      "chain_of_thought": "1",
+      "formula_first": "1",
+      "backward": "8 - 7 = 1"
+    },
+    "prediction": "1",
+    "correct": true,
+    "token_cost": 683,
+    "per_strategy_tokens": {
+      "chain_of_thought": 237,
+      "formula_first": 237,
+      "backward": 209
+    },
+    "aggregation": "majority_vote"
+  },
+  {
+    "index": 26,
+    "question": "Being his favorite, he saved checking on the grapevines after 57 stops. He was told by 252 of the pickers that they fill 108 drums of grapes per day. How many drums of grapes would be filled in 58 days?",
+    "gold_answer": "6264",
+    "strategy_texts": {
+      "chain_of_thought": "1. **Identify what we know:** We are given information about how many drums were filled per day and for how long.  We need to find out how much is filled over 58 days.\n2. **Set up an equation:** The total amount of grapes filled can be calculated using the daily rate multiplied by the number of days. This gives us the formula: Total Grapes = (Pickers/Day) * (Days).\n3. **Plug in known values:** In our case, we have:\n    * Pickers/Day = 252\n    * Days = 58\n4. **Calculate the total grapes filled in one day:** \n   Total Grapes Filled Per Day = 252 / 108 = 2.4 barrels\n5. **Multiply to find the total grapes filled in 58 days:**\n   Total Grapes Filled in 58 Days = 2.4 barrels/day * 58 days = 145.6 barrels\n\n\nFINAL_ANSWER: 145.6",
+      "formula_first": "* Number of pickers = Total Pickers / Number of Days\n* Drums Filled Per Day = Grapes Per Drum * Number of Pickers\n* Total Drums Filled = Drums Filled Per Day * Number of Days\n\n\n**Solution:**\nNumber of pickers = 252 / 57 = 4.4 (approximately)\nDrums Filled Per Day = 108 * 4.4 = 483.2 (approximately)\nTotal Drums Filled = 483.2 * 58 = 26998.56 (approximately)\n\n\n\nFINAL_ANSWER: 26998.56",
+      "backward": "* The total number of drums needed is unknown.\n* We know how much each picker fills daily and over how long period we want to calculate.\n\n\nFINAL_ANSWER: 39648"
+    },
+    "strategy_predictions": {
+      "chain_of_thought": "145.6",
+      "formula_first": "26998.56",
+      "backward": "39648"
+    },
+    "prediction": "145.6",
+    "correct": false,
+    "token_cost": 874,
+    "per_strategy_tokens": {
+      "chain_of_thought": 371,
+      "formula_first": 295,
+      "backward": 208
+    },
+    "aggregation": "majority_vote"
+  },
+  {
+    "index": 27,
+    "question": "Dave had 16 apps and 77 files on his phone. After deleting some apps and files he had 5 apps and 23 files left. How many apps did he delete?",
+    "gold_answer": "11",
+    "strategy_texts": {
+      "chain_of_thought": "Let's use variables to represent the unknown quantities. Let 'x' be the number of apps deleted, and let 'y' be the number of files deleted. We know that:\n*  Dave started with x + y = 16 (total apps)\n*  After deleting, he has x - y = 5 (apps remaining)\nWe can solve for x and y using these two equations. Here is one way to do it:\nAdd the two equations together: (x + y) + (x - y) = 16 + 5\nThis simplifies to 2x = 21\nDivide both sides by 2: x = 10.5\nSince we cannot have half an app, there must be an error in our assumption about how many apps were deleted.\n\n\nFINAL_ANSWER: None",
+      "formula_first": "*  Total initial apps = Initial app count + deleted apps\n* Total initial files = Initial file count + deleted files\n* We know that total initial apps is equal to the final app count plus the deleted apps.\n* We know that total initial files is equal to the final file count plus the deleted files.\n\n\nLet's plug in what we know into these equations:\nInitial app count + Deleted Apps = 5\nInitial File Count + Deleted Files = 23\n\nWe can solve for the number of deleted apps by rearranging the first equation:\nDeleted Apps = 5 - Initial App Count\n\nNow let's use this value of deleted apps in the second equation:\nInitial File Count + (5 - Initial App Count) = 23\n\nSolving for Initial App Count:\nInitial File Count + 5 - Initial App Count = 23\nInitial File Count - Initial App Count = 18\nInitial App Count = Initial File Count - 18\n\nSubstituting back into our rearranged equation from step one:\nDeleted Apps = 5 - (Initial File Count - 18)\nDeleted Apps = 5 - Initial File Count + 18\nDeleted Apps = 23 - Initial File Count\n\n\n\nTo find the initial file count, we can rearrange the equation where we solved for Initial App Count:\nInitial File Count = Initial App Count - 18\n\nSubstitute this value into the equation for Deleted Apps:\nDeleted Apps = 23 - (Initial App Count - 18)\nDeleted Apps = 23 - Initial App Count + 18\nDeleted Apps = 41 - Initial App Count\n\n\n\n\nSince we have two different expressions for Deleted Apps, we can set them equal to each other:\n23 - Initial File Count = 41 - Initial App Count\n\nCombining like terms:\nInitial App Count - Initial File Count = 18\n\nThis means that the difference between the initial app count and the initial file count was 18. This information helps us determine how many apps were deleted.\n\n\n\nFINAL_ANSWER: 0",
+      "backward": "What is asked in the problem?\n... The number of apps Dave deleted.\n\n\nWhat information do we have about this quantity?\n... He started with 16 apps, has 5 apps remaining, and lost some.\n\n\n\nHow can we use this information to find out how many apps were deleted?\n... We know the difference between starting amount and ending amount equals the number of apps deleted.  We can calculate it like this: (Starting Amount) - (Ending Amount) = Number of Apps Deleted\n\n\n\n\nApplying this logic:\n(16 apps) - (5 apps) = ?\n\n\n\nAnswer: 11 apps\n\n\nFINAL_ANSWER: 11"
+    },
+    "strategy_predictions": {
+      "chain_of_thought": "None",
+      "formula_first": "0",
+      "backward": "11"
+    },
+    "prediction": "None",
+    "correct": false,
+    "token_cost": 1168,
+    "per_strategy_tokens": {
+      "chain_of_thought": 309,
+      "formula_first": 575,
+      "backward": 284
+    },
+    "aggregation": "majority_vote"
+  },
+  {
+    "index": 28,
+    "question": "Julia played tag with 5 kids on tuesday. She had played tag with 6 kids on monday. How many more kids did she play with on monday than on tuesday?",
+    "gold_answer": "1",
+    "strategy_texts": {
+      "chain_of_thought": "1. We need to find the difference between the number of kids Julia played with on Monday and Tuesday.\n2. To do that, we subtract the number of kids from Tuesday from the number of kids from Monday.\n3. So, the calculation is: 6 - 5 = ?\n\n\nFINAL_ANSWER: 1",
+      "formula_first": "*  Number of people = (number of days) * (number of games per day)\n\n\nWe can use the information given to find how many more kids were played with on Monday compared to Tuesday. We know that Julia played with 6 kids on Monday and 5 kids on Tuesday. The difference between these numbers is 1 kid.\n\n\n\nFINAL_ANSWER: 1",
+      "backward": "1. The difference between the number of kids played with on Monday and Tuesday is asked for.\n2. We know how many kids were played with on each day.\n3. Therefore, we can calculate the difference.\n\n\nFINAL_ANSWER: 1 kid"
+    },
+    "strategy_predictions": {
+      "chain_of_thought": "1",
+      "formula_first": "1",
+      "backward": "1 kid"
+    },
+    "prediction": "1",
+    "correct": true,
+    "token_cost": 606,
+    "per_strategy_tokens": {
+      "chain_of_thought": 196,
+      "formula_first": 214,
+      "backward": 196
+    },
+    "aggregation": "majority_vote"
+  },
+  {
+    "index": 29,
+    "question": "Julia played tag with 17 kids on monday, 15 kids on tuesday and 2 kids on wednesday. How many kids did she play with altogether?",
+    "gold_answer": "34",
+    "strategy_texts": {
+      "chain_of_thought": "1. We know that Julia played with 17 kids on Monday.\n2. We also know that Julia played with 15 kids on Tuesday.\n3. Finally, we know that Julia played with 2 kids on Wednesday.\n4. To find out how many kids she played with altogether, we need to add up all three numbers of kids she played with.\n5. So, the total number of kids is 17 + 15 + 2 = 34.\n\n\nFINAL_ANSWER: 34",
+      "formula_first": "* Total players = Monday + Tuesday + Wednesday\n* Total Players = 17 + 15 + 2\n\n\nFINAL_ANSWER: 34",
+      "backward": "The question is asking how many kids Julia played with in total. We know how many she played with each day. So we can add those numbers together.\n\n\nFINAL_ANSWER: 34"
+    },
+    "strategy_predictions": {
+      "chain_of_thought": "34",
+      "formula_first": "34",
+      "backward": "34"
+    },
+    "prediction": "34",
+    "correct": true,
+    "token_cost": 584,
+    "per_strategy_tokens": {
+      "chain_of_thought": 237,
+      "formula_first": 168,
+      "backward": 179
+    },
+    "aggregation": "majority_vote"
+  },
+  {
+    "index": 30,
+    "question": "Debby bought 95 soda bottles and 180 water bottles when they were on sale. If she drank 15 water bottles and 54 soda bottles a day How many days would the water bottles last?",
+    "gold_answer": "12",
+    "strategy_texts": {
+      "chain_of_thought": "1. **Identify what we know:** We know that Debby has 95 + 180 = 275 total bottles, and drinks 15 + 54 = 69 bottles per day.  We want to find out how many days the water bottles will last.\n2. **Define variables:** Let 'x' represent the number of days the water bottles will last.\n3. **Set up an equation:** The number of water bottles left after x days is given by 180 - (69 * x). This must be equal to zero because there are no more water bottles left after all have been consumed. So, we can set up the equation: 180 - (69 * x) = 0\n4. **Solve for x:** To solve for x, we need to isolate it. Add (69 * x) to both sides of the equation: 180 = 69 * x. Then divide both sides by 69: x = 180 / 69.\n5. **Calculate x:** Calculate the value of x using a calculator: x ≈ 2.58.\n\n\nFINAL_ANSWER: 3",
+      "formula_first": "* **Water Bottles:**  Number of water bottles = (Total Water Bottles) / (Bottles per Day)\n* **Days to Last:** Days to last = (Total Water Bottles) / (Bottles per Day)\n\n\n**Solution:**\n* Number of water bottles = 180 / 15 = 12\n* Days to last = 180 / 15 = 12\n\n\n\nFINAL_ANSWER: 12",
+      "backward": "What is being asked in the problem?\nThe problem asks how many days the water bottles will last.\n\n\nWhat information do we have about the water bottles?\nWe know Debby has 180 water bottles, and she drinks 15 of them per day.\n\n\n\nHow can we use this information to find out how long the water bottles will last?\nTo figure out how many days the water bottles will last, we need to divide the total number of water bottles by the number of water bottles consumed each day.\n\n\n\nFINAL_ANSWER: 180 / 15 = 12"
+    },
+    "strategy_predictions": {
+      "chain_of_thought": "3",
+      "formula_first": "12",
+      "backward": "180 / 15 = 12"
+    },
+    "prediction": "3",
+    "correct": false,
+    "token_cost": 917,
+    "per_strategy_tokens": {
+      "chain_of_thought": 394,
+      "formula_first": 244,
+      "backward": 279
+    },
+    "aggregation": "majority_vote"
+  },
+  {
+    "index": 31,
+    "question": "Danny collects bottle caps and wrappers. He found 15 bottle caps and 18 wrappers at the park. Now he has 67 wrappers and 35 bottle caps in his collection. How many more wrappers than bottle caps does danny have now?",
+    "gold_answer": "32",
+    "strategy_texts": {
+      "chain_of_thought": "1. **Identify what we know:** We know that Danny started with 15 bottle caps and 18 wrappers, and then collected some more.  We also know how many of each item he currently has.\n2. **Define variables:** Let 'b' represent the number of bottle caps and 'w' represent the number of wrappers.\n3. **Set up equations based on the given information:**\n    * Equation 1 (starting amount): b + w = total starting items\n    * Equation 2 (current amount): b + w = total current items\n4. **Simplify the equations:** Since both amounts are equal to the same thing, they can be combined into one equation. This gives us: 2b + 2w = total starting items + total current items\n5. **Substitute known values:** Substitute the numbers for the initial amount of bottle caps and wrappers into the simplified equation: 2(15) + 2(18) = 67 + 35\n6. **Calculate the value of the unknown variable:** Simplify the left side of the equation: 30 + 36 = 97. Then combine it with the right side: 97 = 97. The equation holds true.\n7. **Determine the difference between the two quantities:** To find out how many more wrappers than bottle caps Danny has, subtract the number of bottle caps from the number of wrappers: w - b\n8. **Apply the final calculation:** From our previous steps, we know that w = 67 and b = 35. Therefore: 67 - 35 = 32\n\n\nFINAL_ANSWER: 32",
+      "formula_first": "*  Total Wrappers = Bottle Caps + Wrappers collected\n* Total Bottle Caps = Bottle Caps collected + Bottle Caps already owned\n* Difference between two quantities = (Quantity 2 - Quantity 1)\n\n\n**Applying these formulas:**\n\nLet's break down the problem step by step:\n\n1. **Calculate total wrappers:**\n   * We know that Danny started with 67 wrappers and added 18 more wrappers to his collection.\n   * Therefore, the total number of wrappers is 67 + 18 = 85 wrappers.\n\n2. **Calculate total bottle caps:**\n   * We know that Danny started with 35 bottle caps and added 15 more bottle caps to his collection.\n   * Therefore, the total number of bottle caps is 35 + 15 = 50 bottle caps.\n\n3. **Find the difference:**\n   * The difference between the number of wrappers and bottle caps is 85 - 50 = 35.\n\n\n\nFINAL_ANSWER: 35",
+      "backward": "What is being asked?\n...Danny has ...more wrappers than bottle caps.\n\n\nHow much of each item does he have?\nBottle Caps: 35\nWrappers: 67\n\n\n\nNow, how can we find out how many more wrappers than bottle caps he has?\nWe subtract the amount of bottle caps from the amount of wrappers.  \n\n\n\n\nFINAL_ANSWER: 32"
+    },
+    "strategy_predictions": {
+      "chain_of_thought": "32",
+      "formula_first": "35",
+      "backward": "32"
+    },
+    "prediction": "32",
+    "correct": true,
+    "token_cost": 1115,
+    "per_strategy_tokens": {
+      "chain_of_thought": 498,
+      "formula_first": 375,
+      "backward": 242
+    },
+    "aggregation": "majority_vote"
+  },
+  {
+    "index": 32,
+    "question": "Lewis earns $ 491 every week during the 1181 weeks of harvest. If he has to pay $ 216 rent every week How much money will have at the end of the harvest season?",
+    "gold_answer": "324775",
+    "strategy_texts": {
+      "chain_of_thought": "1. Calculate how much money Lewis makes per year.\n    * Multiply his weekly earnings by the number of weeks in a year.\n2. Subtract his weekly rent from his yearly earnings.\n3. This difference represents the amount of money Lewis will have left after paying rent for the entire harvest period.\n\n\nFINAL_ANSWER: 570,776",
+      "formula_first": "* **Total earnings:**  Earnings per week * Number of weeks = Total Earnings\n* **Net income:** Total Earnings - Rent Expense = Net Income\n\n\nFINAL_ANSWER: 570361",
+      "backward": "What is the total amount earned in one year?\nHow many years are there in a harvest season?\n\n\nFINAL_ANSWER: 507361"
+    },
+    "strategy_predictions": {
+      "chain_of_thought": "570,776",
+      "formula_first": "570361",
+      "backward": "507361"
+    },
+    "prediction": "570,776",
+    "correct": false,
+    "token_cost": 596,
+    "per_strategy_tokens": {
+      "chain_of_thought": 215,
+      "formula_first": 193,
+      "backward": 188
+    },
+    "aggregation": "majority_vote"
+  },
+  {
+    "index": 33,
+    "question": "There were some birds sitting on the fence. 4 more birds came to join them. If there are a total of 5 birds on the fence now How many birds had been sitting on the fence at the start?",
+    "gold_answer": "1",
+    "strategy_texts": {
+      "chain_of_thought": "1. We know that there are currently 5 birds on the fence.\n2.  We also know that 4 more birds joined the group, bringing the total to 5.\n3. Therefore, we can subtract the new birds from the current total to find out how many were originally present.\n4. The original number of birds is represented by \"x\". So, x - 4 = 5.\n5. To solve for x, add 4 to both sides of the equation. This gives us x + 4 = 9.\n6. Finally, subtract 4 from both sides to isolate x. This results in x = 5.\n\n\nFINAL_ANSWER: 5",
+      "formula_first": "*  Let 'x' represent the initial number of birds.\n* The current number of birds is x + 4 (the original number plus four new birds).\n* We know that the current number of birds is equal to 5.\n\n\nSubstituting these into our equations we get:\nx + 4 = 5\n\nSolving for x:\nx = 1\n\n\n\nFINAL_ANSWER: 1",
+      "backward": "1.  What is the final state? We know there are 5 birds on the fence now.\n2.  How did we get here? The initial state was different, and 4 more birds joined later.\n3.  Let's work back from the current state (5 birds). \n\n\nFINAL_ANSWER: 9"
+    },
+    "strategy_predictions": {
+      "chain_of_thought": "5",
+      "formula_first": "1",
+      "backward": "9"
+    },
+    "prediction": "5",
+    "correct": false,
+    "token_cost": 736,
+    "per_strategy_tokens": {
+      "chain_of_thought": 282,
+      "formula_first": 231,
+      "backward": 223
+    },
+    "aggregation": "majority_vote"
+  },
+  {
+    "index": 34,
+    "question": "Rebecca wants to split a collection of eggs into groups of 5. Rebecca has 20 eggs and 6 marbles. How many more eggs does Rebecca have than marbles?",
+    "gold_answer": "14",
+    "strategy_texts": {
+      "chain_of_thought": "1. **Identify what we need to find:** We want to know how many more eggs Rebecca has than marbles.\n2. **Find the total number of eggs:**  Rebecca has 20 eggs.\n3. **Find the total number of marbles:** Rebecca has 6 marbles.\n4. **Calculate the difference between the number of eggs and marbles:** 20 eggs - 6 marbles = 14 eggs.\n\n\nFINAL_ANSWER: 14",
+      "formula_first": "*  Eggs = Total Eggs / Number of Groups\n*  Marbles = Total Marbles / Number of Groups\n\n\nWe can solve for the number of eggs by first finding how many groups Rebecca can make from her total eggs. We know that she has 20 eggs and wants to divide them into groups of 5. Therefore, we can calculate the number of groups as follows:\nNumber of Groups = Total Eggs / Number of Eggs per Group = 20 / 5 = 4\n\nNow that we know there are 4 groups, we can find the number of eggs in each group. This is simply the total number of eggs divided by the number of groups:\nNumber of Eggs per Group = Total Eggs / Number of Groups = 20 / 4 = 5\n\nTherefore, Rebecca has 5 eggs per group. Now let's look at the question again. It asks us \"How many more eggs does Rebecca have than marbles?\" To figure this out, we need to compare the number of eggs Rebecca has (which is 20) to the number of marbles she has (which is 6). The difference between these two numbers gives us our final answer.\n\n\n\nFINAL_ANSWER: 14",
+      "backward": "1. The question is asking how many more eggs Rebecca has than marbles.\n2. We know she has 20 eggs and 6 marbles.\n3. To find out how many more eggs, we need to subtract the number of marbles from the number of eggs.\n\n\nFINAL_ANSWER: 14"
+    },
+    "strategy_predictions": {
+      "chain_of_thought": "14",
+      "formula_first": "14",
+      "backward": "14"
+    },
+    "prediction": "14",
+    "correct": true,
+    "token_cost": 821,
+    "per_strategy_tokens": {
+      "chain_of_thought": 224,
+      "formula_first": 389,
+      "backward": 208
+    },
+    "aggregation": "majority_vote"
+  },
+  {
+    "index": 35,
+    "question": "Danny collects bottle caps and wrappers. He found 22 bottle caps and 8 wrappers at the park. Now he has 28 bottle caps and 63 wrappers in his collection. How many bottle caps did danny have at first?",
+    "gold_answer": "6",
+    "strategy_texts": {
+      "chain_of_thought": "1. **Define variables:** Let 'x' represent the initial amount of bottle caps Danny had.\n2. **Set up an equation:** We know that Danny started with x bottle caps plus some other items, which we don't know yet.  We also know that after collecting more items, he has 28 bottle caps. So, we can set up an equation to express this information: x + (number of other items) = 28\n3. **Consider the given information about wrappers:** We are told that Danny collected 8 wrappers initially. This means that the total number of items he had before adding new ones is represented by the sum of the current number of bottle caps and wrappers. Therefore, we can use another equation to express this information: x + 8 = total number of items\n4. **Combine equations:** Since we want to find the initial amount of bottle caps ('x'), let's combine both equations together. The goal is to isolate 'x'. To do so, we need to figure out what value would make both equations true simultaneously.\n5. **Solve for x:** By combining the two equations, we get: x + 8 + (number of other items) = 28. Simplifying this gives us: x + (number of other items) = 20.\n\n\nFINAL_ANSWER: 20",
+      "formula_first": "*  Total initial amount = Initial Bottle Caps + Initial Wrappers\n* Total current amount = Current Bottle Caps + Current Wrappers\n\n\nLet's plug in our known values into these equations to solve for the unknown variable (Initial Bottle Caps):\n\n1) Let x be the initial number of bottle caps.\n2) We know that the total initial amount is equal to x + y where y represents the initial number of wrappers.\n3) The total current amount is equal to z + w where z represents the current number of bottle caps and w represents the current number of wrappers.\n4) We are given that x + y = 22 + 8 = 30\n5) We are also given that z + w = 28 + 63 = 91\n6) Therefore, we can set up an equation to find x:\n   x + y = 30\n7) Solving for y, we get:\n    y = 30 - x\n8) Substituting this value of y back into the second equation:\n     z + w = 91\n9) Substitute the value of y from step 7 into the equation above:\n      z + w = 91\n10) Since we don’t know the exact values of z and w, let’s use substitution again.\n11) Solve for z by rearranging the equation:\n       z = 91 - w\n12) Substitute this value of z into the equation from step 8:\n        (91 - w) + w = 91\n13) Simplify the equation:\n         91 = 91\n14) This means that the two sides of the equation are equal, which confirms that there is no contradiction between the information provided.\n\n\n\nFINAL_ANSWER: 22",
+      "backward": "1. We know how many bottle caps and wrappers Danny had after going to the park.\n2. We also know how many bottle caps and wrappers he has now.\n3. The difference between these two sets of numbers is equal to the amount of bottle caps and wrappers he collected at the park.\n\n\nFINAL_ANSWER: 22"
+    },
+    "strategy_predictions": {
+      "chain_of_thought": "20",
+      "formula_first": "22",
+      "backward": "22"
+    },
+    "prediction": "22",
+    "correct": false,
+    "token_cost": 1187,
+    "per_strategy_tokens": {
+      "chain_of_thought": 424,
+      "formula_first": 536,
+      "backward": 227
+    },
+    "aggregation": "majority_vote"
+  },
+  {
+    "index": 36,
+    "question": "For Gwen's birthday she received 2 dollars from her mom. Her dad gave her 4 more dollars. If she spent 3 dollars. How much money did she still have?",
+    "gold_answer": "3",
+    "strategy_texts": {
+      "chain_of_thought": "1.  Find out how much money Gwen got from her dad.\n    *   Gwen's dad gave her 4 more dollars than what she got from her mom, so he gave her $2 + $4 = $6.\n2. Find out how much money Gwen had after spending some of it on gifts.\n    *   She started with $2 (from Mom) + $6 (from Dad) = $8 total.\n    *   After spending $3, she has $8 - $3 = $5 left.\nFINAL_ANSWER: 5",
+      "formula_first": "* **Total amount:** Total Money = Mom's gift + Dad's gift - Spending\n* **Money remaining:**  Remaining Money = Total Amount - Spending\n\n\n**Calculations:**\n1. **Total amount:** $2 (Mom) + $4 (Dad) - $3 (Spending) = $3\n2. **Money remaining:** $3 (Total amount) - $3 (Spending) = $0\n\n\n\nFINAL_ANSWER: 0",
+      "backward": "1.  What is the total amount of money Gwen had after receiving gifts?\n2.  How much money did Gwen spend?\n3.  Subtract the amount Gwen spent from the total amount she had.\n\n\nFINAL_ANSWER: 5"
+    },
+    "strategy_predictions": {
+      "chain_of_thought": "5",
+      "formula_first": "0",
+      "backward": "5"
+    },
+    "prediction": "5",
+    "correct": false,
+    "token_cost": 683,
+    "per_strategy_tokens": {
+      "chain_of_thought": 252,
+      "formula_first": 234,
+      "backward": 197
+    },
+    "aggregation": "majority_vote"
+  },
+  {
+    "index": 37,
+    "question": "Baker made 134 pastries and 11 cakes. If he sold 140 cakes and 92 pastries How many more pastries than cakes did baker make?",
+    "gold_answer": "123",
+    "strategy_texts": {
+      "chain_of_thought": "1. **Identify what we know:** We know that Baker made 134 pastries and 11 cakes, and he sold 140 cakes and 92 pastries.  We want to find out how many more pastries he made than cakes.\n2. **Set up an equation:** Let's use variables to represent the unknown quantities. Let 'p' be the number of pastries and 'c' be the number of cakes. We can set up the following equations based on our given information: p = 134 + c (total pastries) and s = 140 + 92 (total sales).\n3. **Simplify the equation:** Since we are looking for the difference between pastries and cakes, let's simplify the equation from Step 2. The total amount of pastries is equal to the total amount of cakes plus the extra pastries. So, we have p - c = ?\n4. **Find the value of one variable:** To solve for the difference between pastries and cakes, we need to figure out the value of either 'p' or 'c'. We can do this using substitution. Solve the first equation for 'c': c = p - 134. Substitute this into the second equation: s = 140 + 92 = 232. Now substitute the value of 'c' back into the simplified equation from Step 3: p - (p - 134) = ?\n\n\nFINAL_ANSWER: 232",
+      "formula_first": "*  Total pastries = Total cakes + Number of pastries made\n*  Number of pastries made - Number of cakes made = Number of pastries made\n*  Number of pastries made - Number of cakes made = Number of pastries left over\n\n\n**Solution:**\nLet's break down the problem step by step using formulas:\n\n1. **Total pastries = Total cakes + Number of pastries made**\n   We know that the total number of pastries is 134 and the total number of cakes is 11. So we can calculate the number of pastries made to be 134 - 11 = 123.\n\n2. **Number of pastries made - Number of cakes made = Number of pastries made**\n    This means that the difference between the number of pastries made and the number of cakes made equals the number of pastries made. We already calculated that the number of pastries made was 123.\n\n3. **Number of pastries made - Number of cakes made = Number of pastries left over**\n    The number of pastries left over after selling some is equal to the number of pastries made minus the number of pastries sold. This gives us 123 - 92 = 31.\n\n\n\nFINAL_ANSWER: 31",
+      "backward": "What is being asked in the problem?\nThe problem asks how many more pastries than cakes did Baker make.\n\n\nWhat information do we have?\nWe know that Baker made 134 pastries and 11 cakes, and he sold 140 cakes and 92 pastries.\n\n\n\nHow can we solve it?\nTo find out how many more pastries than cakes Baker made, we need to calculate the difference between the number of pastries and the number of cakes.  This means subtracting the number of cakes from the number of pastries.\n\n\n\n\nFINAL_ANSWER: 22"
+    },
+    "strategy_predictions": {
+      "chain_of_thought": "232",
+      "formula_first": "31",
+      "backward": "22"
+    },
+    "prediction": "232",
+    "correct": false,
+    "token_cost": 1106,
+    "per_strategy_tokens": {
+      "chain_of_thought": 442,
+      "formula_first": 400,
+      "backward": 264
+    },
+    "aggregation": "majority_vote"
+  },
+  {
+    "index": 38,
+    "question": "Baker made 170 cakes. He sold 78 of them and bought 31 new cakes. How many more cakes did baker sell than those he bought?",
+    "gold_answer": "47",
+    "strategy_texts": {
+      "chain_of_thought": "1. **Identify what we know:** We know that Baker started with 170 cakes, sold 78, and then bought 31 more.  We want to find out how many more cakes he sold than he bought.\n2. **Set up an equation:** Let's use variables to represent the number of cakes Baker sold (S) and the number of cakes he bought (B). The difference between these two is what we are looking for. So our equation would be S - B = ?\n3. **Substitute known values:** We know S = 78 and B = 31. Substitute these into the equation from Step 2: 78 - 31 = ?\n4. **Calculate the result:** 78 - 31 = 47\n5. **Answer:** Baker sold 47 more cakes than he bought.\n\n\nFINAL_ANSWER: 47",
+      "formula_first": "*  Cakes remaining = Total Cakes - Cakes Sold\n*  Difference in cakes = Cakes Remaining - New Cakes Bought\n\n\nFINAL_ANSWER: 47",
+      "backward": "What is asked in the problem?\nThe difference between the number of cakes sold and the number of cakes bought.\n\n\nFINAL_ANSWER: 47"
+    },
+    "strategy_predictions": {
+      "chain_of_thought": "47",
+      "formula_first": "47",
+      "backward": "47"
+    },
+    "prediction": "47",
+    "correct": true,
+    "token_cost": 662,
+    "per_strategy_tokens": {
+      "chain_of_thought": 319,
+      "formula_first": 169,
+      "backward": 174
+    },
+    "aggregation": "majority_vote"
+  },
+  {
+    "index": 39,
+    "question": "There were 3 dollars in Olivia's wallet. She collected 49 more dollars from an atm. After she visited a supermarket there were 49 dollars left. How much more money did she collect at the atm than she spent at the supermarket?",
+    "gold_answer": "46",
+    "strategy_texts": {
+      "chain_of_thought": "1.  Olivia started with $3.00.\n2.  She added $49 to her balance, so she had $3 + $49 = $52.00.\n3.  After visiting the supermarket, she had $52 - $49 = $3.00 remaining.\n4.  The difference between what she collected and what she spent is $49 - $3 = $46.00.\n\n\nFINAL_ANSWER: 46",
+      "formula_first": "*  Total amount of money = Initial Amount + Additional Money - Final Amount\n*  Let x be the additional amount of money Olivia collected at the ATM.\n\n\nUsing these equations we can solve for x:\n1) Total amount of money = initial amount + additional money - final amount\n2) $3 + $49 = $52 (initial amount + additional money)\n3) $52 - $49 = $3 (final amount)\n4) $x = $49 (additional money)\n5) $x - $49 = $0 (difference between what was collected and spent)\n\n\n\nFINAL_ANSWER: 0",
+      "backward": "1.  What is the total amount of money Olivia had after visiting the supermarket?\n2.  How much money was added to her balance at the ATM?\n3.  Subtract the amount spent at the supermarket from the total amount of money Olivia has.\n\n\nFINAL_ANSWER: 50"
+    },
+    "strategy_predictions": {
+      "chain_of_thought": "46",
+      "formula_first": "0",
+      "backward": "50"
+    },
+    "prediction": "46",
+    "correct": true,
+    "token_cost": 763,
+    "per_strategy_tokens": {
+      "chain_of_thought": 250,
+      "formula_first": 291,
+      "backward": 222
+    },
+    "aggregation": "majority_vote"
+  },
+  {
+    "index": 40,
+    "question": "Rachel picked 3 ripe apples from her tree. Now the tree has 2 ripe apples and 27 unripe apples. How many ripe apples did the tree have to begin with?",
+    "gold_answer": "5",
+    "strategy_texts": {
+      "chain_of_thought": "1. We know that Rachel picked 3 ripe apples, so we need to subtract those from the total number of ripe apples on the tree.  This gives us an equation: (Total Ripe Apples) - 3 = Total Unripe Apples + Total Ripe Apples.\n2. The question states that there are 2 ripe apples left after Rachel picks some. This means that the initial amount of ripe apples is represented by \"x\". So our equation becomes: x - 3 = 27 + x.\n3. To solve for 'x', we can combine like terms. On the right side of the equation, we see two 'x's. Combining them will give us: x - 3 = 27 + x.\n4. Subtracting 'x' from both sides of the equation eliminates one variable. This leaves us with: -3 = 27.\n5. Since -3 does not equal 27, it indicates that there must be an error in the information given about the situation.\n\n\nFINAL_ANSWER: None",
+      "formula_first": "*  Total Apples = Ripe Apples + Unripe Apples\n*  Let 'x' be the initial number of ripe apples on the tree.\n\n\nSubstituting values into the equations:\n1) Total Apples = x + 27\n2) We know that after picking some apples, there are 2 ripe apples left. So we can say: x - 3 = 2\n\nSolving for x in the second equation:\nx = 5\n\nFINAL_ANSWER: 5",
+      "backward": "1. We know how many ripe apples are left after Rachel picks some.\n2. The total number of apples is given, so we can calculate the initial amount of apples.\n\n\nFINAL_ANSWER: 5"
+    },
+    "strategy_predictions": {
+      "chain_of_thought": "None",
+      "formula_first": "5",
+      "backward": "5"
+    },
+    "prediction": "5",
+    "correct": true,
+    "token_cost": 784,
+    "per_strategy_tokens": {
+      "chain_of_thought": 352,
+      "formula_first": 242,
+      "backward": 190
+    },
+    "aggregation": "majority_vote"
+  },
+  {
+    "index": 41,
+    "question": "Paco had 8 sweet cookies and 6 salty cookies. He ate 20 sweet cookies and 34 salty cookies. How many more salty cookies than sweet cookies did he eat?",
+    "gold_answer": "14",
+    "strategy_texts": {
+      "chain_of_thought": "1. **Identify what we know:** We know that Paco started with 8 sweet cookies and 6 salty cookies, and then ate some of both types.  We need to find out how many more salty cookies he ate compared to sweet cookies.\n2. **Define variables:** Let 's' represent the number of sweet cookies Paco ate. And let 't' represent the number of salty cookies Paco ate.\n3. **Set up equations based on the given information:** We are told that Paco ate 20 sweet cookies (s) and 34 salty cookies (t). This translates into two equations:\n    * s = 20 \n    * t = 34\n4. **Calculate the difference between the number of salty cookies eaten and the number of sweet cookies eaten:** The question asks for the difference between the number of salty cookies eaten and the number of sweet cookies eaten. Since we already have values for 's' and 't', we can calculate this directly:\n   * t - s = 34 - 20 = 14\n5. **Answer the question:** Therefore, Paco ate 14 more salty cookies than sweet cookies.\n\n\nFINAL_ANSWER: 14",
+      "formula_first": "*  Number of cookies eaten = Number of cookies total - Number of cookies remaining\n*  Salty cookies eaten = Total salty cookies - Salty cookies remaining\n*  Sweet cookies eaten = Total sweet cookies - Sweet cookies remaining\n*  Salty cookies eaten - Sweet cookies eaten = Difference in cookies eaten\n\n\nSubstituting values into the equations:\n*  Salty cookies eaten = 6 - (6 - 34) = 34\n*  Sweet cookies eaten = 8 - (8 - 20) = 12\n*  Salty cookies eaten - Sweet cookies eaten = 34 - 12 = 22\n\n\n\nFINAL_ANSWER: 22",
+      "backward": "1. The problem asks how many more salty cookies than sweet cookies Paco ate.\n2. We know Paco ate 20 sweet cookies and 34 salty cookies.\n3. To find the difference, we need to subtract the number of sweet cookies from the number of salty cookies.\n\n\nFINAL_ANSWER: 14"
+    },
+    "strategy_predictions": {
+      "chain_of_thought": "14",
+      "formula_first": "22",
+      "backward": "14"
+    },
+    "prediction": "14",
+    "correct": true,
+    "token_cost": 878,
+    "per_strategy_tokens": {
+      "chain_of_thought": 384,
+      "formula_first": 279,
+      "backward": 215
+    },
+    "aggregation": "majority_vote"
+  },
+  {
+    "index": 42,
+    "question": "Helen the hippo and her friends are preparing for thanksgiving at Helen's house. Helen baked 197 chocolate chip cookies and 46 raisin cookies yesterday. And she baked 75 raisin cookies and 66 chocolate chip cookies this morning. How many more chocolate chip cookies did Helen bake yesterday compared to today?",
+    "gold_answer": "131",
+    "strategy_texts": {
+      "chain_of_thought": "1. **Identify what we need to find:** We want to know how many more chocolate chip cookies Helen baked yesterday than today.\n2. **Find the total number of chocolate chip cookies Helen baked yesterday:**  Helen baked 197 + 75 = 272 chocolate chip cookies yesterday.\n3. **Find the total number of chocolate chip cookies Helen baked today:** She baked 66 + 75 = 141 chocolate chip cookies today.\n4. **Calculate the difference between yesterday's and today's cookie count:** 272 - 141 = 131.\n\n\nFINAL_ANSWER: 131",
+      "formula_first": "*  Total cookies baked yesterday = Chocolate chips + Raisins\n*  Total cookies baked today = Raisin + Chocolate Chips\n*  Difference in cookies baked = Total cookies baked yesterday - Total cookies baked today\n\n\n**Calculations:**\n\nYesterday's total cookies = 197 + 46 = 243\nToday's total cookies = 75 + 66 = 141\nDifference in cookies baked = 243 - 141 = 102\n\n\n\nFINAL_ANSWER: 102",
+      "backward": "* The question is asking how many MORE chocolate chip cookies Helen baked yesterday than today.\n* We know the total number of chocolate chip cookies Helen baked yesterday (197) and today (75).\n* To find the difference, we need to subtract the number of cookies Helen baked today from the number she baked yesterday.\n\n\nFINAL_ANSWER: 122"
+    },
+    "strategy_predictions": {
+      "chain_of_thought": "131",
+      "formula_first": "102",
+      "backward": "122"
+    },
+    "prediction": "131",
+    "correct": true,
+    "token_cost": 830,
+    "per_strategy_tokens": {
+      "chain_of_thought": 298,
+      "formula_first": 282,
+      "backward": 250
+    },
+    "aggregation": "majority_vote"
+  },
+  {
+    "index": 43,
+    "question": "Jack received 5 emails and 6 letters in the morning. He then received 9 emails and 7 letters in the afternoon. How many letters did jack receive in the day?",
+    "gold_answer": "13",
+    "strategy_texts": {
+      "chain_of_thought": "1. Find the total number of emails Jack received during the day.\n2. Add that to the number of emails he received in the morning.\n3. Find the total number of letters Jack received during the day.\n4. Add that to the number of letters he received in the morning.\n\n\nFINAL_ANSWER: 10 + 13 = 23",
+      "formula_first": "* Total Emails = Morning Emails + Afternoon Emails\n* Total Letters = Morning Letters + Afternoon Letters\n* Total Letters Received =  Total Letters - (Morning Letters)\n\n\nFINAL_ANSWER: 13",
+      "backward": "1. The total number of letters he received is asked for.\n2. We know how many letters he received in each part of the day.\n3. To find out the total, we can add up the letters from both parts of the day.\n\n\nFINAL_ANSWER: 13"
+    },
+    "strategy_predictions": {
+      "chain_of_thought": "10 + 13 = 23",
+      "formula_first": "13",
+      "backward": "13"
+    },
+    "prediction": "13",
+    "correct": true,
+    "token_cost": 595,
+    "per_strategy_tokens": {
+      "chain_of_thought": 208,
+      "formula_first": 182,
+      "backward": 205
+    },
+    "aggregation": "majority_vote"
+  },
+  {
+    "index": 44,
+    "question": "4 birds and 3 storks were sitting on the fence. 6 more storks came to join them. How many more storks than birds are sitting on the fence?",
+    "gold_answer": "5",
+    "strategy_texts": {
+      "chain_of_thought": "1. **Identify what we know:** We have information about the initial number of birds and storks, and then an additional group of storks joins.\n2. **Define variables:** Let 'b' represent the number of birds and 's' represent the number of storks.\n3. **Set up equations based on the given information:**  We can express our knowledge using two simple equations: b + s = total birds initially; s + (6) = total storks after adding new ones.\n4. **Solve for one variable in terms of the other:** Solve the second equation for 's': s = total storks - 6.\n5. **Substitute into the first equation:** Substitute the value of 's' from step 4 into the first equation: b + (total storks - 6) = total birds initially.\n6. **Simplify and solve for the remaining variable:** Combine like terms and simplify: b + total storks - 6 = total birds initially. This means that b is equal to the difference between the total birds initially and the total storks minus 6.\n7. **Calculate the final answer:** Calculate the difference between the total birds initially and the total storks plus 6.\n\n\nFINAL_ANSWER: 9",
+      "formula_first": "* **Formula:**  Number of storks = Number of birds + (number of storks that come)\n* **Substitute Values:** \n    * Number of birds = 4\n    * Number of storks that come = 6\n    * Total number of storks = 4 + 6 = 10\n* **Compute Result:** \n   * Number of storks - Number of birds = 10 - 4 = 6\n\n\nFINAL_ANSWER: 6",
+      "backward": "1.  What is asked in the problem?\n2.  How can we find out how many more storks there are than birds?\n3.  We know the total number of storks after they arrived, but we also have information about the initial number of birds and storks.\n\n\nFINAL_ANSWER: 9"
+    },
+    "strategy_predictions": {
+      "chain_of_thought": "9",
+      "formula_first": "6",
+      "backward": "9"
+    },
+    "prediction": "9",
+    "correct": false,
+    "token_cost": 850,
+    "per_strategy_tokens": {
+      "chain_of_thought": 394,
+      "formula_first": 243,
+      "backward": 213
+    },
+    "aggregation": "majority_vote"
+  },
+  {
+    "index": 45,
+    "question": "The grasshopper, the frog and the mouse had a jumping contest. The grasshopper jumped 25 inches. The frog jumped 18 inches farther than the grasshopper and the mouse jumped 2 inches farther than the frog. How far did the mouse jump?",
+    "gold_answer": "45",
+    "strategy_texts": {
+      "chain_of_thought": "1. Find how many inches the frog jumped:  The frog jumped 18 inches farther than the grasshopper so it jumped 25 + 18 = 43 inches.\n2. Find how many inches the mouse jumped: The mouse jumped 2 inches farther than the frog so it jumped 43 + 2 = 45 inches.\n\n\nFINAL_ANSWER: 45",
+      "formula_first": "* Distance = Speed x Time\n*  Distance = Rate x Time\n*  Time = Distance / Speed\n\n\n**Solution:**\nThe frog jumped 18 inches farther than the grasshopper so the frog's distance was 25 + 18 = 43 inches.\nThe mouse jumped 2 inches farther than the frog so the mouse's distance was 43 + 2 = 45 inches.\n\n\n\nFINAL_ANSWER: 45",
+      "backward": "What is asked in the problem?\nThe distance the mouse jumps.\n\n\nWhat information is needed to calculate it?\n* Distance the frog jumps (which is 18 inches more than the grasshopper)\n* Distance the mouse jumps (which is 2 inches more than the frog's distance).\n\n\n\nNow we can solve for the mouse's jump.  We know the frog jumped 18 inches farther than the grasshopper so let's start there. We are given that the frog jumped 18 inches farther than the grasshopper who jumped 25 inches. So the frog jumped 25 + 18 = 43 inches. Now we know the frog jumped 43 inches. We also know the mouse jumped 2 inches farther than the frog. Therefore, the mouse jumped 43 + 2 = 45 inches.\n\n\n\n\nFINAL_ANSWER: 45"
+    },
+    "strategy_predictions": {
+      "chain_of_thought": "45",
+      "formula_first": "45",
+      "backward": "45"
+    },
+    "prediction": "45",
+    "correct": true,
+    "token_cost": 818,
+    "per_strategy_tokens": {
+      "chain_of_thought": 226,
+      "formula_first": 250,
+      "backward": 342
+    },
+    "aggregation": "majority_vote"
+  },
+  {
+    "index": 46,
+    "question": "Marco and his dad went strawberry picking. Together their strawberries weighed 35 pounds. Marco's strawberries weighed 13 pounds. How much more did his dad's strawberries weigh than his?",
+    "gold_answer": "9",
+    "strategy_texts": {
+      "chain_of_thought": "1. We know that the total weight of the strawberries is 35 pounds, and Marco's weight is 13 pounds.  This means that his dad's weight must be 35 - 13 = 22 pounds.\n2. To find out how much more his dad's strawberries weighed than Marco's, we need to subtract Marco's weight from his dad's weight. This gives us 22 - 13 = 9 pounds.\n\n\nFINAL_ANSWER: 9",
+      "formula_first": "*  Total weight = Weight of Marco + Weight of Dad\n*  Weight of Dad = Total weight - Weight of Marco\n\n\n**Substituting Values:**\n*  Dad's weight = 35 lbs - 13 lbs = 22 lbs\n\n\n\nFINAL_ANSWER: 22 lbs",
+      "backward": "What is being asked in the problem?\nThe amount of weight on Marco's dad's strawberries compared to Marco's.\n\n\nHow can we find out how much more does his dad's strawberries weigh than Marco's?\nWe know the total weight, and the weight of Marco's strawberries. We can subtract those two values from each other to get the difference.\n\n\n\nFINAL_ANSWER: 22 pounds"
+    },
+    "strategy_predictions": {
+      "chain_of_thought": "9",
+      "formula_first": "22 lbs",
+      "backward": "22 pounds"
+    },
+    "prediction": "9",
+    "correct": true,
+    "token_cost": 681,
+    "per_strategy_tokens": {
+      "chain_of_thought": 242,
+      "formula_first": 204,
+      "backward": 235
+    },
+    "aggregation": "majority_vote"
+  },
+  {
+    "index": 47,
+    "question": "Ed had 12 more marbles than Doug. Ed lost 20 of his marbles at the playground. If Ed had 17 marbles How many marbles does Doug have now?",
+    "gold_answer": "5",
+    "strategy_texts": {
+      "chain_of_thought": "1. **Define variables:** Let's say that Doug has 'd' marbles. Since Ed had 12 more marbles than Doug, Ed has d + 12 marbles.\n\n2. **Set up an equation:** We know that after losing some marbles, Ed still has 17 marbles. So we can set up the equation: (d+12) - 20 = 17\n\n3. **Solve for 'd':** Simplify the equation from Step 2:  d + 12 - 20 = 17 => d - 8 = 17 => d = 17 + 8 => d = 25\n\n4. **Answer:** Doug currently has 25 marbles.\n\n\nFINAL_ANSWER: 25",
+      "formula_first": "*  Let x be the number of marbles Doug has.\n*  Ed's initial amount of marbles is x + 12.\n*  After losing some marbles, Ed has (x+12) - 20 = x - 8 marbles.\n*  We know that Ed initially had 17 marbles so we can set up an equation: x - 8 = 17.\n\n\nSolving for x:\n* Add 8 to both sides of the equation: x = 25.\n\n\n\nFINAL_ANSWER: 25",
+      "backward": "What is asked in the problem?\n... The number of marbles Doug has now.\n\n\nWhat information is given about Doug's marbles?\n... We know nothing about how many marbles Doug started with, but we know he has less than Ed.\n\n\n\nHow can we use the information provided to find out how many marbles Doug has now?\n...  We can calculate how many marbles Ed had initially and then subtract the amount he lost. Then we can compare that to Ed's current total to figure out how many marbles Doug has.\n\n\n\n\nFINAL_ANSWER: 3"
+    },
+    "strategy_predictions": {
+      "chain_of_thought": "25",
+      "formula_first": "25",
+      "backward": "3"
+    },
+    "prediction": "25",
+    "correct": false,
+    "token_cost": 812,
+    "per_strategy_tokens": {
+      "chain_of_thought": 293,
+      "formula_first": 257,
+      "backward": 262
+    },
+    "aggregation": "majority_vote"
+  },
+  {
+    "index": 48,
+    "question": "Marco and his dad went strawberry picking. Together they collected strawberries that weighed 24 pounds. On the way back Marco lost 9 pounds of strawberries. Marco's strawberries now weighed 3 pounds. How much did his dad's strawberries weigh?",
+    "gold_answer": "12",
+    "strategy_texts": {
+      "chain_of_thought": "1.  We know that together, Marco and his dad picked 24 pounds of strawberries. Let 'x' represent the weight of the strawberries Marco's dad picked. We can set up an equation to find x: 24 = Marco's weight + Dad's weight.\n2.  Marco's weight after losing some is 3 pounds. So we have another equation: 3 = Marco's weight - Lost Weight.\n3.  The lost weight was 9 pounds. Substituting it into the second equation gives us: 3 = Marco's weight - 9.\n4.  Solving for Marco's weight (which is also equal to the initial weight minus the lost weight): 3 + 9 = Marco's weight. This means Marco's weight is 12 pounds.\n5.  Now we can use the first equation to solve for x: 24 = 12 + x.\n6.  Subtracting 12 from both sides gives us: 24 - 12 = x. Therefore, x = 12.\n\n\nFINAL_ANSWER: 12",
+      "formula_first": "* **Total weight:**  Weight (total) = Weight (Marco) + Weight (Dad)\n* **After loss:** Weight (after loss) = Weight (before loss) - Loss\n* **Remaining weight:** Weight (remaining) = Weight (after loss) + Weight (lost)\n\n\n**Solution:**\nLet's break down the information given in the problem to find how many pounds of strawberries were picked by Dad.\n\n1. We know the total weight is 24 pounds. Let 'x' represent the weight of Dad's strawberries.\n2. The initial combined weight was x + 3 pounds because we are told their total weight was 24 pounds after combining them.\n3. After Marco loses some strawberries, he has 3 pounds left. This means the remaining weight for him is 3 pounds.\n4. Therefore, the weight before losing any strawberries would be 24 - 9 = 15 pounds.\n\n\n\nFINAL_ANSWER: 15",
+      "backward": "1.  What is the total weight of strawberries Marco had after losing some?\n2.  How many pounds of strawberries did Marco have initially?\n3.  What was the initial weight of the strawberries, knowing how much Marco has left?\n\n\nFINAL_ANSWER: 18 pounds"
+    },
+    "strategy_predictions": {
+      "chain_of_thought": "12",
+      "formula_first": "15",
+      "backward": "18 pounds"
+    },
+    "prediction": "12",
+    "correct": true,
+    "token_cost": 962,
+    "per_strategy_tokens": {
+      "chain_of_thought": 385,
+      "formula_first": 359,
+      "backward": 218
+    },
+    "aggregation": "majority_vote"
+  },
+  {
+    "index": 49,
+    "question": "A chef had 40 apples and 54 peaches. After making some pies, he had 39 apples left. How many apples did he use?",
+    "gold_answer": "1",
+    "strategy_texts": {
+      "chain_of_thought": "1. **Define variables:** Let 'x' represent the number of pies made.\n2. **Set up an equation:** The total number of apples used is equal to the initial amount minus the remaining amount.  This can be represented as: 40 - x = 39 (apples)\n3. **Solve for x:** To find out how many pies were made, we need to isolate 'x'. We do that by adding 'x' to both sides of the equation: 40 - x + x = 39 + x. This simplifies to 40 = 39 + x. Then subtract 39 from both sides: 40 - 39 = 39 + x - 39. This gives us 1 = x.\n4. **Answer:** Therefore, the chef made 1 pie.\n\n\nFINAL_ANSWER: 1",
+      "formula_first": "*  Initial amount of apples = Initial amount of peaches + Apples used in pies\n*  Apples remaining after pie baking = Initial amount of apples - Number of apples used in pies\n\n\nLet's solve for the number of apples used in pies. We can do that by rearranging the first equation to get \"apples used in pies\" on one side. Then we can plug in the known values into the rearranged equation.\n\n\n\nRearranging the first equation gives us:\nNumber of apples used in pies = (Initial amount of apples) - (Apples remaining after pie baking).\n\nSubstituting the given values:\nNumber of apples used in pies = (40 apples) - (39 apples) = 1 apple.\n\n\n\n\nFINAL_ANSWER: 1",
+      "backward": "1. The chef started with 40 apples.\n2. He has 39 apples left after making pies.\n3. Therefore, he used ... apples.\n\n\nFINAL_ANSWER: 1"
+    },
+    "strategy_predictions": {
+      "chain_of_thought": "1",
+      "formula_first": "1",
+      "backward": "1"
+    },
+    "prediction": "1",
+    "correct": true,
+    "token_cost": 784,
+    "per_strategy_tokens": {
+      "chain_of_thought": 311,
+      "formula_first": 288,
+      "backward": 185
+    },
+    "aggregation": "majority_vote"
+  },
+  {
+    "index": 50,
+    "question": "In a school there are 308 girls and 318 boys. There are also 36 teachers How many pupils are there in that school?",
+    "gold_answer": "626",
+    "strategy_texts": {
+      "chain_of_thought": "1. We know the total number of girls, boys, and teachers.  We need to find the total number of pupils.\n2. To get the total number of pupils, we add up all the numbers of girls, boys, and teachers.\n3. Therefore, the total number of pupils is 308 + 318 + 36 = ?\n\n\nFINAL_ANSWER: 662",
+      "formula_first": "* Total students = Girls + Boys + Teachers\n* Number of Students =  Total students\n\n\nSubstituting values into the equations:\nTotal students = 308 + 318 + 36 = 662\nNumber of Students = 662\n\n\n\nFINAL_ANSWER: 662",
+      "backward": "What is needed to calculate the total number of pupils? We know the number of girls, boys, and teachers.\n\n\nFINAL_ANSWER: 308 + 318 + 36 = 662"
+    },
+    "strategy_predictions": {
+      "chain_of_thought": "662",
+      "formula_first": "662",
+      "backward": "308 + 318 + 36 = 662"
+    },
+    "prediction": "662",
+    "correct": false,
+    "token_cost": 601,
+    "per_strategy_tokens": {
+      "chain_of_thought": 212,
+      "formula_first": 201,
+      "backward": 188
+    },
+    "aggregation": "majority_vote"
+  },
+  {
+    "index": 51,
+    "question": "A mailman has to give 9 pieces of junk mail to each house in each block. If there are 20 houses on a block How many pieces of junk mail should he give in each block?",
+    "gold_answer": "180",
+    "strategy_texts": {
+      "chain_of_thought": "1. We know that the mailman needs to deliver 9 pieces of junk mail per house, so we need to multiply the number of houses by the amount of junk mail per house.\n2. The total number of houses is 20. So we have to calculate 9 * 20 = 180.\n3. Therefore, the mailman should give 180 pieces of junk mail in each block.\n\n\nFINAL_ANSWER: 180",
+      "formula_first": "* Number of pieces per block = (Number of houses) * (Pieces per house)\n* Total pieces of junk mail = (Number of blocks) * (Number of pieces per block)\n\n\nSubstitute values into the equations:\nTotal pieces of junk mail = (number of blocks) * (pieces per block)\nFINAL_ANSWER: 180",
+      "backward": "1. The mailman needs to deliver 9 pieces of junk mail per house, and there are 20 houses on a block.  What is the total amount of junk mail needed?\n\n\nFINAL_ANSWER: 180"
+    },
+    "strategy_predictions": {
+      "chain_of_thought": "180",
+      "formula_first": "180",
+      "backward": "180"
+    },
+    "prediction": "180",
+    "correct": true,
+    "token_cost": 652,
+    "per_strategy_tokens": {
+      "chain_of_thought": 234,
+      "formula_first": 219,
+      "backward": 199
+    },
+    "aggregation": "majority_vote"
+  },
+  {
+    "index": 52,
+    "question": "The grasshopper, the frog and the mouse had a jumping contest. The grasshopper jumped 19 inches. The frog jumped 10 inches farther than the grasshopper and the mouse jumped 20 inches farther than the frog. How much farther did the mouse jump than the grasshopper?",
+    "gold_answer": "30",
+    "strategy_texts": {
+      "chain_of_thought": "1. Find how far the frog jumped: The frog jumped 10 inches farther than the grasshopper, so it jumped 19 + 10 = 29 inches.\n2. Find how far the mouse jumped: The mouse jumped 20 inches farther than the frog, so it jumped 29 + 20 = 49 inches.\n3. Calculate the difference between the mouse's jump and the grasshopper's jump: The mouse jumped 49 - 19 = 30 inches farther than the grasshopper.\n\n\nFINAL_ANSWER: 30",
+      "formula_first": "* Distance = Speed x Time\n*  Distance = Rate * Time\n\n\n**Solution:**\nThe frog's distance is equal to the grasshopper's distance plus 10 inches. So we can calculate that by adding 10 inches to the grasshopper's distance. This gives us 19 + 10 = 29 inches for the frog's distance.\nThe mouse's distance is equal to the frog's distance plus 20 inches. We can calculate that by adding 20 inches to the frog's distance. This gives us 29 + 20 = 49 inches for the mouse's distance.\nFinally, the difference between the mouse's distance and the grasshopper's distance is calculated by subtracting the grasshopper's distance from the mouse's distance. This gives us 49 - 19 = 30 inches.\n\n\n\nFINAL_ANSWER: 30",
+      "backward": "What is asked in the problem?\nThe mouse jumped how many inches farther than the grasshopper?\n\n\nFINAL_ANSWER: 39"
+    },
+    "strategy_predictions": {
+      "chain_of_thought": "30",
+      "formula_first": "30",
+      "backward": "39"
+    },
+    "prediction": "30",
+    "correct": true,
+    "token_cost": 816,
+    "per_strategy_tokens": {
+      "chain_of_thought": 271,
+      "formula_first": 353,
+      "backward": 192
+    },
+    "aggregation": "majority_vote"
+  },
+  {
+    "index": 53,
+    "question": "Baker made 61 pastries and 167 cakes. If he sold 108 cakes and 44 pastries How many cakes would baker still have?",
+    "gold_answer": "59",
+    "strategy_texts": {
+      "chain_of_thought": "1. **Identify what we know:** We know that Baker has 167 cakes and sold 108 of them.  We also know that he has 61 pastries, but didn't sell any yet.\n2. **Determine what to find:** We want to find out how many cakes Baker still has after selling some.\n3. **Set up an equation:** Let 'x' represent the number of cakes Baker still has. The total number of cakes before selling is 167 - 108 = 59. This means x = 59.\n4. **Solution:** Therefore, Baker would still have 59 cakes.\n\n\nFINAL_ANSWER: 59",
+      "formula_first": "*  Total pastries = Total cakes + Number of pastries baked\n*  Number of cakes = Total pastries - Number of pastries baked\n*  Cakes remaining = Cakes initially baked - Cakes sold\n\n\nFINAL_ANSWER: 123",
+      "backward": "What is asked in the problem?\nThe problem asks how many cakes baker would still have after selling some.\n\n\nFINAL_ANSWER: 129"
+    },
+    "strategy_predictions": {
+      "chain_of_thought": "59",
+      "formula_first": "123",
+      "backward": "129"
+    },
+    "prediction": "59",
+    "correct": true,
+    "token_cost": 633,
+    "per_strategy_tokens": {
+      "chain_of_thought": 275,
+      "formula_first": 185,
+      "backward": 173
+    },
+    "aggregation": "majority_vote"
+  },
+  {
+    "index": 54,
+    "question": "The grasshopper, the frog and the mouse had a jumping contest. The grasshopper jumped 36 inches. The frog jumped 17 inches farther than the grasshopper and the mouse jumped 15 inches farther than the frog. How far did the frog jump?",
+    "gold_answer": "53",
+    "strategy_texts": {
+      "chain_of_thought": "1.  The frog jumped 17 inches farther than the grasshopper, so we need to add that distance to the grasshopper's jump. This gives us the frog's total jump length.\n2.  We know the grasshopper jumped 36 inches. We also know the frog jumped 17 inches farther than the grasshopper. So, we can calculate the frog's jump length by adding those two distances together.\n3.  To find out how far the mouse jumped, we need to consider the frog's jump. Since the mouse jumped 15 inches farther than the frog, we can subtract that amount from the frog's jump length.\n\n\nFINAL_ANSWER: 53 inches",
+      "formula_first": "* Distance = Speed x Time\n*  Distance = Rate x Time\n*  Time = Distance / Speed\n\n\n**Solution:**\nThe frog jumped 17 inches farther than the grasshopper so the frog's distance is 36 + 17 = 53 inches.\nThe mouse jumped 15 inches farther than the frog so the mouse's distance is 53 + 15 = 68 inches.\n\n\n\nFINAL_ANSWER: 53",
+      "backward": "What is asked in the problem?\nThe frog's distance from the starting point of the competition.\n\n\nWhat information do we have about the frog's distance?\nWe know how far the grasshopper jumped and how far the mouse jumped compared to the frog.\n\n\n\nHow can we use this information to find the frog's distance?\nLet's start by finding out how far the mouse jumped. We know the mouse jumped 15 inches farther than the frog. So, let's add 15 inches to the frog's distance.  Then, we can calculate the frog's distance.\n\n\n\n\nFINAL_ANSWER: 52 inches"
+    },
+    "strategy_predictions": {
+      "chain_of_thought": "53 inches",
+      "formula_first": "53",
+      "backward": "52 inches"
+    },
+    "prediction": "53 inches",
+    "correct": true,
+    "token_cost": 838,
+    "per_strategy_tokens": {
+      "chain_of_thought": 291,
+      "formula_first": 253,
+      "backward": 294
+    },
+    "aggregation": "majority_vote"
+  },
+  {
+    "index": 55,
+    "question": "A waiter had 3 customers. After some more arrived he had 8 customers. How many new customers arrived?",
+    "gold_answer": "5",
+    "strategy_texts": {
+      "chain_of_thought": "1. We know that the waiter started with 3 customers.\n2. He then served 5 more customers, bringing his total to 8.\n3. To find out how many new customers arrived, we need to calculate the difference between the current number of customers (8) and the initial number of customers (3).\n4. The difference is 8 - 3 = 5.\n\n\nFINAL_ANSWER: 5",
+      "formula_first": "*  Number of initial customers = Number of current customers - New Customers\n*  Initial customer count + New Customer Count = Total Customer Count\n\n\nFINAL_ANSWER: 5",
+      "backward": "1. The waiter started with 3 customers and ended up with 8.\n2. We want to find out how many new customers came in between those two numbers.\n\n\nFINAL_ANSWER: 5"
+    },
+    "strategy_predictions": {
+      "chain_of_thought": "5",
+      "formula_first": "5",
+      "backward": "5"
+    },
+    "prediction": "5",
+    "correct": true,
+    "token_cost": 542,
+    "per_strategy_tokens": {
+      "chain_of_thought": 206,
+      "formula_first": 162,
+      "backward": 174
+    },
+    "aggregation": "majority_vote"
+  },
+  {
+    "index": 56,
+    "question": "There were 13 roses and 84 orchids in the vase. Jessica cut some more roses and orchids from her flower garden. There are now 91 orchids and 14 roses in the vase. How many roses did she cut?",
+    "gold_answer": "1",
+    "strategy_texts": {
+      "chain_of_thought": "Let's use variables to represent the unknown quantities. Let 'x' be the number of roses Jessica cut, and let 'y' be the number of orchids she cut. We know that x + y represents the total number of roses and orchids Jessica cut.  We also know that there was originally 13 roses and 84 orchids, so we can set up an equation for the original amount of flowers. The new amount of flowers is represented by (91 orchids) + (14 roses). This means that the total number of orchids and roses after cutting is equal to the initial amount plus the number of cuts made.\n\n\nFINAL_ANSWER: 7",
+      "formula_first": "* **Total initial flowers:**  x = 13 + 84\n* **Initial total of roses and orchids:** x = 13 + 84\n* **Final total of orchids:** y = 91\n* **Final total of roses:** z = 14\n* **Roses cut:** r = z - x\n* **Orchids cut:** o = y - x\n\n\nFINAL_ANSWER: 70",
+      "backward": "* The final state is 14 roses and 91 orchids.\n* We know there was an initial amount of 13 roses and 84 orchids.\n* This means we have to find out how much was added/removed, so we can get to the final state.\n\n\nFINAL_ANSWER: 5"
+    },
+    "strategy_predictions": {
+      "chain_of_thought": "7",
+      "formula_first": "70",
+      "backward": "5"
+    },
+    "prediction": "7",
+    "correct": false,
+    "token_cost": 753,
+    "per_strategy_tokens": {
+      "chain_of_thought": 280,
+      "formula_first": 247,
+      "backward": 226
+    },
+    "aggregation": "majority_vote"
+  },
+  {
+    "index": 57,
+    "question": "46 campers went rowing on a day. 43 campers went rowing in the morning and some more campers went rowing in the afternoon. How many campers went rowing in the afternoon?",
+    "gold_answer": "3",
+    "strategy_texts": {
+      "chain_of_thought": "1. We know that there were 46 campers total who went rowing.\n2. We also know that 43 campers went rowing in the morning.\n3. Therefore, we can find out how many campers went rowing in the afternoon by subtracting the number of campers who rowed in the morning from the total number of campers who went rowing.\n4. The difference between 46 and 43 is 3.\n5. So, **3** campers went rowing in the afternoon.\n\n\nFINAL_ANSWER: 3",
+      "formula_first": "* **Total campers:**  C = Morning campers + Afternoon campers\n* **Formula for total campers:** C = M + A\n* We know that C = 46, M = 43, so we can solve for A (afternoon campers)\n\n\nSubstituting values into the formula:\n46 = 43 + A\nSolving for A:\nA = 46 - 43\nA = 3\n\n\nFINAL_ANSWER: 3",
+      "backward": "1. The total number of campers who went rowing is 46.\n2. We know that 43 campers went rowing in the morning.\n3. Therefore, we can find out how many campers went rowing in the afternoon.\n\n\nFINAL_ANSWER: 3 campers"
+    },
+    "strategy_predictions": {
+      "chain_of_thought": "3",
+      "formula_first": "3",
+      "backward": "3 campers"
+    },
+    "prediction": "3",
+    "correct": true,
+    "token_cost": 683,
+    "per_strategy_tokens": {
+      "chain_of_thought": 242,
+      "formula_first": 237,
+      "backward": 204
+    },
+    "aggregation": "majority_vote"
+  },
+  {
+    "index": 58,
+    "question": "Paco had 28 cookies. He ate some of them and had 7 cookies left. How many cookies did Paco eat?",
+    "gold_answer": "21",
+    "strategy_texts": {
+      "chain_of_thought": "1. We know that Paco started with 28 cookies.\n2. After eating, he has 7 cookies left. This means he must have eaten the rest of his cookies.\n3. The difference between the starting amount (28) and the ending amount (7) is equal to the number of cookies Paco ate.\n4. Therefore, Paco ate 28 - 7 = 21 cookies.\n\n\nFINAL_ANSWER: 21",
+      "formula_first": "*  Initial amount = Final amount + Change in Amount\n*  Change in Amount = Initial amount - Final amount\n\n\nLet's plug in our known values into the equations to solve for the unknown variable (number of cookies eaten):\n\n1. **Initial amount:** 28 cookies\n2. **Final amount:** 7 cookies\n3. **Change in Amount:** ?\n\nUsing the change in amount formula we can find the value of the unknown:\n\n**Change in Amount = Initial amount - Final amount**\n**Change in Amount = 28 - 7**\n**Change in Amount = 21**\n\nNow that we know the change in amount, we can use it to calculate how many cookies were eaten:\n\n**Initial amount = Final amount + Change in Amount**\n**28 = 7 + Change in Amount**\n**28 - 7 = Change in Amount**\n**21 = Change in Amount**\n\n\n\nFINAL_ANSWER: 21",
+      "backward": "1.  Paco started with 28 cookies.\n2.  He has 7 cookies left after eating some.\n3.  The difference between his starting amount and remaining amount is the number of cookies he ate.\n\n\nFINAL_ANSWER: 21"
+    },
+    "strategy_predictions": {
+      "chain_of_thought": "21",
+      "formula_first": "21",
+      "backward": "21"
+    },
+    "prediction": "21",
+    "correct": true,
+    "token_cost": 734,
+    "per_strategy_tokens": {
+      "chain_of_thought": 214,
+      "formula_first": 332,
+      "backward": 188
+    },
+    "aggregation": "majority_vote"
+  },
+  {
+    "index": 59,
+    "question": "Zachary did 19 push-ups in gym class today. David did 39 more push-ups than Zachary. John did 13 push-ups less than david. How many push-ups did David do?",
+    "gold_answer": "58",
+    "strategy_texts": {
+      "chain_of_thought": "1. We know that Zachary did 19 push-ups.\n2. David did 39 more push-ups than Zachary, so he did 19 + 39 = 58 push-ups.\n3. John did 13 fewer push-ups than David, so he did 58 - 13 = 45 push-ups.\n4. Therefore, David did 58 push-ups.\n\n\nFINAL_ANSWER: 58",
+      "formula_first": "*  David's push-ups = Zachary's push-ups + (number of push-ups David did more)\n*  John's push-ups = David's push-ups - (number of push-ups John did less)\n\n\nLet's plug in our numbers to find David's push-ups:\n\nDavid's push-ups = Zachary's push-ups + (number of push-ups David did more)\n= 19 + (39)\n= 58\n\n\n\nFINAL_ANSWER: 58",
+      "backward": "What is asked for? The number of push-ups David did.\nHow can we find it? We know how many push-ups Zachary and John did, so we can use those numbers to figure out how many push-ups David did.\nWhat information do we have about David's push-ups?  We know he did 39 more push-ups than Zachary.\nFINAL_ANSWER: 58"
+    },
+    "strategy_predictions": {
+      "chain_of_thought": "58",
+      "formula_first": "58",
+      "backward": "58"
+    },
+    "prediction": "58",
+    "correct": true,
+    "token_cost": 750,
+    "per_strategy_tokens": {
+      "chain_of_thought": 241,
+      "formula_first": 267,
+      "backward": 242
+    },
+    "aggregation": "majority_vote"
+  },
+  {
+    "index": 60,
+    "question": "Paul got a box of 440 crayons for his birthday. During the school year he gave 111 crayons to his friends while he lost 106 crayons. How many crayons did he have left?",
+    "gold_answer": "223",
+    "strategy_texts": {
+      "chain_of_thought": "1. **Start with the initial amount:** Paul had 440 crayons at first.\n2. **Subtract the given crayons:** He gave away 111 crayons, so subtract that from the starting amount: 440 - 111 = 329 crayons.\n3. **Subtract the lost crayons:**  He also lost 106 crayons, so subtract that from the remaining amount: 329 - 106 = 223 crayons.\n\n\nFINAL_ANSWER: 223",
+      "formula_first": "*  Total crayons = Initial crayons + Crayons received - Crayons given away - Crayons lost\n*  Final crayons = Total crayons - Crayons given away - Crayons lost\n\n\n**Solution:**\nInitial crayons = 440\nCrayons received = 0 (He didn't receive any)\nCrayons given away = 111\nCrayons lost = 106\nFinal crayons = 440 - 111 - 106 = 213\n\nFINAL_ANSWER: 213",
+      "backward": "What is asked in the problem?\n...Paul has how many crayons left?\n\n\nWhat needs to be computed first?\n...The total number of crayons Paul had at the beginning, after giving some away and losing some.\n\n\n\nHow can we find out if we know the starting amount?\n...We can calculate it by adding up all the crayons given away and lost.  Then subtract from the initial amount.\n\n\n\n\nFINAL_ANSWER: 293"
+    },
+    "strategy_predictions": {
+      "chain_of_thought": "223",
+      "formula_first": "213",
+      "backward": "293"
+    },
+    "prediction": "223",
+    "correct": true,
+    "token_cost": 760,
+    "per_strategy_tokens": {
+      "chain_of_thought": 251,
+      "formula_first": 264,
+      "backward": 245
+    },
+    "aggregation": "majority_vote"
+  },
+  {
+    "index": 61,
+    "question": "The school is planning a field trip. The school has 24 classrooms. There are 120 students in the school with each classroom having the same number of students. There are 84 seats on each school bus. How many students are in each class?",
+    "gold_answer": "5",
+    "strategy_texts": {
+      "chain_of_thought": "1. **Identify what we know:** We know that there are 24 classrooms, 120 students total, and 84 seats per bus.  We need to find out how many students are in each class.\n2. **Set up an equation:** Since every classroom has the same number of students, let's say 'x' represents the number of students in each class. Then, the total number of students can be represented as 24 * x = 120.\n3. **Solve for x:** Divide both sides of the equation by 24: (24*x)/24 = 120/24. This simplifies to x = 5.\n4. **Answer:** Each class has 5 students.\n\n\nFINAL_ANSWER: 5",
+      "formula_first": "* **Number of Students:**  n = total students / number of classes\n* **Students per Class:** n/c = number of students per class\n\n\n**Solution:**\nWe know that there are 120 students in total and 24 classrooms. Therefore, we can calculate the number of students in each class by dividing the total number of students by the number of classrooms. This gives us:\nn = 120 students / 24 classrooms = 5 students per class.\n\n\n\nFINAL_ANSWER: 5",
+      "backward": "What does the problem want us to find out?  The number of students per class.\nHow can we get that information from the given data? We know there are 120 students total and 24 classrooms, so we can divide the total number of students by the number of classrooms to find the average number of students per class.\n\n\nFINAL_ANSWER: 5"
+    },
+    "strategy_predictions": {
+      "chain_of_thought": "5",
+      "formula_first": "5",
+      "backward": "5"
+    },
+    "prediction": "5",
+    "correct": true,
+    "token_cost": 825,
+    "per_strategy_tokens": {
+      "chain_of_thought": 316,
+      "formula_first": 268,
+      "backward": 241
+    },
+    "aggregation": "majority_vote"
+  },
+  {
+    "index": 62,
+    "question": "Jesse needs a carpet of size 10 square feet to cover her room. If her room is 5 feet long What is the width of her room?",
+    "gold_answer": "2",
+    "strategy_texts": {
+      "chain_of_thought": "We know that the area of a rectangle is length times width, so we can use this formula to find the width of Jesse's room. We are given the area (10 square feet) and the length (5 feet).  Let 'w' represent the width of the room. So, we have the equation: Area = Length * Width. Substituting our known values into the equation gives us: 10 = 5 * w. To solve for 'w', we divide both sides of the equation by 5: 10 / 5 = 5 * w / 5. This simplifies to: 2 = w. Therefore, the width of Jesse's room is 2 feet.\n\n\nFINAL_ANSWER: 2",
+      "formula_first": "* Area = length * width\n* We know area (10 sq ft) and we want to find the width\n\n\nSubstituting values into the formula:\n\nArea = Length * Width\n10 = 5 * Width\n\nSolving for Width:\n\nWidth = 10 / 5\nWidth = 2 feet\n\n\n\nFINAL_ANSWER: 2",
+      "backward": "What information does the problem give us about the length and width of the room?\nThe problem tells us that the area of the carpet is 10 square feet, and we know the length of the carpet is 5 feet. We can use these pieces of information to find the width of the room.\n\n\nFINAL_ANSWER: 2 feet"
+    },
+    "strategy_predictions": {
+      "chain_of_thought": "2",
+      "formula_first": "2",
+      "backward": "2 feet"
+    },
+    "prediction": "2",
+    "correct": true,
+    "token_cost": 696,
+    "per_strategy_tokens": {
+      "chain_of_thought": 278,
+      "formula_first": 207,
+      "backward": 211
+    },
+    "aggregation": "majority_vote"
+  },
+  {
+    "index": 63,
+    "question": "You had 26 bags with equal number of cookies. If you had 15 candies and 52 cookies in total How many cookies does each bag have?",
+    "gold_answer": "2",
+    "strategy_texts": {
+      "chain_of_thought": "1. **Define variables:** Let 'x' represent the number of cookies in each bag.\n2. **Set up equations based on given information:** We know that there are 26 bags, so we can express the total number of cookies as 26 * x.  We also know that the total number of cookies is 52. Therefore, we get the equation: 26*x = 52.\n3. **Solve for the variable (x):** Divide both sides of the equation by 26 to isolate 'x': x = 52 / 26. This simplifies to x = 2.\n4. **Answer:** Each bag has 2 cookies.\n\n\nFINAL_ANSWER: 2",
+      "formula_first": "* **Total Cookies:**  Number of Bags * Number of Cookies per Bag = Total Cookies\n* **Total Candies:** Number of Bags * Number of Candies per Bag = Total Candies\n\n\nLet's solve for the number of cookies per bag (let's call it \"x\"):\n\n**Equation:** Total Cookies = Number of Bags * x\nWe know that there are 52 cookies in total. So we can plug that into our equation: 52 = Number of Bags * x\n\n**Equation:** Total Candies = Number of Bags * Number of Candies per Bag\nWe know that there are 15 candies in total. We don't know how many candies are in each bag, so let's represent that by calling it \"y\". Our equation becomes: 15 = Number of Bags * y\n\nNow we have two equations:\n1) 52 = Number of Bags * x\n2) 15 = Number of Bags * y\n\nTo find the value of 'x', which is the number of cookies per bag, we can use either equation. Let's use equation 1): 52 = Number of Bags * x\n\nSince we also know that Number of Bags * y = 15, we can divide both sides of this equation by Number of Bags to get y = 15 / Number of Bags. Now we can substitute this value of y back into equation 1): 52 = Number of Bags * x\n\nSolving for x, we get: x = 52 / Number of Bags\n\nThis means that the number of cookies per bag depends on the number of bags. To determine the exact number of cookies per bag, we would need more information about the number of bags.\n\n\n\nFINAL_ANSWER: Not enough information provided.",
+      "backward": "What is asked for? The number of cookies per bag.\nHow can we find it? We know the total number of cookies, and the total number of candies.  We also know there are 26 bags.\nWhat else do we need? To solve for the number of cookies per bag, we need to figure out how many cookies were in all the bags.\n\n\nFINAL_ANSWER: 2"
+    },
+    "strategy_predictions": {
+      "chain_of_thought": "2",
+      "formula_first": "Not enough information provided.",
+      "backward": "2"
+    },
+    "prediction": "2",
+    "correct": true,
+    "token_cost": 1018,
+    "per_strategy_tokens": {
+      "chain_of_thought": 281,
+      "formula_first": 511,
+      "backward": 226
+    },
+    "aggregation": "majority_vote"
+  },
+  {
+    "index": 64,
+    "question": "After Olivia visited a supermarket there were 29 dollars left. If there were 54 dollars in her wallet initially How much did she spend?",
+    "gold_answer": "25",
+    "strategy_texts": {
+      "chain_of_thought": "1. We know that Olivia had $54 to start, and after visiting the supermarket, she has $29 left.  This means we need to find out how much money was spent.\n2. To do this, subtract the amount of money remaining from the initial amount: $54 - $29 = $25.\n3. Therefore, Olivia spent $25 at the supermarket.\n\n\nFINAL_ANSWER: 25",
+      "formula_first": "*  Initial amount = Final amount + Amount spent\n* Initial amount = $54\n* Final amount = $29\n* Amount spent = ?\n\n\nSubstituting values into the first equation we get:\n$54 = $29 + Amount spent\nSolving for Amount spent:\nAmount spent = $54 - $29\nAmount spent = $25\n\n\n\nFINAL_ANSWER: 25",
+      "backward": "We know how much money was left and we know how much money she had at first, so we can find out how much she spent.\n\n\nAnswer: \nFINAL_ANSWER: 25 dollars"
+    },
+    "strategy_predictions": {
+      "chain_of_thought": "25",
+      "formula_first": "25",
+      "backward": "25 dollars"
+    },
+    "prediction": "25",
+    "correct": true,
+    "token_cost": 613,
+    "per_strategy_tokens": {
+      "chain_of_thought": 215,
+      "formula_first": 218,
+      "backward": 180
+    },
+    "aggregation": "majority_vote"
+  },
+  {
+    "index": 65,
+    "question": "Jesse's room is 7 feet wide. If she needs a carpet of size 14 square feet What is the length of her room?",
+    "gold_answer": "2",
+    "strategy_texts": {
+      "chain_of_thought": "1. We know that the area of a rectangle is calculated using the formula A = l * w, where A represents the area, l represents the length, and w represents the width.\n2. In this case, we are given that the area (A) is 14 square feet and the width (w) is 7 feet.  We need to find the length (l).\n3. Substituting these values into the formula, we get: 14 = l * 7\n4. To solve for 'l', we divide both sides of the equation by 7: 14 / 7 = l\n5. This simplifies to: 2 = l\n6. Therefore, the length of Jesse's room is 2 feet.\n\n\nFINAL_ANSWER: 2",
+      "formula_first": "* Area = Length * Width\n* We know that area = 14 sq ft and width = 7 ft\n\n\nSubstituting these values into the first equation we get:  Area = Length * Width\n14 = Length * 7\nSolving for Length gives us: Length = 2 ft\n\n\n\nFINAL_ANSWER: 2",
+      "backward": "What must be true about the area of the room and the carpet in order for it to fit perfectly?\n\n\nAnswer: The area of the room should equal the area of the carpet, so we can set up an equation: Area = Length * Width.  We know the area of the carpet is 14 square feet and the width is 7 feet. We want to find the length. So let's plug those values into our equation: 14 = Length * 7.\n\n\n\nFINAL_ANSWER: 2 feet"
+    },
+    "strategy_predictions": {
+      "chain_of_thought": "2",
+      "formula_first": "2",
+      "backward": "2 feet"
+    },
+    "prediction": "2",
+    "correct": true,
+    "token_cost": 735,
+    "per_strategy_tokens": {
+      "chain_of_thought": 288,
+      "formula_first": 201,
+      "backward": 246
+    },
+    "aggregation": "majority_vote"
+  },
+  {
+    "index": 66,
+    "question": "Nell collects baseball cards. She had 242 cards. She gave 136 of her cards to Jeff. How many cards does Nell have left?",
+    "gold_answer": "106",
+    "strategy_texts": {
+      "chain_of_thought": "1. We know that Nell started with 242 cards.\n2.  She gave away 136 cards.\n3. To find out how many she has left, we need to subtract the number of cards given away from the original amount.\n4. The calculation is: 242 - 136 = ?\n5. Therefore, Nell has ? cards left.\n\n\nFINAL_ANSWER: 106",
+      "formula_first": "*  Number of cards = Initial amount - Number given away\n* Formula for calculating change in quantity: Change = (Initial Amount) * (Rate of Change)\n\n\n**Solution:**\nNell has 242 cards initially. She gives away 136 cards. Therefore, she has 242 - 136 = **106** cards remaining.\n\nFINAL_ANSWER: 106",
+      "backward": "What is asked in the problem?\n... The number of cards Nell has left.\nHow can we get that information from the given data?\nWe know how many cards she started with and how many she gave away. We can find out how many are left by subtracting the number of cards given away from the original amount.\nTherefore, we need to calculate:  242 - 136 = ?\n\n\nFINAL_ANSWER: 106"
+    },
+    "strategy_predictions": {
+      "chain_of_thought": "106",
+      "formula_first": "106",
+      "backward": "106"
+    },
+    "prediction": "106",
+    "correct": true,
+    "token_cost": 676,
+    "per_strategy_tokens": {
+      "chain_of_thought": 218,
+      "formula_first": 223,
+      "backward": 235
+    },
+    "aggregation": "majority_vote"
+  },
+  {
+    "index": 67,
+    "question": "If you had 4 bags with equal number of cookies and 36 cookies in total How many cookies does each bag have?",
+    "gold_answer": "9",
+    "strategy_texts": {
+      "chain_of_thought": "1. We know that there are 4 bags, so we can represent the number of cookies per bag with the variable 'x'.\n2. The total number of cookies is 36, which means that the sum of all the cookies in the bags equals 36.  We can express this mathematically as: 4 * x = 36\n3. To solve for 'x', we need to isolate it on one side of the equation. We do this by dividing both sides of the equation by 4: x = 36 / 4\n4. Simplifying the right hand side gives us: x = 9\n5. Therefore, each bag has 9 cookies.\n\n\nFINAL_ANSWER: 9",
+      "formula_first": "*  Total Cookies = Number of Bags * Number of Cookies per Bag\n*  Number of Cookies per Bag = Total Cookies / Number of Bags\n\n\nSubstituting values into the first equation we get:\n36 = x * y\nWhere x is the number of bags and y is the number of cookies per bag. We can solve for y by dividing both sides by x to get:\ny = 36/x\n\nNow substituting this value of y back into the second equation gives us:\n36 = x * (36/x)\nSimplifying this equation we get:\n36 = 36\nThis means that our initial assumption was incorrect. There must be an error somewhere in how we set up the problem.\n\n\n\nFINAL_ANSWER: None",
+      "backward": "1.  What is asked?\n2.  How can we find it?\n3.  We know there are 36 cookies in total, and they're divided into 4 bags.\n\n\nFINAL_ANSWER: 9"
+    },
+    "strategy_predictions": {
+      "chain_of_thought": "9",
+      "formula_first": "None",
+      "backward": "9"
+    },
+    "prediction": "9",
+    "correct": true,
+    "token_cost": 742,
+    "per_strategy_tokens": {
+      "chain_of_thought": 270,
+      "formula_first": 287,
+      "backward": 185
+    },
+    "aggregation": "majority_vote"
+  },
+  {
+    "index": 68,
+    "question": "A farmer had 90 tomatoes in his garden. If he picked 154 of them yesterday and 50 today. How many tomatoes did he pick in all?",
+    "gold_answer": "204",
+    "strategy_texts": {
+      "chain_of_thought": "1. **Identify what we know:** The farmer started with 90 tomatoes, picked 154 yesterday, and picked 50 today. We need to find the total number of tomatoes he picked.\n2. **Break down the information into separate quantities:**  We can calculate the total number of tomatoes picked separately for yesterday and today.\n3. **Calculate the amount picked yesterday:** He picked 154 tomatoes yesterday.\n4. **Calculate the amount picked today:** He picked 50 tomatoes today.\n5. **Add the amounts from steps 3 and 4 together:** This gives us the total number of tomatoes picked so far.\n\n\nFINAL_ANSWER: 204",
+      "formula_first": "* Total Tomatoes = Initial Tomatoes + Picked Tomatoes\n* Total Picked = Picked Yesterday + Picked Today\n\n\nLet's break down the calculation step by step:\n\nTotal Tomatoes = 90 (Initial) + 154 (Picked Yesterday) + 50 (Picked Today)\nTotal Picked = 154 (Yesterday) + 50 (Today)\nFinal Answer: 204",
+      "backward": "What is asked for? The total number of tomatoes the farmer picked.\nHow can we get there from here? We know how many were picked each day, so we just need to add those together.\nTherefore, the final calculation is (picked yesterday) + (picked today).\n\n\nFINAL_ANSWER: 204"
+    },
+    "strategy_predictions": {
+      "chain_of_thought": "204",
+      "formula_first": "204",
+      "backward": "204"
+    },
+    "prediction": "204",
+    "correct": true,
+    "token_cost": 715,
+    "per_strategy_tokens": {
+      "chain_of_thought": 276,
+      "formula_first": 229,
+      "backward": 210
+    },
+    "aggregation": "majority_vote"
+  },
+  {
+    "index": 69,
+    "question": "Randy has 90 blocks. He uses 89 blocks to build a house and 63 blocks to build a tower. How many more blocks did he use to build the house than he did to build the tower?",
+    "gold_answer": "26",
+    "strategy_texts": {
+      "chain_of_thought": "1. **Identify what we need to find:** We want to know how many more blocks were used for the house compared to the tower. This is represented by \"difference\".\n2. **Find the total amount of blocks used for the house and tower:**  We add up the number of blocks used for both projects: 89 + 63 = 152 blocks.\n3. **Subtract the number of blocks used for the tower from the total blocks used:** To get our difference, subtract the number of blocks used for the tower (63) from the total blocks used (152): 152 - 63 = 89 blocks.\n\n\nFINAL_ANSWER: 89",
+      "formula_first": "*  Total Blocks Used = Blocks for House + Blocks for Tower\n*  Difference in Blocks Used = Blocks for House - Blocks for Tower\n\n\n**Solution:**\n1. Total Blocks Used = 89 + 63 = 152\n2. Difference in Blocks Used = 152 - 63 = 89\n\n\n\nFINAL_ANSWER: 89",
+      "backward": "1.  What is the difference between the number of blocks used to build the house and the number of blocks used to build the tower?\n2.  How can we find out how many blocks were used to build each structure?\n\n\nFINAL_ANSWER: 26"
+    },
+    "strategy_predictions": {
+      "chain_of_thought": "89",
+      "formula_first": "89",
+      "backward": "26"
+    },
+    "prediction": "89",
+    "correct": false,
+    "token_cost": 724,
+    "per_strategy_tokens": {
+      "chain_of_thought": 287,
+      "formula_first": 228,
+      "backward": 209
+    },
+    "aggregation": "majority_vote"
+  },
+  {
+    "index": 70,
+    "question": "If Lewis earns a total of $ 460 during 5 weeks of harvest How much money does he earn each week?",
+    "gold_answer": "92",
+    "strategy_texts": {
+      "chain_of_thought": "1. We know that Lewis earned a total of $460 over 5 weeks.\n2. To find out how much he earns per week, we need to divide his total earnings by the number of weeks.\n3. So, the calculation is $460 / 5 = $92.\n\n\nFINAL_ANSWER: 92",
+      "formula_first": "* **Total earnings = Weekly Earnings * Number of Weeks**\n\nSubstituting known values into the formula:\n\n$460 = Weekly Earnings * 5\n\nSolving for Weekly Earnings:\n\nWeekly Earnings = $460 / 5\n\nWeekly Earnings = $92\n\n\nFINAL_ANSWER: 92",
+      "backward": "1. We know how much Lewis earned in total over 5 weeks.\n2. To find out his weekly earnings, we must divide the total amount by the number of weeks.\n\n\nFINAL_ANSWER: 92."
+    },
+    "strategy_predictions": {
+      "chain_of_thought": "92",
+      "formula_first": "92",
+      "backward": "92."
+    },
+    "prediction": "92",
+    "correct": true,
+    "token_cost": 564,
+    "per_strategy_tokens": {
+      "chain_of_thought": 192,
+      "formula_first": 192,
+      "backward": 180
+    },
+    "aggregation": "majority_vote"
+  },
+  {
+    "index": 71,
+    "question": "Carol was sending out birthday invitations to her friends. Each package of invitations she bought had 10 invitations in it and she bought 7 packs. If she sends invitations to only 2 friends How many invitations will be left?",
+    "gold_answer": "68",
+    "strategy_texts": {
+      "chain_of_thought": "1. We know that Carol has 7 packs of invitations, and each pack contains 10 invitations. So we can calculate how many total invitations she has: 7 packs * 10 invitations/pack = 70 invitations.\n2. She is going to send invitations to only 2 friends, so we need to find out how many invitations are left after sending them.  We do this by subtracting the number of invitations sent from the total number of invitations: 70 invitations - 2 invitations = 68 invitations.\n3. Therefore, there will be **68** invitations left.\n\n\nFINAL_ANSWER: 68",
+      "formula_first": "* Number of total invitations = Pack * Invitations per pack\n* Total invitations = 7 packs * 10 invitations/pack = 70 invitations\n* Invitations remaining = Total invitations - Invitations sent\n* Invitations remaining = 70 invitations - 2 invitations = 68 invitations\n\n\nFINAL_ANSWER: 68",
+      "backward": "What is being asked?\nHow many invitations are left after Carol sends invitations to 2 friends?\n\n\nFINAL_ANSWER: 70 - (2 * 10) = 50"
+    },
+    "strategy_predictions": {
+      "chain_of_thought": "68",
+      "formula_first": "68",
+      "backward": "70 - (2 * 10) = 50"
+    },
+    "prediction": "68",
+    "correct": true,
+    "token_cost": 688,
+    "per_strategy_tokens": {
+      "chain_of_thought": 273,
+      "formula_first": 220,
+      "backward": 195
+    },
+    "aggregation": "majority_vote"
+  },
+  {
+    "index": 72,
+    "question": "Kelly has 22 nintendo games. How many does she need to buy so that she will have 140 games left?",
+    "gold_answer": "118",
+    "strategy_texts": {
+      "chain_of_thought": "1. We know that Kelly currently has 22 games.\n2. She wants to have 140 games after buying more.\n3. To find out how many games she needs to buy, we can subtract her current amount from the desired amount: 140 - 22 = ?\n4. The result of subtracting is the number of games she needs to buy.\n\n\nFINAL_ANSWER: 118",
+      "formula_first": "* **Total Games:** Total games = Current games + New purchases\n* **Desired Number of Games:** Desired number of games =  Current games + new purchases - (Games already owned)\n\n\nWe can use these equations to solve for how many more games Kelly needs to buy. Let's break it down step by step:\n\n**Step 1: Define variables.**\n\nLet 'x' represent the number of games Kelly needs to buy.\n\n**Step 2: Set up an equation based on the given information.**\n\nTotal games = Current games + New purchases\n22 + x = current games + x - 22\n\n**Step 3: Solve for x.**\n\nThe goal is to find the value of 'x'. We know we want her total games to be 140 after buying some. So let's rewrite our equation in terms of what we are trying to achieve:\n\ndesired number of games = current games + new purchases - (games already owned)\n140 = 22 + x - 22\n\n**Step 4: Simplify and solve for x.**\n\n140 = 22 + x - 22\n140 = x\n\nFINAL_ANSWER: 140",
+      "backward": "What is asked in the problem?\n...Kelly needs to buy how many games...?\n\n\nFINAL_ANSWER: 68"
+    },
+    "strategy_predictions": {
+      "chain_of_thought": "118",
+      "formula_first": "140",
+      "backward": "68"
+    },
+    "prediction": "118",
+    "correct": true,
+    "token_cost": 761,
+    "per_strategy_tokens": {
+      "chain_of_thought": 212,
+      "formula_first": 388,
+      "backward": 161
+    },
+    "aggregation": "majority_vote"
+  },
+  {
+    "index": 73,
+    "question": "41 campers went rowing and 4 campers went hiking in the morning. 26 campers went rowing in the afternoon. How many campers went rowing and hiking in all?",
+    "gold_answer": "71",
+    "strategy_texts": {
+      "chain_of_thought": "1. We know that 41 campers went rowing and 4 campers went hiking in the morning.  This is our starting point for calculating total campers who went rowing and hiking.\n2. In the afternoon, 26 campers went rowing. This information tells us about how many campers were rowing in the afternoon.\n3. To find out how many campers went rowing and hiking in all, we need to add up the number of campers who went rowing in the morning plus the number who went hiking in the morning plus the number who went rowing in the afternoon.\n4. The final calculation will be (41 + 4) + 26 = ?\n\n\nFINAL_ANSWER: 71",
+      "formula_first": "* Total campers = Rowing Campers + Hiking Campers\n* Total rowings campers = Rowing Campers (morning) + Rowing Campers (afternoon)\n* Total hikers = Hiking Campers (morning) + Hiking Campers (afternoon)\n\n\n**Calculations:**\nTotal campers = 41 + 4 = 45\nRowing Campers = 41 + 26 = 67\nHiking Campers = 4 + 26 = 30\nTotal Rowing & Hiking Campers = 67 + 30 = 97\n\n\n\nFINAL_ANSWER: 97",
+      "backward": "What is asked for? The total number of campers who went rowing and hiking.\n\n\nWhat needs to be computed first?  The combined number of campers who went rowing in both the morning and afternoon.\n\n\n\nHow can we get that value? We know there were 41 campers who went rowing, but only 26 went rowing in the afternoon. So, how many went rowing in the morning? 41 - 26 = 15 campers went rowing in the morning.\n\n\n\n\nNow we have the information needed to calculate the total number of campers who went rowing and hiking. To find that, add up the number of campers who went rowing in the morning (15) plus the number who went hiking in the morning (4). This gives us 15 + 4 = 19 campers.\n\n\n\nFINAL_ANSWER: 19"
+    },
+    "strategy_predictions": {
+      "chain_of_thought": "71",
+      "formula_first": "97",
+      "backward": "19"
+    },
+    "prediction": "71",
+    "correct": true,
+    "token_cost": 860,
+    "per_strategy_tokens": {
+      "chain_of_thought": 273,
+      "formula_first": 269,
+      "backward": 318
+    },
+    "aggregation": "majority_vote"
+  },
+  {
+    "index": 74,
+    "question": "In Haley's class 4 are boys who love to play marbles. If Haley has 23 marbles and wants to keep 15 marbles for herself How many will each of the boys receive?",
+    "gold_answer": "2",
+    "strategy_texts": {
+      "chain_of_thought": "1. We know that there are 4 boys who like to play marbles.\n2. The total number of marbles is 23, but Haley keeps 15 for herself.\n3. Therefore, we need to find out how many marbles are left for the boys.\n4. To do so, subtract the number of marbles Haley kept from the total number of marbles: 23 - 15 = 8.\n5. Each boy gets 8 / 4 = 2 marbles.\n\n\nFINAL_ANSWER: 2",
+      "formula_first": "* Number of marbles per boy = Total marbles / Number of boys\n* Total marbles - Marbles kept by Haley = Marbles left for the boys\n\n\n**Solution:**\nTotal marbles = 23 + 15 = 38\nMarbles kept by Haley = 15\nMarbles left for the boys = 38 - 15 = 23\nNumber of marbles per boy = 23 / 4 = 5.75\n\nFINAL_ANSWER: 5.75",
+      "backward": "What is asked in the problem?\nThe question asks how many marbles each boy receives.\n\n\nWhat information do we have?\nWe know there are 4 boys, and Haley keeps 15 marbles. We also know she has 23 total marbles.\n\n\n\nHow can we find out how many marbles each boy gets?\nTo figure out how many marbles each boy gets, we need to subtract the number of marbles Haley keeps from the total number of marbles. Then divide the result by the number of boys.\n\n\n\n\nFINAL_ANSWER: 8"
+    },
+    "strategy_predictions": {
+      "chain_of_thought": "2",
+      "formula_first": "5.75",
+      "backward": "8"
+    },
+    "prediction": "2",
+    "correct": true,
+    "token_cost": 760,
+    "per_strategy_tokens": {
+      "chain_of_thought": 248,
+      "formula_first": 251,
+      "backward": 261
+    },
+    "aggregation": "majority_vote"
+  },
+  {
+    "index": 75,
+    "question": "Julia played tag with 4 kids on wednesday. She had played with 6 kids on monday and 17 kids on tuesday. How many more kids did she play with on monday than on wednesday?",
+    "gold_answer": "2",
+    "strategy_texts": {
+      "chain_of_thought": "1. We need to find the difference between the number of kids Julia played with on Monday and Wednesday.\n2. To do that, we can subtract the number of kids she played with on Wednesday from the number of kids she played with on Monday.\n3. The number of kids she played with on Monday is 6.\n4. The number of kids she played with on Wednesday is 4.\n5. So, we can calculate the difference: 6 - 4 = 2.\n\n\nFINAL_ANSWER: 2",
+      "formula_first": "*  Total Kids Played = Number of Days * Average Kids per Day\n* Total Kids Played (Monday) = 6\n* Total Kids Played (Wednesday) = 4\n* Difference in Kids Played = Total Kids Played (Monday) - Total Kids Played (Wednesday)\n\n\nFINAL_ANSWER: 2",
+      "backward": "What is being asked in the prompt?\nThe question wants to know how many more kids were played with on Monday compared to Wednesday.\n\n\nFINAL_ANSWER: 2"
+    },
+    "strategy_predictions": {
+      "chain_of_thought": "2",
+      "formula_first": "2",
+      "backward": "2"
+    },
+    "prediction": "2",
+    "correct": true,
+    "token_cost": 637,
+    "per_strategy_tokens": {
+      "chain_of_thought": 245,
+      "formula_first": 208,
+      "backward": 184
+    },
+    "aggregation": "majority_vote"
+  },
+  {
+    "index": 76,
+    "question": "In a school there are 700 girls and the rest are boys. If there are 142 more boys than girls How many pupils are there in that school?",
+    "gold_answer": "1542",
+    "strategy_texts": {
+      "chain_of_thought": "Let's denote the number of girls as 'g'.  The number of boys is then represented by 'b', where b = g + 142 (since there are 142 more boys than girls). We know that g + b = total students, which we need to find.\n\n\nWe can express the total number of students using the information given about the ratio between girls and boys: g/b = 700/total students.\n\n\n\nNow let's solve for 'b': b = g + 142\n\n\n\n\nSubstitute this value of 'b' into the equation from Step 3: g / (g + 142) = 700 / total students\n\n\n\n\nMultiply both sides by (g + 142): g * (g + 142) = 700 * (g + 142)\n\n\n\n\nExpand the left side: g^2 + 142g = 700g + 99400\n\n\n\n\nCombine like terms: g^2 - 558g + 99400 = 0\n\n\n\n\nThis is a quadratic equation. To solve it, we use the quadratic formula: \ng = (-b ± √(b² - 4ac)) / 2a\n\n\n\n\nWhere a = 1, b = -558, and c = 99400.\n\n\n\n\nPlugging these values into the quadratic formula gives us two possible solutions for 'g'. Let's call them g1 and g2. Since g represents the number of girls, we want the positive solution. Therefore, g = g1.\n\n\n\n\nOnce you have found g1, substitute it back into the equation b = g + 142 to get the corresponding value of b.\n\n\n\n\nFinally, calculate the total number of students by adding the number of girls and boys: total students = g + b\n\n\n\n\nFINAL_ANSWER: [Your numerical answer here]",
+      "formula_first": "* **Total students:**  n = g + b\n* **Number of girls (g):** g = 700\n* **Number of boys (b):** b = g + 142\n* **Substitute to find total students:** n = 700 + (g + 142)\n* **Simplify:** n = 842\n\n\nFINAL_ANSWER: 842",
+      "backward": "What is asked for? The total number of pupils in the school.\nHow can we get it? We know the ratio between girls and boys, but also how many more boys there are compared to girls.  We just need to calculate the number of boys.\nWhat else do we need? To find out the number of boys, we need to know the difference between the number of boys and girls.\n\n\nFINAL_ANSWER: 842"
+    },
+    "strategy_predictions": {
+      "chain_of_thought": "142",
+      "formula_first": "842",
+      "backward": "842"
+    },
+    "prediction": "842",
+    "correct": false,
+    "token_cost": 1005,
+    "per_strategy_tokens": {
+      "chain_of_thought": 541,
+      "formula_first": 228,
+      "backward": 236
+    },
+    "aggregation": "majority_vote"
+  },
+  {
+    "index": 77,
+    "question": "Luke played 177 rounds of a trivia game. If he gained 46 points in each round How many points did he score in the game?",
+    "gold_answer": "8142",
+    "strategy_texts": {
+      "chain_of_thought": "1. We know that Luke played 177 rounds.\n2. Each round gave him 46 points.\n3. To find his total score, we need to multiply the number of rounds by the points per round.\n4. Therefore, his total score is 177 * 46 = ?\n\n\nFINAL_ANSWER: 8042",
+      "formula_first": "* Points = Rounds * Points per Round\n* Points = 177 * 46\n\n\nFINAL_ANSWER: 8022",
+      "backward": "What is asked for? The total points scored.\nHow can we get there from here? We know how many rounds and how many points per round.\nTherefore, we need to multiply the number of rounds by the points per round.\n\n\nFINAL_ANSWER: 8022"
+    },
+    "strategy_predictions": {
+      "chain_of_thought": "8042",
+      "formula_first": "8022",
+      "backward": "8022"
+    },
+    "prediction": "8022",
+    "correct": false,
+    "token_cost": 565,
+    "per_strategy_tokens": {
+      "chain_of_thought": 202,
+      "formula_first": 165,
+      "backward": 198
+    },
+    "aggregation": "majority_vote"
+  },
+  {
+    "index": 78,
+    "question": "Marco and his dad went strawberry picking. Marco's strawberries weighed 15 pounds. If together their strawberries weighed 37 pounds. How much did his dad's strawberries weigh?",
+    "gold_answer": "22",
+    "strategy_texts": {
+      "chain_of_thought": "Let x represent the weight of the strawberries that Marco's dad picked.  We know that the total weight of both sets of strawberries is 37 pounds, so we can set up an equation to solve for x: 15 + x = 37. To find out how many pounds of strawberries his dad picked, subtract 15 from both sides of the equation: (15 + x) - 15 = 37 - 15. This simplifies to x = 22. Therefore, his dad's strawberries weighed 22 pounds.\n\n\nFINAL_ANSWER: 22",
+      "formula_first": "*  Let x represent the weight of Dad's strawberries in pounds.\n*  The total weight is the sum of both weights: x + 15 = 37\n*  Solving for x: x = 37 - 15\n\n\nFINAL_ANSWER: 22",
+      "backward": "What is being asked in the problem?\nThe amount of weight on which his dad picked.\n\n\nFINAL_ANSWER: 22 pounds"
+    },
+    "strategy_predictions": {
+      "chain_of_thought": "22",
+      "formula_first": "22",
+      "backward": "22 pounds"
+    },
+    "prediction": "22",
+    "correct": true,
+    "token_cost": 637,
+    "per_strategy_tokens": {
+      "chain_of_thought": 258,
+      "formula_first": 204,
+      "backward": 175
+    },
+    "aggregation": "majority_vote"
+  },
+  {
+    "index": 79,
+    "question": "Robin has some packages of gum. There are 7 pieces in each package. Robin has 6 extra pieces of gum. In all the number of pieces of gums robin has is 41. How many packages does Robin have?",
+    "gold_answer": "5",
+    "strategy_texts": {
+      "chain_of_thought": "Let's use variables to represent unknown quantities. Let 'x' be the number of packages Robin has.  We know that the total number of gum pieces Robin has is equal to the sum of the pieces in each package multiplied by the number of packages, plus the extra pieces. We can express this mathematically as follows:\n\n* Total gum pieces = (number of packages * pieces per package) + extra gum pieces\n* 41 = (x * 7) + 6\n\nNow we need to solve for x. Here's how:\n\n1. Subtract 6 from both sides of the equation: \n   41 - 6 = (x * 7) + 6 - 6\n   35 = (x * 7)\n\n2. Divide both sides by 7:\n    35 / 7 = (x * 7) / 7\n    5 = x\n\nTherefore, Robin has **5** packages.\n\n\nFINAL_ANSWER: 5",
+      "formula_first": "*  Number of packages = Total gum / Pieces per package\n*  Total gum = Number of packages * Pieces per package + Extra gum\n\n\nLet's plug in what we know into our equations to solve for the unknown variable (number of packages):\n\n* Total gum = 41\n* Pieces per package = 7\n* Extra gum = 6\n\nSubstituting these values into the first equation gives us:\n\n* Number of packages = 41 / 7 \n\nSolving for the number of packages:\n\n* Number of packages = 5.86...\n\nSince Robin can't have half a package, let's try adjusting our assumption that there are 41 total pieces of gum. We could assume that Robin has an additional piece of gum somewhere else. Let's adjust the value of \"extra gum\" by one. This would give us:\n\n* Total gum = 42\n* Pieces per package = 7\n* Extra gum = 7\n\nNow substituting these values into the first equation gives us:\n\n* Number of packages = 42 / 7\n\nSolving for the number of packages:\n\n* Number of packages = 6\n\nTherefore, Robin has **6** packages.\n\n\n\nFINAL_ANSWER: 6",
+      "backward": "What do we know about the total number of gum pieces? We know it's 41, and there are 7 pieces per package.  How can we get from 41 to 7 pieces per package?\n\n\nFINAL_ANSWER: 6"
+    },
+    "strategy_predictions": {
+      "chain_of_thought": "5",
+      "formula_first": "6",
+      "backward": "6"
+    },
+    "prediction": "6",
+    "correct": false,
+    "token_cost": 968,
+    "per_strategy_tokens": {
+      "chain_of_thought": 349,
+      "formula_first": 410,
+      "backward": 209
+    },
+    "aggregation": "majority_vote"
+  },
+  {
+    "index": 80,
+    "question": "Dan has $ 3. For a total of $ 4 he bought 2 candy bar each one costing the same amount of money. How much did each candy bar cost?",
+    "gold_answer": "2",
+    "strategy_texts": {
+      "chain_of_thought": "1.  Let's represent the unknown quantity, \"x\", which is the price per candy bar.\n2.  We know that Dan spent a total of $4 on two candy bars. So we can set up an equation: 2 * x = $4\n3.  To solve for x, divide both sides of the equation by 2: (2 * x) / 2 = $4 / 2\n4.  This simplifies to: x = $2\n5.  Therefore, each candy bar costs $2.\n\n\nFINAL_ANSWER: 2",
+      "formula_first": "*  Cost = Price * Quantity\n*  Total Cost = Number of Items * Price per Item\n\n\nLet's break down the information given in the problem to find the price of each candy bar:\n\n1. **Total Cost:** We know that Dan spent a total of $4 for two candy bars. This can be represented by the equation: Total Cost = Number of Items * Price per Item.\n   We are given that the total cost is $4 and there are 2 items. So we have: $4 = 2 * Price per item.\n2. **Price per Item:** To solve for the price per item, divide both sides of the equation by 2: $4 / 2 = Price per item. Therefore, the price per candy bar is $2.\n\n\n\nFINAL_ANSWER: 2",
+      "backward": "1. We know how much Dan spent in total ($4).\n2. We also know the price per candy bar is equal and we have two candy bars.\n3. Therefore, we can calculate the cost of one candy bar.\n\n\nFINAL_ANSWER: 2.00"
+    },
+    "strategy_predictions": {
+      "chain_of_thought": "2",
+      "formula_first": "2",
+      "backward": "2.00"
+    },
+    "prediction": "2",
+    "correct": true,
+    "token_cost": 760,
+    "per_strategy_tokens": {
+      "chain_of_thought": 250,
+      "formula_first": 308,
+      "backward": 202
+    },
+    "aggregation": "majority_vote"
+  },
+  {
+    "index": 81,
+    "question": "Randy has 95 blocks. He uses 20 blocks to build a house and 50 blocks to build a tower. How many more blocks did he use to build the tower than he did to build the house?",
+    "gold_answer": "30",
+    "strategy_texts": {
+      "chain_of_thought": "1. **Identify what we know:** We know that Randy used 20 blocks for the house and 50 blocks for the tower.  We want to find out how much more he used for the tower compared to the house.\n2. **Define variables:** Let 'x' represent the difference between the number of blocks used for the tower and the number of blocks used for the house.\n3. **Set up an equation:** The total number of blocks used is equal to the number of blocks used for the house plus the number of blocks used for the tower, so we can set up the equation: 20 + x = 50\n4. **Solve for x:** To solve for x, subtract 20 from both sides of the equation: 20 + x - 20 = 50 - 20\n5. **Simplify:** This simplifies to x = 30.\n\n\nFINAL_ANSWER: 30",
+      "formula_first": "*  Total Blocks Used = Blocks for House + Blocks for Tower\n*  Difference in Blocks = Total Blocks Used - Blocks for House\n*  Blocks used per building = (Number of Blocks) / (Building Type)\n\n\n**Solution:**\n1. **Equation/Formula:**\n   * Total Blocks Used = Blocks for House + Blocks for Tower\n   * Difference in Blocks = Total Blocks Used - Blocks for House\n   * Blocks used per building = (Number of Blocks) / (Building Type)\n\n2. **Substitution:**\n    * Let's say x is the difference between blocks used for the tower and the house.\n    * We know that total blocks used are 20+50=70 blocks.\n    * The difference in blocks is then x.\n\n3. **Calculation:**\n    * Total Blocks Used = 70\n    * Blocks for House = 20\n    * Difference in Blocks = 70 - 20 = 50\n\n4. **Final Answer:**\n    FINAL_ANSWER: 50",
+      "backward": "1.  What is the difference between the number of blocks used to build the tower and the number of blocks used to build the house?\n2.  How can we find out how many blocks were used to build each structure?\n\n\nFINAL_ANSWER: 45"
+    },
+    "strategy_predictions": {
+      "chain_of_thought": "30",
+      "formula_first": "50",
+      "backward": "45"
+    },
+    "prediction": "30",
+    "correct": true,
+    "token_cost": 918,
+    "per_strategy_tokens": {
+      "chain_of_thought": 337,
+      "formula_first": 372,
+      "backward": 209
+    },
+    "aggregation": "majority_vote"
+  },
+  {
+    "index": 82,
+    "question": "Zachary did 44 push-ups and 17 crunches in gym class today. David did 29 more push-ups but 13 less crunches than zachary. How many crunches did David do?",
+    "gold_answer": "4",
+    "strategy_texts": {
+      "chain_of_thought": "1.  We know that Zachary did 44 push-ups and 17 crunches. We need to find out how many crunches David did.\n2.  David did 29 more push-ups than Zachary, so he did 44 + 29 = 73 push-ups.\n3.  We also know that David did 13 fewer crunches than Zachary, meaning he did 17 - 13 = 4 crunches.\n4.  Therefore, David did 4 crunches.\n\n\nFINAL_ANSWER: 4",
+      "formula_first": "*  Push-ups = Number of push-ups done by Zachary + Number of push-ups done by David\n*  Crunches = Number of crunches done by Zachary - Number of crunches done by David\n\n\nLet's plug in what we know into these equations to solve for David's crunches:\n\nZachary's push-ups: 44\nDavid's push-ups: 44 + 29 = 73\nZachary's crunches: 17\nDavid's crunches: 17 - 13 = 4\n\nFINAL_ANSWER: 4",
+      "backward": "What is asked for? The number of crunches David did.\nHow can we find it? We know how many push-ups each person did, and we also know how many crunches Zach did compared to David.  We just have to figure out how many crunches David did based on those facts.\n\n\nFINAL_ANSWER: 10"
+    },
+    "strategy_predictions": {
+      "chain_of_thought": "4",
+      "formula_first": "4",
+      "backward": "10"
+    },
+    "prediction": "4",
+    "correct": true,
+    "token_cost": 770,
+    "per_strategy_tokens": {
+      "chain_of_thought": 262,
+      "formula_first": 281,
+      "backward": 227
+    },
+    "aggregation": "majority_vote"
+  },
+  {
+    "index": 83,
+    "question": "Helen the hippo and her friends are preparing for thanksgiving at Helen's house. Helen baked 519 chocolate chip cookies and 300 raisin cookies yesterday. And she baked 280 raisin cookies and 359 chocolate chip cookies this morning. How many more raisin cookies did Helen bake yesterday compared to today?",
+    "gold_answer": "20",
+    "strategy_texts": {
+      "chain_of_thought": "1. **Identify what we need to find:** We want to know how many more raisin cookies Helen baked yesterday than today.\n2. **Find the total number of raisin cookies Helen baked today:** She baked 280 raisin cookies this morning.\n3. **Find the total number of raisin cookies Helen baked yesterday:**  She baked 300 raisin cookies yesterday.\n4. **Calculate the difference between yesterday's and today's raisin cookie count:** 300 - 280 = 20.\n5. **Answer:** There were 20 more raisin cookies Helen baked yesterday compared to today.\n\n\nFINAL_ANSWER: 20",
+      "formula_first": "*  Total cookies baked yesterday = Chocolate Chip Cookies + Raisin Cookies\n*  Raisin cookies baked today = 280\n*  Chocolate Chip cookies baked today = 359\n*  Difference in raisin cookies between yesterday and today = (Raisin cookies baked today) - (Raisin cookies baked yesterday)\n\n\nFINAL_ANSWER: 69",
+      "backward": "What is being asked in the problem?\n... The difference between the number of raisin cookies Helen baked yesterday and today.\n\n\nWhat information do we have about this quantity?\n... We know how many raisin cookies Helen baked each day, so we can calculate the difference.\n\n\n\nHow do we find the difference?\n... Subtract the number of raisin cookies Helen baked today from the number she baked yesterday.\n\n\n\n\nFINAL_ANSWER: 619 - 280 = 339"
+    },
+    "strategy_predictions": {
+      "chain_of_thought": "20",
+      "formula_first": "69",
+      "backward": "619 - 280 = 339"
+    },
+    "prediction": "20",
+    "correct": true,
+    "token_cost": 819,
+    "per_strategy_tokens": {
+      "chain_of_thought": 299,
+      "formula_first": 246,
+      "backward": 274
+    },
+    "aggregation": "majority_vote"
+  },
+  {
+    "index": 84,
+    "question": "Every day Ryan spends 6 hours on learning english and 7 hours on learning chinese. If he learns for 5 days How many hours does he spend on learning english and chinese in all?",
+    "gold_answer": "65",
+    "strategy_texts": {
+      "chain_of_thought": "1. **Identify what we know:** We know that Ryan spends 6 hours per day on English and 7 hours per day on Chinese.  We also know he learns for 5 days.\n2. **Calculate total time spent on English:** He spends 6 hours/day * 5 days = 30 hours on English.\n3. **Calculate total time spent on Chinese:** He spends 7 hours/day * 5 days = 35 hours on Chinese.\n4. **Add up the times:** Total time is 30 hours (English) + 35 hours (Chinese) = 65 hours.\nFINAL_ANSWER: 65",
+      "formula_first": "* Time spent per day = Hours/day\n* Total time = Days * Hours/day\n* We know that Ryan spends 6 hours on English and 7 hours on Chinese each day.\n\n\nTherefore, we can calculate total time by multiplying the daily hours of study by the number of days.  This gives us the total time spent studying English and Chinese over five days.\n\n\n\nFINAL_ANSWER: 30 + 35 = 65",
+      "backward": "1. We know how much time Ryan spends each day on English and Chinese.\n2. He learns for 5 days.\n3. Therefore, we need to calculate the total time spent on English and Chinese over those 5 days.\n\n\nFINAL_ANSWER: 30 + 35 = 65"
+    },
+    "strategy_predictions": {
+      "chain_of_thought": "65",
+      "formula_first": "30 + 35 = 65",
+      "backward": "30 + 35 = 65"
+    },
+    "prediction": "30 + 35 = 65",
+    "correct": true,
+    "token_cost": 723,
+    "per_strategy_tokens": {
+      "chain_of_thought": 274,
+      "formula_first": 236,
+      "backward": 213
+    },
+    "aggregation": "majority_vote"
+  },
+  {
+    "index": 85,
+    "question": "Mary is baking a cake. The recipe calls for 5 cups of sugar and 14 cups of flour. She already put in 11 cups of flour. How many more cups of sugar than cups of flour does she need to add now?",
+    "gold_answer": "2",
+    "strategy_texts": {
+      "chain_of_thought": "1. **Identify what we know:** We know that the recipe requires 5 cups of sugar, but Mary has only added 11 cups of flour.  We want to find out how much sugar she needs to add.\n2. **Define variables:** Let 'x' represent the amount of sugar Mary needs to add.\n3. **Set up an equation:** Since the total amount of ingredients needed is equal to the total amount used, we can set up an equation: 5 + x = 14 - 11\n4. **Solve for x:** Simplify the right side of the equation: 5 + x = 3\n   * Subtract 5 from both sides: x = 3 - 5\n   * Therefore, x = -2\n5. **Interpret the result:** This means Mary needs to add 2 cups of sugar.\n\n\nFINAL_ANSWER: -2",
+      "formula_first": "*  Sugar needed = Flour needed * (Ratio of Sugar to Flour)\n* Ratio of Sugar to Flour = 5/14\n\n\nFINAL_ANSWER: 2 cups",
+      "backward": "* **What is being asked:**  How much more sugar does Mary need?\n* **Given information:** Mary has used 11 cups of flour, but needs 14 cups total.\n* **Calculation steps:** To find out how much more sugar she needs, we can subtract the amount of flour she's used from the total amount needed.\n\n\nFINAL_ANSWER: 3 cups"
+    },
+    "strategy_predictions": {
+      "chain_of_thought": "-2",
+      "formula_first": "2 cups",
+      "backward": "3 cups"
+    },
+    "prediction": "-2",
+    "correct": false,
+    "token_cost": 761,
+    "per_strategy_tokens": {
+      "chain_of_thought": 330,
+      "formula_first": 191,
+      "backward": 240
+    },
+    "aggregation": "majority_vote"
+  },
+  {
+    "index": 86,
+    "question": "Faye had 31 packs of pencils each one having 6 pencils. She was placing her pencils into rows with 19 pencils in each row. How many pencils does she have?",
+    "gold_answer": "186",
+    "strategy_texts": {
+      "chain_of_thought": "1. **Calculate the total number of pencils:**  Faye has 31 packs * 6 pencils/pack = 186 pencils.\n2. **Calculate the number of rows:** Faye can fit 19 pencils/row, so she needs to divide the total number of pencils by the number of pencils per row. 186 pencils / 19 pencils/row = 9 rows.\n3. **Total Number of Pencils:** Since there are 19 pencils in each row, Faye has 9 rows * 19 pencils/row = 171 pencils.\n\n\nFINAL_ANSWER: 171",
+      "formula_first": "* Number of pencils = (Number of packs) * (Pencils per pack)\n* Total pencils = (Number of pencils) / (Rows)\n\n\nFINAL_ANSWER: 270",
+      "backward": "What is being asked? The total number of pencils.\nHow can we get there from here? We know how many packs and how many pencils are in each pack, but we also know how many pencils are in each row.  We just need to multiply these values together.\n\n\nFINAL_ANSWER: 31 * 6 * 19 = 3527"
+    },
+    "strategy_predictions": {
+      "chain_of_thought": "171",
+      "formula_first": "270",
+      "backward": "31 * 6 * 19 = 3527"
+    },
+    "prediction": "171",
+    "correct": false,
+    "token_cost": 673,
+    "per_strategy_tokens": {
+      "chain_of_thought": 266,
+      "formula_first": 182,
+      "backward": 225
+    },
+    "aggregation": "majority_vote"
+  },
+  {
+    "index": 87,
+    "question": "Paul got a box of 589 crayons for his birthday. During the school year he gave 571 crayons to his friends while he lost 161 crayons. How many more crayons did he give to his friends than those he lost?",
+    "gold_answer": "410",
+    "strategy_texts": {
+      "chain_of_thought": "1. **Identify what we need to find:** We want to know how many more crayons Paul gave away compared to the ones he lost. This means we're looking at the difference between these two quantities.\n2. **Calculate the total number of crayons given away:**  Paul gave away 571 crayons.\n3. **Calculate the total number of crayons lost:** He lost 161 crayons.\n4. **Find the difference between giving away and losing:** To get our final answer, subtract the number of crayons lost from the number of crayons given away. \n   * Difference = 571 - 161 = 410\n\n\nFINAL_ANSWER: 410",
+      "formula_first": "*  Total crayons given away = Total crayons - Crayons lost\n*  Crayons given away = Total crayons - Crayons lost\n*  Difference between giving away and losing = Crayons given away - Crayons lost\n\n\nFINAL_ANSWER: 20",
+      "backward": "What is being asked in the problem?\n... The difference between the number of crayons given away and the number of crayons lost.\n\n\nWhat information is needed to solve it?\n... Number of crayons given away, number of crayons lost.\n\n\n\nHow can we find the missing values?\n... We know how many crayons were given away (571) and lost (161).  We can subtract these numbers to get the final result.\n\n\n\n\nFINAL_ANSWER: 410"
+    },
+    "strategy_predictions": {
+      "chain_of_thought": "410",
+      "formula_first": "20",
+      "backward": "410"
+    },
+    "prediction": "410",
+    "correct": true,
+    "token_cost": 764,
+    "per_strategy_tokens": {
+      "chain_of_thought": 292,
+      "formula_first": 210,
+      "backward": 262
+    },
+    "aggregation": "majority_vote"
+  },
+  {
+    "index": 88,
+    "question": "After eating a hearty meal they went to see the Buckingham palace. There, Rachel learned that 703 visitors came to the Buckingham palace on the previous day. If there were 246 visitors on that day How many visited the Buckingham palace within 25 days?",
+    "gold_answer": "949",
+    "strategy_texts": {
+      "chain_of_thought": "1. We know that the total number of visitors is 703.\n2. We also know that there were 246 visitors on one specific day.\n3. To find out how many visitors came over 25 days we need to add up all the daily visitor numbers from 1 to 25.\n4. The formula for calculating the sum of an arithmetic series is S = (n/2)(a + l), where n is the number of terms, a is the first term, and l is the last term. In our case, n=25, a=246, and l=703.\n5. Substituting these values into the formula gives us S = (25/2)(246+703).\n6. Simplifying the equation, we get S = (25/2)(949)\n7. Calculating the product, we have S = 25 * 474.5\n8. Therefore, the total number of visitors who came to the Buckingham Palace within 25 days is 11862.5\n\n\nFINAL_ANSWER: 11862.5",
+      "formula_first": "* Visitors per day = Total visitors / Number of days\n* Total visitors = Visitors per day * Number of days\n\n\nFINAL_ANSWER: 18,990",
+      "backward": "1. The total number of visitors is given in the prompt. We want to find out how many people visited over 25 days.\n2. To calculate the number of visitors over 25 days we can use the information about the number of visitors on one specific day and then apply it to other days.\n\n\nFINAL_ANSWER: 703 * 25 = 17575"
+    },
+    "strategy_predictions": {
+      "chain_of_thought": "11862.5",
+      "formula_first": "18,990",
+      "backward": "703 * 25 = 17575"
+    },
+    "prediction": "11862.5",
+    "correct": false,
+    "token_cost": 841,
+    "per_strategy_tokens": {
+      "chain_of_thought": 398,
+      "formula_first": 195,
+      "backward": 248
+    },
+    "aggregation": "majority_vote"
+  },
+  {
+    "index": 89,
+    "question": "Nell collects cards. She had 239 baseball cards and 38 Ace cards. She gave some of her cards to Jeff and now has 376 Ace cards and 111 baseball cards left. How many more Ace cards than baseball cards does Nell have?",
+    "gold_answer": "265",
+    "strategy_texts": {
+      "chain_of_thought": "1. **Define variables:** Let 'b' represent the number of baseball cards Nell started with, and let 'a' represent the number of Ace cards she started with. We know that b = 239 and a = 38.\n2. **Set up equations based on given information:**  We are told that after giving some cards away, Nell has 376 Ace cards and 111 baseball cards left. This can be expressed mathematically as follows:\n    * a - (number of baseball cards given away) = 376 \n    * b + (number of Ace cards given away) = 111\n3. **Simplify the equations:** Since we don't know how many baseball cards were given away, we need to express it in terms of 'a'. From the second equation, we get:\n   * b = 111 - (number of Ace cards given away).\n4. **Substitute values into the simplified equation:** Substitute the value of 'b' from Step 3 into the first equation:\n   * a - (number of baseball cards given away) = 376\n5. **Solve for the unknown variable:** To find out how many Ace cards were given away, solve the above equation for 'a':\n   * a = 376 + (number of baseball cards given away)\n6. **Find the difference between Ace and Baseball Cards:** Now that you know the total number of Ace cards ('a') and the number of baseball cards ('b'), calculate the difference:\n   * Difference = a - b\n7. **Calculate the final result:** Plug in the known values of 'a' and 'b' to find the difference:\n   * Difference = (376 + (number of baseball cards given away)) - 239\n\n\nFINAL_ANSWER: 137",
+      "formula_first": "*  Ace Cards = Baseball Cards + (Number of Ace Cards given away) - Number of Ace Cards remaining\n*  Baseball Cards Remaining = Original Baseball Cards - Number of Baseball Cards Given Away\n\n\nLet's break down the information we know:\n\nWe are given that Nell has 376 Ace cards and 111 baseball cards left. We can use these numbers along with the equations above to solve for how many Ace cards she started with. Let's start by plugging in what we know into the first equation:\n\nAce Cards = Baseball Cards + (Number of Ace Cards given away) - Number of Ace Cards remaining\n\nSince we don't know the exact number of Ace cards given away, let's call it 'x'. Now we can rewrite the equation:\n\nAce Cards = Baseball Cards + x - (Number of Ace Cards remaining)\n\nNow plug in the known values:\n\n376 = 239 + x - 376\n\nSimplify the equation:\n\n0 = x - 376\n\nSolving for x gives us:\n\nx = 376\n\n\n\nFINAL_ANSWER: 376",
+      "backward": "What is being asked in the problem?\nThe problem asks how many more Ace cards than baseball cards does Nell have.\n\n\nWhat information do we know about the quantities involved?\nWe know that Nell started with 239 baseball cards and 38 Ace cards. We also know she gave away some cards, resulting in 376 Ace cards and 111 baseball cards remaining.\n\n\n\nHow can we use this information to find our answer?\nLet's say x represents the number of baseball cards Nell gave away.  Then, we can set up an equation based on the given information: \n* Starting amount of Ace cards + Cards given away = Ending amount of Ace cards\n* 38 + x = 376\n* Solving for x gives us x = 376 - 38 = 338\n\n\n\n\nNow let's calculate the difference between Ace cards and baseball cards:\n* Number of Ace cards - Number of Baseball cards = Difference\n* 376 - 111 = 265\n\n\n\nFINAL_ANSWER: 265"
+    },
+    "strategy_predictions": {
+      "chain_of_thought": "137",
+      "formula_first": "376",
+      "backward": "265"
+    },
+    "prediction": "137",
+    "correct": false,
+    "token_cost": 1334,
+    "per_strategy_tokens": {
+      "chain_of_thought": 543,
+      "formula_first": 397,
+      "backward": 394
+    },
+    "aggregation": "majority_vote"
+  },
+  {
+    "index": 90,
+    "question": "Danny collects bottle caps. He found 36 bottle caps at the park while he threw away 35 old ones. Now he has 22 bottle caps in his collection. How many more bottle caps did danny find at the park than those he threw away?",
+    "gold_answer": "1",
+    "strategy_texts": {
+      "chain_of_thought": "1. **Identify what we know:** We know that Danny started with 22 bottle caps, and then added some from the park.  We also know how many he threw away.\n2. **Define variables:** Let 'x' represent the number of bottle caps Danny found at the park.\n3. **Set up an equation:** The total number of bottle caps is equal to the number he found plus the number he had before adding them. So, x + 22 = 36 - 35.\n4. **Solve for x:** Simplify the right side of the equation: x + 22 = 1. Then subtract 22 from both sides: x = -21.\n5. **Interpret the result:** This means Danny actually lost 21 bottle caps!\n\n\nFINAL_ANSWER: -21",
+      "formula_first": "*  Number of bottle caps = Number of bottle caps collected - Number of bottle caps thrown away\n*  Let x be the number of bottle caps Danny found at the park.\n\n\nFINAL_ANSWER: 1",
+      "backward": "1. We know how many bottle caps Danny has now and how many he had previously.\n2. The difference between these two amounts is equal to the number of bottle caps he found at the park.\n\n\nFINAL_ANSWER: 1"
+    },
+    "strategy_predictions": {
+      "chain_of_thought": "-21",
+      "formula_first": "1",
+      "backward": "1"
+    },
+    "prediction": "1",
+    "correct": true,
+    "token_cost": 737,
+    "per_strategy_tokens": {
+      "chain_of_thought": 323,
+      "formula_first": 202,
+      "backward": 212
+    },
+    "aggregation": "majority_vote"
+  },
+  {
+    "index": 91,
+    "question": "A mailman has to give 38 pieces of junk mail to each of the 78 blocks. If there are 19 houses on a block How many pieces of junk mail should he give each house?",
+    "gold_answer": "2",
+    "strategy_texts": {
+      "chain_of_thought": "1. **Identify what we need to find:** The mailman needs to deliver junk mail to each house, so we need to figure out how much junk mail per house is needed.\n2. **Calculate total junk mail:** We know that the mailman delivers 38 pieces of junk mail to each of the 78 blocks. So, the total amount of junk mail delivered is 38 * 78 = 2944 pieces.\n3. **Determine the number of houses:** Each block has 19 houses.\n4. **Divide total junk mail by the number of houses:** To get the junk mail per house, divide the total junk mail by the number of houses. This gives us 2944 / 19 = 152 pieces of junk mail per house.\n\n\nFINAL_ANSWER: 152",
+      "formula_first": "* Number of pieces per block = (Number of blocks) * (Pieces per block)\n* Pieces per block = Total pieces / Number of blocks\n* House count per block = Number of houses in a block\n\n\nFINAL_ANSWER: 38/19=2",
+      "backward": "What is being asked in the problem?\nThe mailman needs to deliver 38 pieces of junk mail to each of the 78 blocks, and we know there are 19 houses per block.  We can calculate how much junk mail he gives to each house.\n\n\nFINAL_ANSWER: 2"
+    },
+    "strategy_predictions": {
+      "chain_of_thought": "152",
+      "formula_first": "38/19=2",
+      "backward": "2"
+    },
+    "prediction": "152",
+    "correct": false,
+    "token_cost": 736,
+    "per_strategy_tokens": {
+      "chain_of_thought": 315,
+      "formula_first": 204,
+      "backward": 217
+    },
+    "aggregation": "majority_vote"
+  },
+  {
+    "index": 92,
+    "question": "Edward spent $ 16 to buy 92 books each book costing him the same amount of money. Now he has $ 6. How much did Edward have before he spent his money?",
+    "gold_answer": "22",
+    "strategy_texts": {
+      "chain_of_thought": "1. We know that Edward bought 92 books for $16, so we can find out how much each book cost.  To do this, divide the total spending ($16) by the number of books (92). This gives us $16 / 92 = $0.17 per book.\n2. Since each book costs $0.17, we can calculate how many books were purchased using the information given about the remaining balance after buying the books. To do this, divide the current balance ($6) by the price per book ($0.17). This gives us $6 / $0.17 = 35.29.\n3. The result from step 2 is an irrational number, which means it cannot be expressed as a whole number. Therefore, there must be some error in our calculations.\n\n\nFINAL_ANSWER: -1",
+      "formula_first": "*  Cost = Price * Quantity\n*  Total Cost = Number of Books * Book Price\n\n\n**Solution:**\nWe know that the cost per book is equal to the total cost divided by the quantity of books purchased. We can use the given information about the price per book to calculate how many books were bought at the original price. The total cost was $16, so we can find the price per book by dividing the total cost by the number of books. This gives us $16 / 92 = $0.17 per book. To determine the initial amount of money Edward had, we must consider the fact that after spending $16 on books, he only has $6 left. Therefore, we can subtract the value of the books from the initial amount to get the remaining balance.\n\n\n\nFINAL_ANSWER: 184",
+      "backward": "What is asked in the problem?\nThe question asks how much money Edward had before spending it.\n\n\nWhat information can we use to calculate that?\nWe know that after buying all the books, Edward has $6 left and spent $16 on them. We also know that each book cost the same amount of money.\n\n\n\nHow can we find out how much was spent per book?\nTo figure out the price per book, divide the total amount spent ($16) by the number of books (92).\n\n\n\nNow let's work back from there.  If we know the price per book, we can determine how many books were bought. Then we can solve for the initial amount of money Edward had.\n\n\n\n\nFINAL_ANSWER: 24"
+    },
+    "strategy_predictions": {
+      "chain_of_thought": "-1",
+      "formula_first": "184",
+      "backward": "24"
+    },
+    "prediction": "-1",
+    "correct": false,
+    "token_cost": 940,
+    "per_strategy_tokens": {
+      "chain_of_thought": 320,
+      "formula_first": 317,
+      "backward": 303
+    },
+    "aggregation": "majority_vote"
+  },
+  {
+    "index": 93,
+    "question": "Brenda's mother made cookies for guests. If she prepared 38 cookies and each of them had 19 cookies How many guests did she prepare cookies for?",
+    "gold_answer": "2",
+    "strategy_texts": {
+      "chain_of_thought": "* **Identify what we know:** We know that Brenda's mom baked 38 cookies, and each cookie has 19 cookies inside.  We need to find out how many people she served.\n* **Set up an equation:** Let 'g' represent the number of guests. Since each guest gets one cookie, we can set up the equation: 38 = g * 19\n* **Solve for 'g':** To solve for 'g', divide both sides of the equation by 19: 38 / 19 = g\n* **Calculate the result:** 2 = g\n* **Answer:** The number of guests is 2\n\n\nFINAL_ANSWER: 2",
+      "formula_first": "* Number of cookies = Total Cookies / Cookie per cookie\n* Guests = Number of cookies /  Cookies per guest\n\n\nSubstituting values into the equations:\nGuests = 38 cookies / 19 cookies/guest\n\nCalculating the result:\nGuests = 2 guests\n\n\n\nFINAL_ANSWER: 2",
+      "backward": "What is being asked in the problem?\nThe amount of guests Brenda's mom prepared cookies for.\n\n\nWhat information do we have?\nBrenda's mom made 38 cookies, and each cookie has 19 cookies.\n\n\n\nHow can we use this information to find our answer?\nWe know how many cookies were made and how many are on each cookie. We can divide the total number of cookies by the number of cookies per cookie to get the number of guests.\n\n\n\n\nFINAL_ANSWER: 2 guests"
+    },
+    "strategy_predictions": {
+      "chain_of_thought": "2",
+      "formula_first": "2",
+      "backward": "2 guests"
+    },
+    "prediction": "2",
+    "correct": true,
+    "token_cost": 724,
+    "per_strategy_tokens": {
+      "chain_of_thought": 275,
+      "formula_first": 199,
+      "backward": 250
+    },
+    "aggregation": "majority_vote"
+  },
+  {
+    "index": 94,
+    "question": "There were 61 parents in the program and 177 pupils too. The program could seat 44 people How many people were present in the program?",
+    "gold_answer": "238",
+    "strategy_texts": {
+      "chain_of_thought": "1. We know there are 61 parents + 177 pupils = total people.\n2.  We also know that the program can hold 44 people.\n3. To find out how many people were present, we need to consider both the parents and the pupils.\n4. Therefore, we must add up all the people together.\n\n\nFINAL_ANSWER: 238",
+      "formula_first": "* Total People = Parents + Pupils\n* Capacity = Number of Seats\n*  Total People = Capacity * (Number of seats / total capacity)\n\n\nSubstituting Values:\n* Total People = 61 + 177\n* Capacity = 44\n* Total People = 44 * (177/44)\n\n\n\nComputing Result:\n* Total People = 208\n\n\n\n\nFINAL_ANSWER: 208",
+      "backward": "The question is asking how many people are present in the program, given information about the number of parents and pupils, and the seating capacity. We can use these pieces of information to calculate the total number of people present.\n\n\nFINAL_ANSWER: 248"
+    },
+    "strategy_predictions": {
+      "chain_of_thought": "238",
+      "formula_first": "208",
+      "backward": "248"
+    },
+    "prediction": "238",
+    "correct": true,
+    "token_cost": 636,
+    "per_strategy_tokens": {
+      "chain_of_thought": 211,
+      "formula_first": 230,
+      "backward": 195
+    },
+    "aggregation": "majority_vote"
+  },
+  {
+    "index": 95,
+    "question": "Melissa scored a total of 91 points in 13 games scoring the same for each game. How many points did she score in each game?",
+    "gold_answer": "7",
+    "strategy_texts": {
+      "chain_of_thought": "1. We know that Melissa scored a total of 91 points in 13 games.  This means we can find out how many points she scored per game by dividing her total points by the number of games.\n2. To do this division, we need to use long division. Let's set up our equation like this: 91 / 13 = ?\n3. Performing the long division, we get: 7 with a remainder of 0. This tells us that Melissa scored 7 points in each game.\n\n\nFINAL_ANSWER: 7",
+      "formula_first": "*  Points per game = Total Points / Number of Games\n*  Melissa's points per game = 91 / 13 \n\n\nFINAL_ANSWER: 7",
+      "backward": "* The question is asking how many points Melissa scored per game.\n* We know her total score was 91 and she played 13 games.\n\n\nFINAL_ANSWER: 7 points"
+    },
+    "strategy_predictions": {
+      "chain_of_thought": "7",
+      "formula_first": "7",
+      "backward": "7 points"
+    },
+    "prediction": "7",
+    "correct": true,
+    "token_cost": 595,
+    "per_strategy_tokens": {
+      "chain_of_thought": 243,
+      "formula_first": 173,
+      "backward": 179
+    },
+    "aggregation": "majority_vote"
+  },
+  {
+    "index": 96,
+    "question": "Paul got a box of 531 crayons and 38 erasers for his birthday. At the end of the school year he only had 391 left while not having lost a single erasers. How many more crayons than erasers did he have left?",
+    "gold_answer": "353",
+    "strategy_texts": {
+      "chain_of_thought": "1. **Identify what we know:** We know that Paul started with 531 crayons and 38 erasers, and after using some, he has 391 crayons left.  We also know that he still has all his erasers.\n2. **Define variables:** Let 'c' represent the number of crayons remaining and 'e' represent the number of erasers remaining.\n3. **Set up equations based on the given information:** We can set up two equations to express the relationship between the starting amount and the ending amount: c = 531 - x (where x is the number of crayons used) and e = 38 (since he has all his erasers).\n4. **Use the second equation to solve for one variable:** Since we know that he has all his erasers, we can use the second equation to find out how many erasers are left. This means that e = 38.\n5. **Substitute the value into the first equation:** Now that we know there are 38 erasers left, we can substitute it back into the first equation to find the number of crayons remaining. So, c = 531 - x.\n6. **Find the difference between the number of crayons and erasers:** To determine how many more crayons were left compared to erasers, subtract the number of erasers from the number of crayons. That would be c - e.\n7. **Calculate the final result:** Substitute the values we found earlier into the last equation: c - e = (531 - x) - 38. Simplify the equation to get the final answer.\n\n\nFINAL_ANSWER: 493",
+      "formula_first": "*  Total items at start = Crayons + Erasers\n*  Items remaining after use = Total items - (Number of used items)\n*  Let x represent the number of erasers that were used.\n\n\n**Solution:**\nWe know that Paul started with 531 crayons and 38 erasers. After the school year ended, he had 391 crayons and no erasers were used. We can set up an equation to solve for how many erasers were used:\n\n* **Equation 1:** Total items at start = Crayons + Erasers\n   * This is represented by 531 + 38 = 569 total items.\n\n* **Equation 2:** Items remaining after use = Total items - (Number of used items)\n    * This is represented by 391 = 569 - (x).\n\nSolving Equation 2 for x:\n* 391 = 569 - x\n* x = 569 - 391\n* x = 178\n\nNow we can calculate the difference between the number of crayons and erasers he had left:\n\n* Difference = Crayons - Erasers\n* Difference = 391 - 0 = 391\n\nTherefore, Paul had 391 more crayons than erasers left.\n\n\n\nFINAL_ANSWER: 391",
+      "backward": "What is being asked in the problem?\nThe problem asks how many more crayons than erasers did Paul have left.\n\n\nWhat information do we know about the quantities involved?\nWe know Paul started with 531 crayons and 38 erasers, but after the school year ended he has 391 crayons and no missing erasers.\n\n\n\nHow can we use this information to solve the problem?\nTo find out how many more crayons than erasers he had left, we need to calculate the difference between the amount of crayons he had at the start and the amount he has left. We also need to consider that he still has all his erasers.\n\n\n\n\nFINAL_ANSWER: 140"
+    },
+    "strategy_predictions": {
+      "chain_of_thought": "493",
+      "formula_first": "391",
+      "backward": "140"
+    },
+    "prediction": "493",
+    "correct": false,
+    "token_cost": 1267,
+    "per_strategy_tokens": {
+      "chain_of_thought": 502,
+      "formula_first": 454,
+      "backward": 311
+    },
+    "aggregation": "majority_vote"
+  },
+  {
+    "index": 97,
+    "question": "For 19 weeks of harvest Lewis earns a total of $ 133. How much money does he earn each week?",
+    "gold_answer": "7",
+    "strategy_texts": {
+      "chain_of_thought": "1. We know that Lewis earns $133 over 19 weeks.\n2. To find out how much he earns per week, we need to divide the total earnings by the number of weeks.\n3. So, his weekly earnings are $133 / 19 = $7.05 (rounded to two decimal places).\n\n\nFINAL_ANSWER: 7.05",
+      "formula_first": "* **Total earnings = Weekly Earnings * Number of Weeks**\n* We know Total earnings ($133) and Number of Weeks (19).  We can solve for Weekly Earnings.\n\n\nLet's plug in what we know:\n$133 = Weekly Earnings * 19\n\nNow let's solve for Weekly Earnings by dividing both sides by 19:\nWeekly Earnings = $133 / 19\n\nFinally, calculate the value on the right side:\nWeekly Earnings = $7\n\nFINAL_ANSWER: 7",
+      "backward": "What is asked in the problem?\nThe amount of money Lewis earns per week.\nHow can we find it?\nWe know his total earnings over 19 weeks and we are given that information.\nTherefore, we divide the total earnings by the number of weeks.\n\n\nFINAL_ANSWER: $7"
+    },
+    "strategy_predictions": {
+      "chain_of_thought": "7.05",
+      "formula_first": "7",
+      "backward": "$7"
+    },
+    "prediction": "7.05",
+    "correct": false,
+    "token_cost": 647,
+    "per_strategy_tokens": {
+      "chain_of_thought": 203,
+      "formula_first": 245,
+      "backward": 199
+    },
+    "aggregation": "majority_vote"
+  },
+  {
+    "index": 98,
+    "question": "Adam has 5 more apples than Jackie. Jackie has 89 oranges and 11 apples. How many apples does Adam have?",
+    "gold_answer": "16",
+    "strategy_texts": {
+      "chain_of_thought": "1. We know that Jackie has 89 oranges and 11 apples.\n2.  Adam has 5 more apples than Jackie, so he has 11 + 5 = 16 apples.\n3. Therefore, Adam has 16 apples.\n\n\nFINAL_ANSWER: 16",
+      "formula_first": "*  Apples = Oranges + Apples\n*  Adam's Apples = Jackie's Apples + 5\n\n\nFINAL_ANSWER: 26",
+      "backward": "What is the unknown quantity we are trying to find?  The unknown quantity is the number of apples Adam has.\nHow can we get that value? We know how many apples Jackie has, and we also know how many apples Adam has compared to Jackie's amount.\nTherefore, we can calculate Adam's apple count by subtracting Jackie's apples from the total number of apples he has.\n\n\nFINAL_ANSWER: 20"
+    },
+    "strategy_predictions": {
+      "chain_of_thought": "16",
+      "formula_first": "26",
+      "backward": "20"
+    },
+    "prediction": "16",
+    "correct": true,
+    "token_cost": 572,
+    "per_strategy_tokens": {
+      "chain_of_thought": 186,
+      "formula_first": 161,
+      "backward": 225
+    },
+    "aggregation": "majority_vote"
+  },
+  {
+    "index": 99,
+    "question": "Jesse's room is 2 feet long and 12 feet wide. If each tile is of size 4 square feet How many tiles does she need to cover the whole floor?",
+    "gold_answer": "6",
+    "strategy_texts": {
+      "chain_of_thought": "1. **Calculate the area of the room:** The area of a rectangle is length times width, so the area of Jesse's room is 2 feet * 12 feet = 24 square feet.\n2. **Divide the area by the area of one tile:**  To find out how many tiles are needed, we divide the total area of the room (24 square feet) by the area of one tile (4 square feet). This gives us 24 square feet / 4 square feet = 6 tiles.\n3. **Answer:** Therefore, Jesse needs 6 tiles to cover her entire floor.\n\n\nFINAL_ANSWER: 6",
+      "formula_first": "* Area = length * width\n* Tiles needed = area / area per tile\n\n\n**Area:**  2 ft * 12 ft = 24 sq ft\n**Tiles Needed:** 24 sq ft / 4 sq ft/tile = 6 tiles\n\n\n\nFINAL_ANSWER: 6",
+      "backward": "What needs to be calculated first? The total area of the room. Then, we know how big each tile is. We can calculate the number of tiles needed by dividing the total area by the area of one tile.\n\n\nFINAL_ANSWER: 30"
+    },
+    "strategy_predictions": {
+      "chain_of_thought": "6",
+      "formula_first": "6",
+      "backward": "30"
+    },
+    "prediction": "6",
+    "correct": true,
+    "token_cost": 670,
+    "per_strategy_tokens": {
+      "chain_of_thought": 268,
+      "formula_first": 203,
+      "backward": 199
+    },
+    "aggregation": "majority_vote"
+  }
+]

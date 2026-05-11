@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "slm-comm-compact"
+version = "0.1.0"
+description = "Compact configurable multi-agent SLM experiments"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+  "pyyaml>=6.0",
+  "torch>=2.1.0",
+  "transformers>=4.40.0",
+  "datasets>=2.18.0",
+  "accelerate>=0.28.0",
+  "sentencepiece>=0.1.99",
+  "bitsandbytes>=0.43.0; platform_system == 'Linux'",
+]
+
+[tool.setuptools]
+include-package-data = true
+
+[tool.setuptools.packages.find]
+include = ["slm_comm*"]

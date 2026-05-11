@@ -1,0 +1,28 @@
+seed: 42
+output_dir: outputs/run_01_with_SVAMP_all_models/deepseek_r1_distill_qwen_1.5b
+
+dataset:
+  name: svamp
+  split: train        
+  max_samples: 100
+
+model:
+  name: deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B
+  device: mps
+  dtype: float32
+  load_in_4bit: false
+
+pipeline:
+  type: diverse_ensemble
+
+ensemble:
+  strategies:
+    - chain_of_thought
+    - formula_first
+    - backward
+
+generation:
+  max_new_tokens: 512
+  temperature: 0.0
+  top_p: 1.0
+  do_sample: false
