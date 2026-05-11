@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=28&pause=1000&color=6C63FF&center=true&vCenter=true&width=900&lines=SLM-Based+Multi-Agent+Frameworks;Methodology+1+%3A+Pipeline+Decomposition;Strategy-Diverse+Ensemble+%7C+SVAMP+Benchmark" alt="Typing SVG" />
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=28&pause=1000&color=6C63FF&center=true&vCenter=true&width=1000&lines=SLM-Based+Multi-Agent+Frameworks;Methodology+1+%3A+Pipeline+Decomposition;Methodology+2+%3A+Diverse+Ensemble+Reasoning;SVAMP+Benchmark" alt="Typing SVG" />
 
 <br/>
 
