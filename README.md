@@ -14,7 +14,7 @@
 [![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white)](https://pytorch.org)
 [![Dataset](https://img.shields.io/badge/Dataset-SVAMP-4CAF50?style=for-the-badge)](https://huggingface.co/datasets/ChilleD/SVAMP)
 [![License](https://img.shields.io/badge/License-MIT-yellow?style=for-the-badge)](LICENSE)
-[![Status](https://img.shields.io/badge/Status-Submitted-at-ICCUBEA-2026-blueviolet?style=for-the-badge)]()
+![Status](https://img.shields.io/badge/Status-Submitted_at_ICCUBEA_2026-blueviolet?style=for-the-badge)
 
 <br/>
 
