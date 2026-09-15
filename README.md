@@ -167,26 +167,28 @@ Configured via `pipeline.communication` in `config.yaml` and `communication.max_
 
 ### 📊 Results — Methodology 1
 
-> Evaluated on **SVAMP** · 100 samples · `planner_solver_verifier` pipeline · greedy decoding (`temperature=0.0`)
+> Evaluated on **SVAMP** · 300 samples · `planner_solver_verifier` pipeline · greedy decoding (`temperature=0.0`, `max_new_tokens=512`) · communication budget `max_tokens=120`, `num_steps=5`.
+> Accuracy is reported with 95% bootstrap confidence intervals (10k resamples); **T̄** is the mean total tokens per problem summed across planner + solver + verifier. Per-mode summaries and CIs are in `outputs_n300/` (`ci_summary.md`).
 
-#### Accuracy by Communication Mode
+#### Accuracy (%) by Communication Mode
 
-| Model | Natural | Constrained | Structured |
-|-------|:-------:|:-----------:|:----------:|
-| DeepSeek-R1-Distill-Qwen-1.5B | 67 | 53 | 62 |
-| Gemma2-2B | 54 | 54 | 46 |
-| LLaMA 3.2-3B | 58 | 71 | 58 |
-| Mistral-7B | 29 | 32 | 36 |
-| Qwen2.5-7B | 44 | 46 | 53 |
+| Model | Natural | Constrained | Structured | T̄ (tokens) |
+|-------|:-------:|:-----------:|:----------:|:----------:|
+| DeepSeek-R1-Distill-Qwen-1.5B | 71.3 ±5.2 | 71.7 ±5.0 | 66.3 ±5.3 | ~1630 |
+| Gemma2-2B | 66.0 ±5.3 | 66.0 ±5.3 | 70.3 ±5.0 | ~730 |
+| LLaMA 3.2-3B | 67.7 ±5.2 | 68.0 ±5.3 | 70.3 ±5.2 | ~1067 |
+| Mistral-7B | 63.3 ±5.5 | 62.7 ±5.5 | 62.3 ±5.5 | ~870 |
+| Qwen2.5-7B | 55.0 ±5.7 | 52.3 ±5.7 | 54.7 ±5.7 | ~2660 |
 
-
+> **Answer extraction.** The final answer is read from the Verifier, falling back to the Solver's answer when the Verifier confirms without restating a number (e.g. it outputs only `VERIFICATION: correct`). Reading the Verifier text literally in that case discards the numeric answer and under-counts accuracy — most severely for models with terse verifiers (Mistral, Qwen). See `extract_verified_answer` in `slm_comm/agents.py`.
 
 #### 🔍 Key Design Insights
 
-- 🗂️ **Structured communication outperforms natural** on models that produce verbose planner outputs — truncating to clean numbered steps reduces noise entering the Solver.
-- 🚫 **Distractor identification by the Planner** is the critical first step — SVAMP problems deliberately include irrelevant numbers, and surfacing them early improves Solver accuracy.
-- ✅ **The Verifier provides a correction pass** that recovers errors introduced by the Solver, at the cost of additional token budget.
-- ⚠️ **Error propagation is a real risk** — a wrong plan passed uncorrected to the Solver tends to compound; the Constrained mode mitigates this by limiting what the Solver can be misled by.
+- 📉 **Token efficiency separates the models more than accuracy does.** Accuracy clusters in the ~52–72% band, while T̄ ranges from ~730 (Gemma2-2B) to ~2660 (Qwen2.5-7B). Gemma2-2B and Mistral-7B give the best accuracy-per-token.
+- 🐘 **Qwen2.5-7B is the least efficient** — verbose LaTeX-style generation inflates token cost ~3× with no accuracy benefit; it also runs to the token cap most often.
+- ⚖️ **Communication mode effects are small.** Within each model the three modes' confidence intervals overlap; structured is best or tied for LLaMA and Gemma2 but slightly hurts DeepSeek-R1.
+- 🚫 **Distractor identification by the Planner** is the critical first step — SVAMP deliberately includes irrelevant numbers, and surfacing them early improves Solver accuracy.
+- 🔎 **Answer-extraction robustness is itself a result** — naive verifier-only parsing severely under-counts models whose verifier confirms tersely, so a solver fallback is required for a fair comparison.
 
 ---
 

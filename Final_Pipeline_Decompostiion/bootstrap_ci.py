@@ -24,7 +24,9 @@ Z = 1.959963984540054  # 95%
 
 ORDER = [("llama3.2", "Llama-3.2-3B"),
          ("gemma2-2b", "Gemma2-2B"),
-         ("Deepseek-r1-1.5b", "DeepSeek-R1-1.5B")]
+         ("Deepseek-r1-1.5b", "DeepSeek-R1-1.5B"),
+         ("qwen2.5_7b", "Qwen2.5-7B"),
+         ("mistral-7b", "Mistral-7B")]
 MODES = ["natural", "constrained", "structured"]
 
 

@@ -95,3 +95,15 @@ def extract_final_answer(text: str) -> str:
         return numbers[-1].replace(",", "")
     lines = [line.strip() for line in text.splitlines() if line.strip()]
     return lines[-1] if lines else text.strip()
+
+
+def extract_verified_answer(verifier_text: str, solver_text: str) -> str:
+    """Final answer from the verifier, falling back to the solver's answer when
+    the verifier confirms without restating a number (e.g. it just says
+    'VERIFICATION: correct'). Taking the verifier text literally in that case
+    loses the numeric answer and scores a correct item as wrong.
+    """
+    pred = extract_final_answer(verifier_text or "")
+    if not re.search(r"\d", str(pred)):
+        return extract_final_answer(solver_text or "")
+    return pred

@@ -3,7 +3,13 @@ from __future__ import annotations
 from dataclasses import asdict
 from typing import Any
 
-from slm_comm.agents import PlannerAgent, SolverAgent, VerifierAgent, extract_final_answer
+from slm_comm.agents import (
+    PlannerAgent,
+    SolverAgent,
+    VerifierAgent,
+    extract_final_answer,
+    extract_verified_answer,
+)
 from slm_comm.communication import build_communication
 from slm_comm.config import AppConfig
 from slm_comm.metrics import is_correct
@@ -80,7 +86,7 @@ class PlannerSolverVerifierPipeline(BasePipeline):
         comm = self.communication(planner.text)
         solver = self.solver.run(example["question"], comm)
         verifier = self.verifier.run(example["question"], solver.text)
-        pred = extract_final_answer(verifier.text)
+        pred = extract_verified_answer(verifier.text, solver.text)
         cost = sum([
             planner.prompt_tokens,
             planner.completion_tokens,

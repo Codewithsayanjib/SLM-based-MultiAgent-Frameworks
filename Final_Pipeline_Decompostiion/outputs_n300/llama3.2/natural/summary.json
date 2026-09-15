@@ -1,0 +1,8 @@
+{
+  "num_examples": 300,
+  "num_correct": 203,
+  "accuracy": 0.6767,
+  "total_token_cost": 321308,
+  "avg_token_cost": 1071.03,
+  "accuracy_per_1000_tokens": 0.631793
+}
