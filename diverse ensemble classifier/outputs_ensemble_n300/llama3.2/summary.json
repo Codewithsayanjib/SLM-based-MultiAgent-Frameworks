@@ -1,0 +1,13 @@
+{
+  "num_examples": 300,
+  "num_correct": 256,
+  "accuracy": 0.8533,
+  "total_token_cost": 291230,
+  "avg_token_cost": 970.77,
+  "nate": 0.87903,
+  "accuracy_chain_of_thought": 0.84,
+  "accuracy_formula_first": 0.7,
+  "accuracy_backward": 0.46,
+  "disagreement_rate": 0.66,
+  "unique_correct_rate": 0.1967
+}

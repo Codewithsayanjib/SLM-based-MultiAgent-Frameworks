@@ -288,46 +288,46 @@ The pipeline also computes:
 
 ### 📊 Results — Methodology 2
 
-> Evaluated on **SVAMP** · 100 samples · `diverse_ensemble` pipeline · greedy decoding (`temperature=0.0`)
+> Evaluated on **SVAMP** · 300 samples · `diverse_ensemble` pipeline · greedy decoding (`temperature=0.0`, `max_new_tokens=512`).
+> Accuracy is reported with 95% bootstrap confidence intervals (10k resamples); **T̄** is the mean total tokens per problem across the three solvers. Full per-model summaries and CIs are in `outputs_ensemble_n300/` (`ci_summary_ensemble.md`).
 
 #### Ensemble Accuracy
 
-| Model | Params | Ensemble Acc | Total Tokens | Avg Tokens/Q |
-|-------|--------|:------------:|:------------:|:------------:|
-| DeepSeek-R1-Distill-Qwen-1.5B | 1.5B | 30.0% | 186,231 | 1,862 |
-| Gemma2-2B | 2B | 68.0% | 77,872 | 779 |
-| **LLaMA 3.2-3B** | **3B** | **81.0%** | **88,562** | **886** |
-| Mistral-7B | 7B | 67.0% | 101,976 | 1,020 |
-| Qwen2.5-7B | 7B | 24.0% | 191,172 | 1,912 |
+| Model | Params | Ensemble Acc | 95% CI | T̄ (tokens) |
+|-------|--------|:------------:|:------:|:----------:|
+| DeepSeek-R1-Distill-Qwen-1.5B | 1.5B | 52.3% | [46.7, 58.0] | 1518 |
+| Gemma2-2B | 2B | 72.0% | [67.0, 77.0] | 814 |
+| **LLaMA 3.2-3B** | **3B** | **85.3%** | **[81.3, 89.3]** | **971** |
+| Mistral-7B | 7B | 71.0% | [65.7, 76.0] | 952 |
+| Qwen2.5-7B | 7B | 19.7% | [15.3, 24.3] | 1929 |
 
 #### Per-Strategy Accuracy Breakdown
 
 | Model | Chain-of-Thought | Formula-First | Backward |
 |-------|:----------------:|:-------------:|:--------:|
-| DeepSeek-R1-Distill-Qwen-1.5B | 20.0% | 22.0% | **51.0%** |
-| Gemma2-2B | **64.0%** | 51.0% | 47.0% |
-| LLaMA 3.2-3B | **77.0%** | 60.0% | 64.0% |
-| Mistral-7B | **66.0%** | 45.0% | 47.0% |
-| Qwen2.5-7B | 22.0% | **57.0%** | 13.0% |
+| DeepSeek-R1-Distill-Qwen-1.5B | 36.7% | 43.3% | **61.0%** |
+| Gemma2-2B | **69.0%** | 54.0% | 51.0% |
+| LLaMA 3.2-3B | **84.0%** | 70.0% | 46.0% |
+| Mistral-7B | **69.7%** | 55.3% | 61.7% |
+| Qwen2.5-7B | 18.3% | **64.7%** | 8.3% |
 
 #### Ensemble Diversity Analysis
 
 | Model | Disagreement Rate | Unique Correct Rate |
 |-------|:-----------------:|:-------------------:|
-| DeepSeek-R1-Distill-Qwen-1.5B | 99% | 31% |
-| Gemma2-2B | 83% | 25% |
-| LLaMA 3.2-3B | 61% | 12% |
-| Mistral-7B | 88% | 27% |
-| Qwen2.5-7B | 100% | 50% |
+| DeepSeek-R1-Distill-Qwen-1.5B | 89% | 34% |
+| Gemma2-2B | 74% | 24% |
+| LLaMA 3.2-3B | 66% | 20% |
+| Mistral-7B | 94% | 19% |
+| Qwen2.5-7B | 99% | 54% |
 
 #### 🔍 Key Observations
 
-- 🏆 **LLaMA 3.2-3B achieves the highest ensemble accuracy (81%)** — outperforming both 7B models, demonstrating that parameter count alone does not determine reasoning quality.
-- 🔄 **Backward Reasoning is the dominant strategy for DeepSeek-R1-1.5B (51%)** — the model's distilled reasoning style aligns naturally with goal-first decomposition.
-- 📐 **Formula-First is the only viable strategy for Qwen2.5-7B (57%)** — the model shows near-random performance on CoT and Backward despite its size.
-- 🤝 **Qwen2.5-7B has a 100% disagreement rate** — the three strategies never agree, and 50% of the time only one solver is correct. High diversity, low consensus.
-- 📉 **Majority vote can be hurt by high disagreement** — when strategies rarely agree and errors are diverse (Qwen2.5-7B), voting collapses rather than helps.
-- ✅ **Gemma2-2B punches above its weight** — at just 2B parameters, it achieves 68% accuracy using only 779 tokens per question on average.
+- 🏆 **LLaMA 3.2-3B achieves the highest ensemble accuracy (85.3%)** — outperforming both 7B models; its CI clears the rest, so the lead is statistically significant.
+- 🤝 **Gemma2-2B and Mistral-7B are a statistical tie for second** (72.0% vs 71.0%, overlapping CIs), with Gemma2 the most token-efficient of the group (T̄ 814).
+- 🔄 **Backward reasoning is the strongest single strategy for DeepSeek-R1-1.5B (61%)** — its distilled reasoning style aligns with goal-first decomposition.
+- 📐 **Formula-First is the only viable strategy for Qwen2.5-7B (64.7%)** — near-random CoT/Backward despite its size, and it is outvoted by them under majority vote.
+- 📉 **Majority vote collapses under high disagreement** — when strategies rarely agree and errors are diverse (Qwen2.5-7B, 99% disagreement), voting hurts rather than helps.
 
 ---
 
